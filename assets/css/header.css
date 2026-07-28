@@ -1,0 +1,313 @@
+/* =================================
+   Font Kanit
+================================= */
+
+@font-face {
+
+    font-family: "Kanit";
+
+    src: url("../../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+
+    font-weight: 400;
+
+    font-style: normal;
+
+}
+
+
+@font-face {
+
+    font-family: "Kanit";
+
+    src: url("../../fonts/Kanit/Kanit-Medium.ttf") format("truetype");
+
+    font-weight: 500;
+
+    font-style: normal;
+
+}
+
+
+@font-face {
+
+    font-family: "Kanit";
+
+    src: url("../../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
+
+    font-weight: 700;
+
+    font-style: normal;
+
+}
+
+
+/* ใช้ Font ทั้งเว็บไซต์ */
+
+body {
+
+    font-family: "Kanit", sans-serif;
+
+}
+
+
+
+/* =================================
+   Navbar
+================================= */
+
+
+.elearning-navbar {
+
+    background-color: #050505;
+
+    height: 68px;
+
+}
+
+
+
+/* Container */
+
+.navbar-container {
+
+    padding-left: 75px;
+
+    padding-right: 40px;
+
+    height: 100%;
+
+}
+
+
+
+/* =================================
+   Logo
+================================= */
+
+.logo {
+
+    width: 205px;
+
+    height: auto;
+
+}
+
+
+
+/* =================================
+   Menu
+================================= */
+
+
+.navbar-nav {
+
+    gap: 4px;
+
+}
+
+
+.nav-link {
+
+
+    color:white !important;
+
+    font-family:"Kanit", sans-serif;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    padding:24px 10px !important;
+
+    position:relative;
+
+    transition:0.3s;
+
+}
+
+
+
+.nav-link:hover {
+
+    color:#d99a1e !important;
+
+}
+
+
+
+/* Active */
+
+.nav-link.active {
+
+    color:#d99a1e !important;
+
+}
+
+
+
+.nav-link.active::after {
+
+
+    content:"";
+
+    position:absolute;
+
+
+    left:10px;
+
+    bottom:12px;
+
+
+    width:34px;
+
+    height:2px;
+
+
+    background:#d99a1e;
+
+
+}
+
+
+
+/* =================================
+   Dropdown
+================================= */
+
+
+.dropdown-menu {
+
+    background:#111;
+
+    border:none;
+
+}
+
+
+.dropdown-item {
+
+    color:white;
+
+    font-family:"Kanit", sans-serif;
+
+    font-size:14px;
+
+}
+
+
+.dropdown-item:hover {
+
+    background:#d99a1e;
+
+    color:white;
+
+}
+
+
+
+/* =================================
+   Buttons
+================================= */
+
+
+.navbar-actions {
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+
+}
+
+
+
+/* Login */
+
+.btn-login {
+
+
+    color:#d99a1e;
+
+
+    border:1px solid #d99a1e;
+
+
+    padding:6px 15px;
+
+
+    border-radius:4px;
+
+
+    font-family:"Kanit", sans-serif;
+
+
+    font-size:13px;
+
+
+    text-decoration:none;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.btn-login:hover {
+
+
+    background:#d99a1e;
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* Enroll */
+
+.btn-enroll {
+
+
+    background:#d99a1e;
+
+
+    color:white;
+
+
+    padding:7px 15px;
+
+
+    border-radius:4px;
+
+
+    font-family:"Kanit", sans-serif;
+
+
+    font-size:13px;
+
+
+    text-decoration:none;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.btn-enroll:hover {
+
+
+    background:#b87910;
+
+
+}
