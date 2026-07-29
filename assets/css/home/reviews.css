@@ -1,0 +1,209 @@
+@font-face {
+
+    font-family: "Kanit";
+
+    src: url("../../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+
+    font-weight:400;
+
+}
+
+
+@font-face {
+
+    font-family: "Kanit";
+
+    src: url("../../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
+
+    font-weight:700;
+
+}
+
+
+/* ==========================
+   Reviews
+========================== */
+
+
+.reviews {
+
+    position:relative;
+
+    z-index:5;
+
+    padding:90px 0;
+
+    font-family:"Kanit",sans-serif;
+
+}
+
+
+/* container */
+
+.reviews .container {
+
+    max-width:100%;
+
+    padding:0 7%;
+
+}
+
+
+
+/* title */
+
+.reviews-title {
+
+    margin:0 0 35px;
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+
+
+/* wrapper */
+
+.reviews-wrapper {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+
+/* card */
+
+.review-card {
+
+    height:115px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px 25px;
+
+    background:#171717;
+
+    border:1px solid #9d6c24;
+
+    border-radius:6px;
+
+}
+
+
+
+/* avatar */
+
+.review-avatar {
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    flex-shrink:0;
+
+}
+
+
+
+/* content */
+
+.review-content {
+
+    flex:1;
+
+}
+
+
+.review-content h5 {
+
+    margin:0 0 5px;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+
+.review-content p {
+
+    margin:0;
+
+    color:#e7e7e7;
+
+    font-size:14px;
+
+    font-weight:300;
+
+    line-height:1.35;
+
+}
+
+
+
+/* quote */
+
+.quote-icon {
+
+
+    width:40px;
+
+    height:40px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:#ffb52e;
+
+    border-radius:50%;
+
+
+    color:#111;
+
+    font-size:22px;
+
+
+    flex-shrink:0;
+
+
+}
+
+
+
+/* responsive */
+
+@media(max-width:992px){
+
+
+    .reviews-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}

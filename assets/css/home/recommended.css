@@ -1,0 +1,231 @@
+/* ===============================
+   Font Kanit
+================================ */
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+
+/* ===============================
+   Recommended
+================================ */
+
+.recommended {
+
+    position: relative;
+    z-index: 5;
+
+    padding: 90px 0;
+
+    font-family: "Kanit", sans-serif;
+
+}
+
+.recommended .container {
+
+    max-width: 100%;
+    padding: 0 7%;
+
+}
+
+
+/* ===============================
+   Header
+================================ */
+
+.recommended-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+
+}
+
+.recommended-header h2 {
+
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+
+}
+
+.recommended-header .see-all {
+
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.recommended-header .see-all:hover {
+
+    color: #d88b1f;
+
+}
+
+
+/* ===============================
+   Card List
+================================ */
+
+.recommended-list {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* ===============================
+   Card
+================================ */
+
+.recommend-card {
+
+    background: #1d1d1d;
+    border: 1px solid #9d6c24;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+.recommend-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.recommend-card img {
+
+    width: 100%;
+    display: block;
+
+}
+
+
+/* ===============================
+   Content
+================================ */
+
+.recommend-content {
+
+    padding: 22px;
+
+}
+
+.recommend-content h5 {
+
+    color: #d88b1f;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    line-height: 1.4;
+
+}
+
+.recommend-content p {
+
+    color: #e7e7e7;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* ===============================
+   Rating
+================================ */
+
+.recommend-rating {
+
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+}
+
+.recommend-rating i {
+
+    color: #d88b1f;
+
+    font-size: 16px;
+
+}
+
+.recommend-rating span {
+
+    color: #fff;
+
+    margin-left: 10px;
+
+    font-size: 15px;
+
+}
+
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 992px) {
+
+    .recommended {
+
+        padding: 60px 0;
+
+    }
+
+    .recommended-list {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .recommended-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

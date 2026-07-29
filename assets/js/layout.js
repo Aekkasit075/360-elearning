@@ -30,6 +30,26 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
+    fetch("components/home/recommended/recommended.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("recommended").innerHTML = data;
+    });
+
+
+    fetch("components/home/news/news.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("news").innerHTML = data;
+    });
+
+
+    fetch("components/home/reviews/reviews.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("news").innerHTML = data;
+    });
+
 
     fetch("components/footer/footer.html")
 
