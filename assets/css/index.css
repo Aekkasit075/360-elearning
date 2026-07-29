@@ -1,8 +1,6 @@
-/* รูปพื้นหลัง + overlay */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
+.home-background {
+
+    min-height: 100vh;
 
     background:
         linear-gradient(
@@ -12,9 +10,8 @@ body::before {
         url("../images/background/background1.png");
 
     background-size: cover;
-    background-position: center;
+
+    background-position: top center;
+
     background-repeat: no-repeat;
-
-    z-index: -1;
 }
-
