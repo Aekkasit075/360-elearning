@@ -1,0 +1,357 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Regular.ttf");
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Kanit",sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+}
+
+/* ===========================
+        BACKGROUND
+=========================== */
+
+.login-page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.30)
+    ),
+    url("../images/background/background2.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+/* ===========================
+        LOGIN CARD
+=========================== */
+
+.login-card{
+
+    width:1100px;
+    height:600px;
+
+    display:flex;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    background:rgba(20,20,20,.45);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.6);
+
+}
+
+/* ===========================
+        LEFT
+=========================== */
+
+.left-side{
+
+    width:50%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logo360{
+
+    width:240px;
+
+}
+
+.logoText{
+
+    width:360px;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+        RIGHT
+=========================== */
+
+.right-side{
+
+    width:50%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:70px;
+
+    color:white;
+
+}
+
+.right-side h2{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    text-align:center;
+
+}
+
+.right-side p{
+
+    color:#cfcfcf;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+        FORM
+=========================== */
+
+label{
+
+    color:#d8d8d8;
+
+    font-size:14px;
+
+}
+
+.form-control{
+
+    height:48px;
+
+    border:none;
+
+    background:white;
+
+    border-radius:3px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+        REMEMBER
+=========================== */
+
+.remember{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:8px;
+    margin-bottom:18px;
+
+    font-size:13px;
+
+    color:#c7c7c7;
+
+}
+
+.remember a{
+
+    color:#d0d0d0;
+
+    text-decoration:none;
+
+}
+
+.remember a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================
+        LOGIN BUTTON
+=========================== */
+
+.btn-login{
+
+    width:100%;
+    height:50px;
+
+    border:none;
+
+    border-radius:4px;
+
+    background:#d88918;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:#b87310;
+
+}
+
+/* ===========================
+        DIVIDER
+=========================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:28px 0;
+
+    color:#8f8f8f;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#666;
+
+}
+
+.divider span{
+
+    margin:0 15px;
+
+}
+
+/* ===========================
+        SOCIAL
+=========================== */
+
+.social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.social button{
+
+    width:100px;
+    height:45px;
+
+    background:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.social button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+
+}
+
+.facebook{
+
+    color:#1877F2;
+
+}
+
+.google{
+
+    color:#EA4335;
+
+}
+
+/* ===========================
+        SIGNUP
+=========================== */
+
+.signup{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#bfbfbf;
+
+}
+
+.signup a{
+
+    color:#d88918;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.signup a:hover{
+
+    color:#ffb347;
+
+}

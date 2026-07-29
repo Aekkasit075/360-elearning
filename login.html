@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>360 Academy Login</title>
+
+    <link rel="stylesheet" href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="login-card">
+
+            <!-- LEFT -->
+
+            <div class="left-side">
+
+                <img src="assets/images/logo/logo2.png" class="logo360">
+
+                <img src="assets/images/logo/logo3.png" class="logoText">
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="right-side">
+
+                <h2>Sign In</h2>
+
+                <p>
+                    Please sign in to your account to start learning
+                </p>
+
+                <form>
+
+                    <label>Username</label>
+
+                    <div class="input-group mb-3">
+
+                        <input class="form-control" placeholder="Username">
+
+                        <span class="input-group-text">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </span>
+
+                    </div>
+
+                    <label>Password</label>
+
+                    <div class="input-group mb-2">
+
+                        <input type="password" id="password" class="form-control" placeholder="Password">
+
+                        <span class="input-group-text eye" onclick="togglePassword()">
+
+                            <i class="fa-solid fa-eye-slash"></i>
+
+                        </span>
+
+                    </div>
+
+                    <div class="remember">
+
+                        <div>
+
+                            <input type="checkbox">
+
+                            Remember password
+
+                        </div>
+
+                        <a href="#">Forgot password?</a>
+
+                    </div>
+
+                    <button class="btn-login">
+
+                        Login
+
+                    </button>
+
+                    <div class="divider">
+
+                        <span>or</span>
+
+                    </div>
+
+                    <div class="social">
+
+                        <button class="facebook">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </button>
+
+                        <button class="google">
+
+                            <i class="fab fa-google"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="signup">
+
+                        Don't have an account?
+
+                        <a href="register.html">
+
+                            Sign up for free
+
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function togglePassword() {
+
+            const pass = document.getElementById("password");
+
+            if (pass.type === "password") {
+
+                pass.type = "text";
+
+            } else {
+
+                pass.type = "password";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
