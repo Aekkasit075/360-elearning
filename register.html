@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <link rel="stylesheet" href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/register.css">
+
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="login-card">
+
+            <!-- LEFT -->
+
+            <div class="left-side">
+
+                <img src="assets/images/logo/logo2.png" class="logo360">
+
+                <img src="assets/images/logo/logo3.png" class="logoText">
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="right-side">
+
+                <h2>Create Account</h2>
+
+                <form>
+
+                    <label>User Name</label>
+
+                    <input class="form-control mb-3" placeholder="User Name">
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <label>Password</label>
+
+                            <input type="password" class="form-control" placeholder="Password">
+
+                        </div>
+
+                        <div class="col">
+
+                            <label>Confirm Password</label>
+
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+
+                        </div>
+
+                    </div>
+
+                    <label class="mt-3">Email</label>
+
+                    <input class="form-control mb-3" placeholder="Email">
+
+                    <div class="row">
+
+                        <div class="col-4">
+
+                            <label>Gender</label>
+
+                            <select class="form-select">
+
+                                <option>Specify</option>
+                                <option>Male</option>
+                                <option>Female</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-8">
+
+                            <label>Tel.</label>
+
+                            <input class="form-control" placeholder="0XX XXX XXXX">
+
+                        </div>
+
+                    </div>
+
+                    <label class="mt-3">DD/MM/YYYY</label>
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <select class="form-select" id="day">
+                                <option value="">Day</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col">
+
+                            <select class="form-select" id="month">
+                                <option value="">Month</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col">
+
+                            <select class="form-select" id="year">
+                                <option value="">Year</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-3">
+
+                        <b>Terms and <span class="orange">Conditions</span></b>
+
+                    </div>
+
+                    <div class="form-check mt-2">
+
+                        <input class="form-check-input" type="checkbox">
+
+                        <label class="form-check-label">
+
+                            Read the application terms and conditions
+
+                            <span class="orange">
+
+                                360 E-Learning
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                    <button class="btn-login mt-3">
+
+                        Confirm
+
+                    </button>
+
+                    <div class="divider">
+
+                        <span>or</span>
+
+                    </div>
+
+                    <div class="social">
+
+                        <button class="facebook">
+
+                            <i class="fab fa-facebook-f"></i>
+
+                        </button>
+
+                        <button class="google">
+
+                            <i class="fab fa-google"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="signup">
+
+                        Member?
+
+                        <a href="login.html">
+
+                            signin
+
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+        const daySelect = document.getElementById("day");
+        const monthSelect = document.getElementById("month");
+        const yearSelect = document.getElementById("year");
+
+        // ---------- Day ----------
+        for (let i = 1; i <= 31; i++) {
+
+            const option = document.createElement("option");
+            option.value = i;
+            option.textContent = i;
+
+            daySelect.appendChild(option);
+
+        }
+
+        // ---------- Month ----------
+        const monthNames = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ];
+
+        monthNames.forEach((month, index) => {
+
+            const option = document.createElement("option");
+            option.value = index + 1;
+            option.textContent = month;
+
+            monthSelect.appendChild(option);
+
+        });
+
+        // ---------- Year ----------
+        const currentYear = new Date().getFullYear();
+
+        for (let year = currentYear; year >= currentYear - 100; year--) {
+
+            const option = document.createElement("option");
+            option.value = year;
+            option.textContent = year;
+
+            yearSelect.appendChild(option);
+
+        }
+
+    </script>
+</body>
+
+</html>
