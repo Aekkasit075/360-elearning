@@ -1,0 +1,119 @@
+.download-page{
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+}
+
+/* ใช้ระยะเดียวกับ Hero */
+.download-section{
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 90px 0;
+}
+
+/* ใช้ padding ซ้ายขวาเหมือน Hero */
+.download-container{
+
+    width: 100%;
+
+    padding: 0 7%;
+}
+
+/* Breadcrumb */
+
+.breadcrumb-custom{
+    color:#cfcfcf;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.breadcrumb-custom .active{
+    color:#d98513;
+}
+
+/* Title */
+
+.download-title{
+
+    font-size:42px;
+
+    font-weight:300;
+
+    margin-bottom:28px;
+}
+
+/* ตาราง */
+
+.download-table{
+
+    width:100%;
+
+    color:#fff;
+
+    border-collapse:collapse;
+}
+
+.download-table thead th{
+
+    background:#d98513;
+
+    color:#fff;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-weight:400;
+
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.download-table tbody td{
+
+    padding:16px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:#f2f2f2;
+
+    vertical-align:middle;
+}
+
+.download-table td:first-child,
+.download-table td:nth-child(3),
+.download-table td:last-child{
+
+    text-align:center;
+}
+
+/* ปุ่ม */
+
+.btn-download{
+
+    background:#d98513;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:5px;
+
+    padding:8px 22px;
+
+    font-size:13px;
+
+    transition:.3s;
+}
+
+.btn-download:hover{
+
+    background:#b97211;
+
+    color:#fff;
+}
