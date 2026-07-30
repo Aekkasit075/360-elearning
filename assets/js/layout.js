@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(){
     fetch("components/home/reviews/reviews.html")
     .then(response => response.text())
     .then(data => {
-        document.getElementById("news").innerHTML = data;
+        document.getElementById("reviews").innerHTML = data;
     });
 
 
