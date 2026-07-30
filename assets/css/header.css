@@ -438,3 +438,39 @@ body {
     background: #d99a1e;
 
 }
+
+
+/* =================================
+   Contact
+================================= */
+
+
+.contact-page .contact-link {
+
+    color:#d99a1e !important;
+
+}
+
+
+.contact-page .contact-link::after {
+
+
+    content:"";
+
+    position:absolute;
+
+
+    left:10px;
+
+    bottom:12px;
+
+
+    width:34px;
+
+    height:2px;
+
+
+    background:#d99a1e;
+
+
+}
