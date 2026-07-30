@@ -380,3 +380,61 @@ body {
 
 
 }
+
+
+/* =================================
+   Schedules
+================================= */
+
+.schedule-page .schedule-link {
+
+    color: #d99a1e !important;
+
+}
+
+.schedule-page .schedule-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+
+    bottom: 12px;
+
+    width: 34px;
+
+    height: 2px;
+
+    background: #d99a1e;
+
+}
+
+
+/* =================================
+   Download
+================================= */
+
+.download-page .download-link {
+
+    color: #d99a1e !important;
+
+}
+
+.download-page .download-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+
+    bottom: 12px;
+
+    width: 34px;
+
+    height: 2px;
+
+    background: #d99a1e;
+
+}
