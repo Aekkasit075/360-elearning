@@ -108,17 +108,35 @@
 
 
 .hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
-    margin-top:25px;
+    margin-top: 25px;
 
-    background:#d98513;
+    background: #d98513;
+    color: #fff;
 
-    color:white;
+    padding: 14px 35px;
 
-    border:none;
+    text-decoration: none;
+    border-radius: 6px;
 
-    padding:14px 35px;
+    transition: 0.3s;
+}
 
+.hero-button:hover {
+    background: #b97211;
+    color: #fff;
+}
+
+.hero-button i {
+    transition: transform 0.3s;
+}
+
+.hero-button:hover i {
+    transform: translateX(4px);
 }
 
 
