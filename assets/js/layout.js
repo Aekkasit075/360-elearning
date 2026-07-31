@@ -62,4 +62,21 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 
+    fetch("components/report-problem/report-problem.html")
+    .then(res => res.text())
+    .then(data=>{
+
+        document.body.insertAdjacentHTML(
+            "beforeend",
+            data
+        );
+
+
+        // แจ้งว่า report component พร้อมแล้ว
+        document.dispatchEvent(
+            new Event("reportProblemLoaded")
+        );
+
+    });
+
 });

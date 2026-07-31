@@ -474,3 +474,128 @@ body {
 
 
 }
+
+
+/* =================================
+   Responsive Navbar
+================================= */
+
+.navbar-toggler {
+    border: 2px solid #d99a1e !important;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===========================
+   Tablet / Mobile
+=========================== */
+
+@media (max-width: 991.98px) {
+
+    .elearning-navbar {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    .navbar-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    /* เมนูทั้งหมดอยู่ใน Hamburger */
+
+    .navbar-collapse {
+        background: #050505;
+        margin-top: 18px;
+        border-radius: 10px;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        gap: 0;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 14px 24px !important;
+        display: block;
+    }
+
+    /* ยกเลิกเส้นใต้ของ active ในมือถือ */
+
+    .nav-link::after,
+    .home-page .home-link::after,
+    .about-page .about-link::after,
+    .schedule-page .schedule-link::after,
+    .download-page .download-link::after,
+    .contact-page .contact-link::after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        background: #111;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .dropdown-item {
+        padding: 10px 15px;
+    }
+
+    .btn-login,
+    .btn-enroll {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Desktop */
+.desktop-actions{
+    display:flex;
+}
+
+.mobile-actions{
+    display:none;
+}
+
+/* Mobile */
+@media (max-width:991.98px){
+
+    .desktop-actions{
+        display:none;
+    }
+
+    .mobile-actions{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        padding:20px;
+    }
+
+    .mobile-actions .btn-login,
+    .mobile-actions .btn-enroll{
+        width:100%;
+        text-align:center;
+    }
+
+}
