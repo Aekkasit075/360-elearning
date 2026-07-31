@@ -389,7 +389,7 @@
 ========================== */
 
 
-.modal-content{
+.schedule-modal .modal-content{
 
     background:#161616 !important;
 
@@ -421,7 +421,7 @@
 
 
 
-.modal-body{
+.schedule-modal .modal-body{
 
     padding:25px;
 

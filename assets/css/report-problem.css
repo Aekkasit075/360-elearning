@@ -228,7 +228,7 @@
    Body
 ================================= */
 
-.modal-body{
+.report-modal .modal-body{
 
     padding:35px 38px;
 
@@ -236,7 +236,7 @@
 
 
 
-.form-label{
+.report-modal .form-label{
 
     font-family:"Kanit";
 
@@ -252,15 +252,18 @@
 
 
 
-.form-control,
-
-.form-select{
+.report-modal .form-control,
+.report-modal .form-select{
 
     height:58px;
 
     border-radius:0;
 
     border:2px solid #ddd;
+
+    background:#fff;
+
+    color:#333;
 
     font-family:"Kanit";
 
