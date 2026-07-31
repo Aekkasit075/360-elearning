@@ -13,15 +13,48 @@
 .sbar
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 15px;
+    margin: 2% 0 0 10%;
+    /* background-color: red; */
 }
 
 .breadcrumb-custom{
     color:#cfcfcf;
     font-size:14px;
-    margin: 50px 0px 0px 100px;
+    margin: 5% 0 0 10%
 }
 
 .breadcrumb-custom .active{
     color:#d98513;
+}
+
+.sbar .btn-secondary 
+{
+    background-color: rgb(255, 255, 255, 0.9); /* Your desired color */
+    border-color: rgb(231, 231, 231, 0.9);     /* Keep border matching */
+    color: black;
+}
+
+.sbar .d-flex
+{
+    display:flex;
+    flex-direction: row;
+    color: black; 
+    gap: 10px;
+    width: 100%;
+    padding-right: 70px;
+}
+
+.d-flex .btn
+{
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #ffa200;                  /* Bootstrap's official orange variable */
+    --bs-btn-border-color: #fd7e14;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #e06d10;            /* Darker orange on hover */
+    --bs-btn-hover-border-color: #d0620c;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #c05808;           /* Darker orange on click */
+    --bs-btn-active-border-color: #b04e06;
 }
