@@ -1,0 +1,27 @@
+.course-page
+{
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+}
+
+.course-section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sbar
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb-custom{
+    color:#cfcfcf;
+    font-size:14px;
+    margin: 50px 0px 0px 100px;
+}
+
+.breadcrumb-custom .active{
+    color:#d98513;
+}
