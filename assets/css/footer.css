@@ -2,7 +2,22 @@
 
 .elearning-footer {
 
-    background:#050505;
+    background:
+        url("http://360-elearning.com/themes/template2/images/bg-footer.jpg")
+        no-repeat;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    background-color:rgb(201 123 25);
+
+    background-blend-mode:multiply;
+
 
     color:white;
 

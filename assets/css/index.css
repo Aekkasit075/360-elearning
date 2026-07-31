@@ -15,3 +15,29 @@
 
     background-repeat: no-repeat;
 }
+
+
+/* =================================
+   Scroll Reveal Animation
+================================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
