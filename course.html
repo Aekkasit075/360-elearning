@@ -1,52 +1,25 @@
 <!DOCTYPE html>
-
-<html lang="th">
-
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>360 E-learning</title>
+    <title>Course | 360 E-learning</title>
 
     <!-- Font Awesome -->
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 
-
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
-
-
     <link rel="stylesheet" href="assets/css/footer.css">
-
     <link rel="stylesheet" href="assets/css/index.css">
-
-
-    <link rel="stylesheet" href="assets/css/home/hero.css">
-
-    <link rel="stylesheet" href="assets/css/home/ourcourse.css">
-
-    <link rel="stylesheet" href="assets/css/home/recommended.css">
-
-    <link rel="stylesheet" href="assets/css/home/news.css">
-
-    <link rel="stylesheet" href="assets/css/home/reviews.css">
-
-    <link rel="stylesheet" href="assets/css/report-problem.css">
-
+    <link rel="stylesheet" href="assets/css/course.css">
 </head>
-
-
-
-<body class="home-page">
-
+<body class="course-page">
     <div class="home-background">
-
         <nav class="navbar navbar-expand-lg navbar-dark elearning-navbar">
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" href="index.html">
@@ -128,19 +101,43 @@
         </nav>
 
         <main>
-
-            <section id="hero" class="reveal"></section>
-
-            <section id="ourcourse" class="reveal"></section>
-
-            <section id="recommended" class="reveal"></section>
-
-            <section id="news" class="reveal"></section>
-
-            <section id="reviews" class="reveal"></section>
-
+            <section class="course-section">
+                <div class="breadcrumb-custom">
+                    <span>HOME</span>
+                    <span class="mx-2">&gt;</span>
+                    <span class="active">DOWNLOAD</span>
+                    </div>
+                <div class="sbar">
+                    <div class="categoriesdd">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Option1</a>
+                            <a class="dropdown-item" href="#">Option2</a>
+                            <a class="dropdown-item" href="#">Option3</a>
+                        </div>
+                    </div>
+                    <div class="sortdd">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Recently</a>
+                            <a class="dropdown-item" href="#">Lastest</a>
+                            <a class="dropdown-item" href="#">Popular</a>
+                        </div>
+                    </div>
+                    <form class="d-flex align-items-center flex-nowrap" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-nowrap" type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
         </main>
 
+    </div>
+    
     <footer class="elearning-footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -212,19 +209,7 @@
         </div>
     </footer>
 
-    </div>
-
-    <script src="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
-    </script>
-
-
+    <script src="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/layout.js"></script>
-
-    <script src="assets/js/report-problem.js"></script>
-
-    <script src="assets/js/scroll-animation.js"></script>
-
 </body>
-
-
 </html>
