@@ -1,0 +1,68 @@
+.course-page
+{
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+}
+
+.breadcrumb-custom{
+    color:#cfcfcf;
+    font-size:14px;
+    margin: 5% 0 0 17%
+}
+
+.breadcrumb-custom .active{
+    color:#d98513;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viddes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.viddes p
+{
+    width: 1000px;
+    /* background-color: blue; */
+}
+
+.viddes img
+{
+    width: 1000px;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.rate
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color: orange; */
+    width: 1000px;
+    padding: 5px 0 15px;
+}
+
+.rate img
+{
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin-right: 5px;
+}
+
+.rate p
+{
+    line-height: 1;
+    margin: 0;
+    margin-right: 40px;
+}
