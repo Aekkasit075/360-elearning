@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+    font-weight:400;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../fonts/Kanit/Kanit-Light.ttf') format('truetype');
+    font-weight:300;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../fonts/Kanit/Kanit-Bold.ttf') format('truetype');
+    font-weight:700;
+}
+/* ================= SECTION ================= */
+
+.curriculum-structure{
+    margin:50px 7%;
+    padding:40px 50px;
+    background:#181c1d;
+    border:1px solid #333;
+    border-radius:12px;
+    color:#fff;
+    font-family:"Kanit",sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.curriculum-header{
+    text-align:center;
+}
+
+.curriculum-header h2{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.curriculum-header p{
+    color:#c9b6a7;
+    font-size:1rem;
+}
+
+/* ================= CONTENT ================= */
+
+.curriculum-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:70px;
+    margin-top:60px;
+}
+
+.curriculum-detail{
+    flex:1;
+}
+
+.curriculum-detail h3{
+    color:#d88900;
+    font-size:1.3rem;
+    margin-bottom:25px;
+}
+
+.curriculum-detail h4{
+    margin-top:30px;
+    margin-bottom:12px;
+    font-size:1rem;
+    font-weight:600;
+}
+
+.curriculum-detail p{
+    color:#aaa;
+    font-size:0.9rem;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+
+.curriculum-detail button{
+    margin-top:25px;
+    padding:12px 22px;
+    background:transparent;
+    border:1px solid #d88900;
+    color:#d88900;
+    border-radius:4px;
+    cursor:pointer;
+    transition:.3s;
+    font-family:"Kanit",sans-serif;
+}
+
+.curriculum-detail button:hover{
+    background:#d88900;
+    color:#fff;
+}
+
+/* ================= CHART ================= */
+
+.curriculum-chart{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.plan{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.plan-boxes{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+}
+
+.stack{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.box{
+    width:110px;
+    background:#d88900;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:10px;
+    box-sizing:border-box;
+    font-size:14px;
+    line-height:1.4;
+    border-radius:2px;
+}
+
+.large{
+    height:330px;
+}
+
+/* ---------- Plan 1 ---------- */
+
+.plan1-stack .box:first-child{
+    height:118px;
+}
+
+.plan1-stack .box:last-child{
+    height:206px;
+}
+
+/* ---------- Plan 2 ---------- */
+
+.plan2-stack .box:first-child{
+    height:198px;
+}
+
+.plan2-stack .box:last-child{
+    height:126px;
+}
+
+.plan h5{
+    margin-top:18px;
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .curriculum-structure{
+        padding:35px 30px;
+    }
+
+    .curriculum-content{
+        flex-direction:column;
+        align-items:center;
+        gap:45px;
+    }
+
+    .curriculum-detail{
+        width:100%;
+    }
+
+    .curriculum-chart{
+        width:100%;
+        justify-content:center;
+        align-items:flex-end;
+        gap:28px;
+    }
+
+    .box{
+        width:92px;
+        font-size:13px;
+        padding:8px;
+    }
+
+    .large{
+        height:280px;
+    }
+
+    .plan1-stack .box:first-child{
+        height:100px;
+    }
+
+    .plan1-stack .box:last-child{
+        height:174px;
+    }
+
+    .plan2-stack .box:first-child{
+        height:170px;
+    }
+
+    .plan2-stack .box:last-child{
+        height:104px;
+    }
+
+    .plan h5{
+        font-size:1.1rem;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:900px){
+
+    .curriculum-structure{
+        margin:25px 15px;
+        padding:25px 18px;
+    }
+
+    .curriculum-header h2{
+        font-size:1.6rem;
+    }
+
+    .curriculum-header p{
+        font-size:.9rem;
+    }
+
+    .curriculum-content{
+        align-items:center;
+    }
+
+    .curriculum-detail{
+        width:100%;
+    }
+
+    .curriculum-detail h3{
+        font-size:1.15rem;
+    }
+
+    .curriculum-detail h4{
+        font-size:.95rem;
+    }
+
+    .curriculum-detail p{
+        font-size:.85rem;
+    }
+
+    .curriculum-detail button{
+        width:100%;
+        text-align:center;
+    }
+
+    .curriculum-chart{
+        width:100%;
+        justify-content:center;
+        align-items:flex-end;
+        gap:18px;
+    }
+
+    .plan-boxes{
+        gap:6px;
+    }
+
+    .stack{
+        gap:5px;
+    }
+
+    .box{
+        width:68px;
+        font-size:10px;
+        padding:6px;
+    }
+
+    .large{
+        height:210px;
+    }
+
+    /* ---------- Plan 1 ---------- */
+
+    .plan1-stack .box:first-child{
+        height:78px;
+    }
+
+    .plan1-stack .box:last-child{
+        height:126px;
+    }
+
+    /* ---------- Plan 2 ---------- */
+
+    .plan2-stack .box:first-child{
+        height:135px;
+    }
+
+    .plan2-stack .box:last-child{
+        height:69px;
+    }
+
+    .plan h5{
+        margin-top:12px;
+        font-size:.95rem;
+    }
+
+}

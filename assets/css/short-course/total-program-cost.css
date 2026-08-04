@@ -1,0 +1,205 @@
+.total-program-cost{
+    margin:70px 7%;
+    color:#fff;
+    font-family:"Kanit",sans-serif;
+}
+
+.total-program-cost h2{
+    text-align:center;
+    font-size:2.45rem;
+    font-weight:700;
+    margin-bottom:28px;
+    color:#f5f5f5;
+}
+
+/* ================= TABLE ================= */
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+.cost-table{
+    width:100%;
+    min-width:1050px;
+    border-collapse:collapse;
+    background:#111111;
+    border:2px solid #b97512;
+}
+
+.cost-table th,
+.cost-table td{
+    border:1.5px solid #b97512;
+    padding:18px 38px;
+    vertical-align:middle;
+}
+
+.cost-table thead th{
+    background:#111111;
+    color:#f8f8f8;
+    font-size:1rem;
+    font-weight:400;
+}
+
+.cost-table tbody tr{
+    background:#111111;
+    transition:.25s;
+}
+
+.cost-table tbody tr:hover{
+    background:#171717;
+}
+
+.cost-table tbody td{
+    color:#f1f1f1;
+    font-size:1rem;
+}
+
+.title{
+    font-size:1.18rem;
+    font-weight:400;
+    color:#f4f4f4;
+    line-height:1.4;
+}
+
+.sub{
+    margin-top:2px;
+    font-size:.78rem;
+    color:#bdbdbd;
+    line-height:1.35;
+}
+
+.price{
+    color:#d18312;
+    font-size:1.28rem;
+    font-weight:500;
+    line-height:1.2;
+}
+
+/* ================= FOOT ================= */
+
+.cost-table tfoot td{
+    background:#d18312;
+    color:#fff;
+    font-size:1.45rem;
+    font-weight:600;
+    padding:22px 38px;
+    border-color:#d18312;
+}
+
+.cost-table tfoot td:first-child{
+    text-align:left;
+}
+
+/* ================= NOTE ================= */
+
+.cost-note{
+    margin-top:14px;
+    color:#d4d4d4;
+    font-size:.73rem;
+    line-height:1.4;
+}
+
+.cost-note p{
+    margin:1px 0;
+}
+
+.cost-note p:first-child{
+    color:#fff;
+    font-size:.82rem;
+    font-weight:500;
+    margin-bottom:8px;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+    .total-program-cost{
+        margin:60px 5%;
+    }
+
+    .total-program-cost h2{
+        font-size:2rem;
+    }
+
+    .cost-table{
+        min-width:960px;
+    }
+
+    .cost-table th,
+    .cost-table td{
+        padding:16px 22px;
+    }
+
+    .price{
+        font-size:1.12rem;
+    }
+
+    .title{
+        font-size:1rem;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .total-program-cost{
+        margin:45px 15px;
+    }
+
+    .total-program-cost h2{
+        font-size:1.55rem;
+    }
+
+    .cost-table{
+        min-width:900px;
+    }
+
+    .cost-table th,
+    .cost-table td{
+        padding:14px 18px;
+    }
+
+    .title{
+        font-size:.95rem;
+    }
+
+    .price{
+        font-size:1rem;
+    }
+
+    .sub{
+        font-size:.7rem;
+    }
+
+    .cost-table tfoot td{
+        font-size:1.15rem;
+        padding:18px;
+    }
+
+    .cost-note{
+        font-size:.68rem;
+    }
+
+}
+
+/* ================= SCROLLBAR ================= */
+
+.table-responsive::-webkit-scrollbar{
+    height:8px;
+}
+
+.table-responsive::-webkit-scrollbar-track{
+    background:#161616;
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+    background:#b97512;
+    border-radius:20px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover{
+    background:#d18312;
+}

@@ -162,6 +162,127 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 
+    // Course Curriculum
+
+    if(document.getElementById("course_curriculum")){
+
+        fetch("components/short-course/course-curriculum/course-curriculum.html")
+
+        .then(response => response.text())
+
+        .then(data => {
+
+
+            document.getElementById("course_curriculum").innerHTML = data;
+
+
+
+            // โหลด Course Card หลังจากมี courseGrid แล้ว
+
+            fetch("components/short-course/course-curriculum/course-card.html")
+
+            .then(response => response.text())
+
+            .then(card => {
+
+
+                let html = "";
+
+
+                for(let i = 0; i < 16; i++){
+
+                    html += card;
+
+                }
+
+
+                document.getElementById("courseGrid").innerHTML = html;
+
+
+            });
+
+
+        });
+
+    }
+
+
+    // Curriculum Components
+
+    if(document.getElementById("curriculum_components")){
+
+
+        fetch("components/short-course/curriculum-components/curriculum-components.html")
+
+        .then(response=>response.text())
+
+        .then(data=>{
+
+
+            document.getElementById("curriculum_components").innerHTML = data;
+
+
+        });
+
+
+    }
+
+
+    // Pathway Master
+
+    if(document.getElementById("pathway_master")){
+
+        fetch("components/short-course/pathway-master/pathway-master.html")
+
+        .then(response => response.text())
+
+        .then(data => {
+
+            document.getElementById("pathway_master").innerHTML = data;
+
+        });
+
+    }
+
+
+    // Curriculum Structure
+
+    if(document.getElementById("curriculum_structure")){
+
+
+        fetch("components/short-course/curriculum-structure/curriculum-structure.html")
+
+        .then(response=>response.text())
+
+        .then(data=>{
+
+
+            document.getElementById("curriculum_structure").innerHTML = data;
+
+
+        });
+
+
+    }
+
+
+    // Total Program Cost
+
+    if(document.getElementById("total_program_cost")){
+
+        fetch("components/short-course/total-program-cost/total-program-cost.html")
+
+        .then(response => response.text())
+
+        .then(data =>{
+
+            document.getElementById("total_program_cost").innerHTML = data;
+
+        });
+
+    }
+
+
     fetch("components/footer/footer.html")
     .then(response => response.text())
     .then(data => {
