@@ -18,6 +18,15 @@
     font-weight:700;
 }
 
+.course-card-link{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
+
+.course-card-link:hover{
+    color:inherit;
+}
 
 .course-curriculum {
 
