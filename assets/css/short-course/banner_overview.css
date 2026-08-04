@@ -1,0 +1,690 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+    font-weight:400;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../fonts/Kanit/Kanit-Light.ttf') format('truetype');
+    font-weight:300;
+}
+
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../../fonts/Kanit/Kanit-Bold.ttf') format('truetype');
+    font-weight:700;
+}
+
+
+
+
+
+.banner-overview-section {
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(25,30,33,.65),
+        rgba(25,30,33,.75)
+    ),
+    url("../images/background/background1.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:70px 0;
+
+    color:white;
+
+    font-family:'Kanit',sans-serif;
+
+}
+
+
+
+
+
+.academy-wrapper{
+
+    width:100%;
+
+    padding:0 7%;
+
+}
+
+
+
+
+
+
+
+/* =====================
+        TOP BANNER
+===================== */
+
+
+.academy-banner{
+
+    background:
+    rgba(25,25,25,.65);
+
+    padding:35px 45px;
+
+}
+
+
+
+.academy-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.academy-left{
+
+    max-width:450px;
+
+}
+
+
+
+.academy-logo{
+
+    width:300px;
+
+}
+
+
+
+.academy-left h1{
+
+    margin-top:18px;
+
+    font-size:18px;
+
+    font-weight:400;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+.academy-left p{
+
+    margin-top:8px;
+
+    font-size:12px;
+
+    font-weight:300;
+
+    line-height:1.5;
+
+    color:#ddd;
+
+}
+
+
+
+.academy-symbol{
+
+    width:260px;
+
+    opacity:.95;
+
+}
+
+
+
+
+
+
+
+/* =====================
+        TITLE
+===================== */
+
+
+.highlight-title{
+
+    text-align:center;
+
+    margin:45px 0 35px;
+
+}
+
+
+
+.highlight-title h2{
+
+    font-size:18px;
+
+    font-weight:400;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.highlight-title p{
+
+    font-size:11px;
+
+    font-weight:300;
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+        SWIPER
+===================== */
+
+
+/* =====================
+        SWIPER
+===================== */
+
+
+.highlightSwiper{
+
+    width:100%;
+
+    padding:40px 0 70px;
+
+}
+
+
+
+.highlightSwiper .swiper-slide{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+
+.highlight-card{
+
+
+    width:260px;
+
+    height:170px;
+
+
+    background:#d88917;
+
+
+    border-radius:10px;
+
+
+    padding:25px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    transform:scale(.9);
+
+
+    opacity:.9;
+
+
+    transition:.4s ease;
+
+
+}
+
+
+
+
+/* card ที่ active */
+
+.highlight-card.active{
+
+
+    width:340px;
+
+    height:220px;
+
+
+    transform:scale(1);
+
+
+    opacity:1;
+
+
+    z-index:5;
+
+
+}
+
+
+
+
+
+/* quote icon */
+
+
+.quote{
+
+
+    font-size:35px;
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.quote i{
+
+    font-size:38px;
+
+}
+
+
+
+
+
+/* text */
+
+
+.highlight-card p{
+
+
+    width:160px;
+
+
+    font-size:14px;
+
+
+    line-height:1.5;
+
+
+    font-weight:400;
+
+
+}
+
+
+
+
+/* avatar */
+
+
+.highlight-card img{
+
+
+    position:absolute;
+
+
+    right:15px;
+
+
+    bottom:15px;
+
+
+    width:95px;
+
+
+    height:125px;
+
+
+    object-fit:cover;
+
+
+    border-radius:15px;
+
+
+}
+
+
+
+.highlight-card.active img{
+
+
+    width:130px;
+
+
+    height:170px;
+
+
+    right:15px;
+
+
+    bottom:15px;
+
+
+}
+
+
+
+
+
+/* active text */
+
+.highlight-card.active p{
+
+
+    width:180px;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+
+
+
+
+/* SWIPER BUTTON */
+
+
+.swiper-button-next,
+.swiper-button-prev{
+
+    color:#d88917;
+
+}
+
+
+
+.swiper-pagination-bullet{
+
+    background:#d88917;
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+        PROGRAM INFO
+===================== */
+
+
+.program-info{
+
+    margin-top:55px;
+
+    display:flex;
+
+    gap:50px;
+
+    padding:35px 40px;
+
+    background:
+    rgba(0,0,0,.35);
+
+}
+
+
+
+
+
+.about-program{
+
+    width:65%;
+
+}
+
+
+
+.about-program h3,
+.overview-program h3{
+
+    font-size:15px;
+
+    font-weight:400;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.about-program p{
+
+    font-size:11px;
+
+    line-height:1.55;
+
+    color:#ddd;
+
+    font-weight:300;
+
+}
+
+
+
+
+
+.about-program a{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    color:#e89419;
+
+    font-size:12px;
+
+    text-decoration:underline;
+
+}
+
+
+
+
+
+
+
+/* =====================
+        OVERVIEW
+===================== */
+
+
+.overview-program{
+
+    width:35%;
+
+}
+
+
+
+
+
+.overview-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin:25px 0;
+
+}
+
+
+
+
+
+.overview-item i{
+
+    width:35px;
+
+    color:#d88917;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.overview-item span{
+
+    display:block;
+
+    font-size:11px;
+
+    color:#ddd;
+
+    font-weight:300;
+
+}
+
+
+
+
+
+.overview-item p{
+
+    margin-top:3px;
+
+    font-size:13px;
+
+    font-weight:400;
+
+}
+
+
+
+
+
+
+
+
+/* =====================
+        RESPONSIVE
+===================== */
+
+
+@media(max-width:992px){
+
+
+    .academy-header{
+
+        flex-direction:column;
+
+        gap:30px;
+
+        text-align:center;
+
+    }
+
+
+
+    .academy-left{
+
+        max-width:100%;
+
+    }
+
+
+
+    .highlightSwiper{
+
+        padding-bottom:40px;
+
+    }
+
+
+
+    .program-info{
+
+        flex-direction:column;
+
+    }
+
+
+
+    .about-program,
+    .overview-program{
+
+        width:100%;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .academy-wrapper{
+
+        padding:0 5%;
+
+    }
+
+
+
+    .academy-banner{
+
+        padding:25px;
+
+    }
+
+
+
+    .academy-logo{
+
+        width:120px;
+
+    }
+
+
+
+    .academy-symbol{
+
+        width:100px;
+
+    }
+
+
+
+}
