@@ -1,10 +1,10 @@
-.download-page{
+.download-page {
     font-family: "Kanit", sans-serif;
     color: #fff;
 }
 
 /* ใช้ระยะเดียวกับ Hero */
-.download-section{
+.download-section {
 
     min-height: calc(100vh - 80px);
 
@@ -16,7 +16,7 @@
 }
 
 /* ใช้ padding ซ้ายขวาเหมือน Hero */
-.download-container{
+.download-container {
 
     width: 100%;
 
@@ -25,95 +25,139 @@
 
 /* Breadcrumb */
 
-.breadcrumb-custom{
-    color:#cfcfcf;
-    font-size:14px;
-    margin-bottom:18px;
+/* ==========================
+   Breadcrumb
+========================== */
+
+.breadcrumb-custom {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
 }
 
-.breadcrumb-custom .active{
-    color:#d98513;
+.breadcrumb-link {
+
+    color: #cfcfcf;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.breadcrumb-link:hover {
+
+    color: #d98513;
+
+    text-decoration: none;
+
+}
+
+.breadcrumb-separator {
+
+    color: #cfcfcf;
+
+}
+
+.breadcrumb-custom .active {
+
+    color: #d98513;
+
 }
 
 /* Title */
 
-.download-title{
+.download-title {
 
-    font-size:42px;
+    font-size: 42px;
 
-    font-weight:300;
+    font-weight: 300;
 
-    margin-bottom:28px;
+    margin-bottom: 28px;
 }
 
 /* ตาราง */
 
-.download-table{
+.download-table {
 
-    width:100%;
+    width: 100%;
 
-    color:#fff;
+    color: #fff;
 
-    border-collapse:collapse;
+    border-collapse: collapse;
 }
 
-.download-table thead th{
+.download-table thead th {
 
-    background:#d98513;
+    background: #d98513;
 
-    color:#fff;
+    color: #fff;
 
-    padding:15px;
+    padding: 15px;
 
-    text-align:center;
+    text-align: center;
 
-    font-weight:400;
+    font-weight: 400;
 
-    border:1px solid rgba(255,255,255,.15);
+    border: 1px solid rgba(255, 255, 255, .15);
 }
 
-.download-table tbody td{
+.download-table tbody td {
 
-    padding:16px;
+    padding: 16px;
 
-    background:rgba(255,255,255,.06);
+    background: rgba(255, 255, 255, .06);
 
-    border:1px solid rgba(255,255,255,.15);
+    border: 1px solid rgba(255, 255, 255, .15);
 
-    color:#f2f2f2;
+    color: #f2f2f2;
 
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 .download-table td:first-child,
 .download-table td:nth-child(3),
-.download-table td:last-child{
+.download-table td:last-child {
 
-    text-align:center;
+    text-align: center;
 }
 
 /* ปุ่ม */
 
-.btn-download{
+.btn-download {
 
-    background:#d98513;
+    background: #d98513;
 
-    color:#fff;
+    color: #fff;
 
-    border:none;
+    border: none;
 
-    border-radius:5px;
+    border-radius: 5px;
 
-    padding:8px 22px;
+    padding: 8px 22px;
 
-    font-size:13px;
+    font-size: 13px;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-.btn-download:hover{
+.btn-download:hover {
 
-    background:#b97211;
+    background: #b97211;
 
-    color:#fff;
+    color: #fff;
 }
