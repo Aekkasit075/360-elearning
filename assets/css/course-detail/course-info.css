@@ -1,0 +1,53 @@
+.course-detail-info{
+
+    display:flex;
+
+    gap:30px;
+
+    width:90%;
+
+    margin:40px auto;
+
+    color:white;
+
+    font-family:"Kanit",sans-serif;
+
+}
+
+
+
+#content{
+
+    width:55%;
+
+}
+
+
+
+#instructor{
+
+    width:45%;
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+    .course-detail-info{
+
+        flex-direction:column;
+
+    }
+
+
+    #content,
+    #instructor{
+
+        width:100%;
+
+    }
+
+}

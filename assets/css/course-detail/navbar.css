@@ -1,0 +1,186 @@
+.course-detail-navbar{
+
+    width:100%;
+
+    background:rgba(40,45,45,0.75);
+
+    backdrop-filter:blur(5px);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+
+/* Navbar list */
+
+.course-detail-navbar ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:15px 7%;
+
+    overflow-x:auto;
+
+    scrollbar-width:none;
+
+}
+
+
+.course-detail-navbar ul::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+
+
+.course-detail-navbar li{
+
+    position:relative;
+
+    flex-shrink:0;
+
+}
+
+
+
+.course-detail-navbar a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-family:"Kanit",sans-serif;
+
+    white-space:nowrap;
+
+    transition:.3s;
+
+}
+
+
+
+.course-detail-navbar a:hover{
+
+    color:#d88916;
+
+}
+
+
+
+.course-detail-navbar li.active a{
+
+    color:#d88916;
+
+}
+
+
+
+/* underline */
+
+.course-detail-navbar li.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-15px;
+
+    left:0;
+
+    width:60px;
+
+    height:3px;
+
+    background:#d88916;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media(max-width:992px){
+
+
+    .course-detail-navbar ul{
+
+        gap:25px;
+
+        padding:15px 5%;
+
+    }
+
+
+    .course-detail-navbar a{
+
+        font-size:14px;
+
+    }
+
+
+}
+
+
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:576px){
+
+
+    .course-detail-navbar ul{
+
+        gap:20px;
+
+        padding:12px 20px;
+
+    }
+
+
+
+    .course-detail-navbar a{
+
+        font-size:13px;
+
+    }
+
+
+
+    .course-detail-navbar li.active::after{
+
+        width:45px;
+
+        height:2px;
+
+        bottom:-12px;
+
+    }
+
+
+}

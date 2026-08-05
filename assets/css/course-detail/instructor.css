@@ -1,0 +1,109 @@
+.instructor h3{
+
+font-size:18px;
+
+border-bottom:1px solid #777;
+
+padding-bottom:15px;
+
+}
+
+
+
+.instructor-card{
+
+display:flex;
+
+gap:15px;
+
+margin:20px 0;
+
+}
+
+
+
+.instructor-card img{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+
+
+.instructor-card h4{
+
+font-size:16px;
+
+}
+
+
+
+.instructor-card p{
+
+font-size:13px;
+
+margin:3px;
+
+}
+
+
+
+.instructor-card i{
+
+color:#d88916;
+
+}
+
+
+
+.instructor-card a{
+
+color:#d88916;
+
+font-size:12px;
+
+}
+
+
+.bio{
+
+font-size:13px;
+
+}
+
+
+.instructor i{
+
+    color:#d88916;
+
+    margin-right:8px;
+
+    font-size:13px;
+
+}
+
+
+
+.instructor a{
+
+    color:#d88916;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+}
+
+
+
+.instructor a i{
+
+    font-size:11px;
+
+}

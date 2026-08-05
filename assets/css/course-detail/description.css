@@ -1,0 +1,242 @@
+.course-description-container{
+
+    display:grid;
+
+    grid-template-columns: 60% 35%;
+
+    gap:40px;
+
+    padding:50px 7%;
+
+    color:white;
+
+    font-family:"Kanit",sans-serif;
+
+}
+
+
+
+.course-description-left h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+.description-line{
+
+    width:100%;
+
+    height:1px;
+
+    background:#d88916;
+
+    margin:20px 0;
+
+}
+
+
+
+.what-you-get{
+
+    border:1px solid #d88916;
+
+    background:#181818;
+
+    padding:15px;
+
+    border-radius:5px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.what-you-get h4{
+
+    font-size:16px;
+
+}
+
+
+
+.course-description-left h4{
+
+    font-size:16px;
+
+    margin-top:25px;
+
+}
+
+
+
+.course-description-left p,
+.course-description-left li{
+
+    font-size:14px;
+
+    color:#ddd;
+
+}
+
+
+
+.show-more{
+
+    text-align:center;
+
+    color:#d88916;
+
+    margin-top:50px;
+
+}
+
+
+
+/* Right */
+
+.quotation-box{
+
+    background:#d88916;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.course-feature{
+
+    margin-top:20px;
+
+}
+
+
+
+.course-feature p{
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+.course-feature i{
+
+    color:#d88916;
+
+    width:25px;
+
+    font-size:18px;
+
+    margin-right:8px;
+
+}
+
+
+.course-feature p{
+
+    color:white;
+
+    font-size:14px;
+
+    display:block;
+
+}
+
+
+
+.course-feature b{
+
+    font-weight:600;
+
+}
+
+
+
+.course-feature span{
+
+    color:#ddd;
+
+    margin-left:35px;
+
+}
+
+
+
+.course-feature small{
+
+    color:#d88916;
+
+    margin-left:5px;
+
+}
+
+
+
+.verified{
+
+    display:inline-block;
+
+    background:#d88916;
+
+    color:white !important;
+
+    border-radius:15px;
+
+    padding:3px 10px;
+
+    margin-top:5px;
+
+    font-size:11px;
+
+}
+
+
+
+.verified i{
+
+    color:white;
+
+    width:auto;
+
+    font-size:11px;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+
+    .course-description-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+@media(max-width:576px){
+
+
+    .course-description-container{
+
+        padding:30px 20px;
+
+    }
+
+
+}

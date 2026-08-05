@@ -1,0 +1,253 @@
+.payment-container{
+
+    background:#000;
+
+    color:white;
+
+    padding:60px 7% 0;
+
+    font-family:"Kanit",sans-serif;
+
+}
+
+
+
+.payment-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.payment-header h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+.payment-header p{
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+.payment-list{
+
+    width:60%;
+
+    margin:auto;
+
+}
+
+
+
+.payment-item{
+
+    margin-bottom:12px;
+
+}
+
+
+
+.payment-question{
+
+    background:#303035;
+
+    padding:10px 15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+
+
+.payment-question i{
+
+    transition:.3s;
+
+}
+
+
+
+.payment-answer{
+
+    display:none;
+
+    background:#222;
+
+    padding:15px;
+
+    color:#ccc;
+
+    font-size:14px;
+
+}
+
+
+
+.payment-item.active 
+.payment-answer{
+
+    display:block;
+
+}
+
+
+
+.payment-item.active 
+.payment-question i{
+
+    transform:rotate(180deg);
+
+}
+
+
+
+
+
+
+.payment-footer{
+
+    margin-top:70px;
+
+    background:#1c1c1c;
+
+    padding:25px 10%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.course-mini{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+
+.course-mini img{
+
+    width:110px;
+
+    height:60px;
+
+    object-fit:cover;
+
+}
+
+
+
+.course-mini div{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.course-mini span{
+
+    color:#ddd;
+
+}
+
+
+
+.course-mini b{
+
+    color:white;
+
+}
+
+
+
+
+
+
+.free-box h4{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.free-box a{
+
+    display:block;
+
+    background:#d88916;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 45px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+
+
+.free-box a:hover{
+
+    background:#f09a20;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.payment-list{
+
+    width:100%;
+
+}
+
+
+.payment-footer{
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+}

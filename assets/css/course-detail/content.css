@@ -1,0 +1,96 @@
+.course-content{
+
+    color:white;
+
+}
+
+
+.content-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #777;
+
+}
+
+
+
+.content-header h3{
+
+    font-size:18px;
+
+}
+
+
+
+.content-header button{
+
+    background:none;
+
+    border:none;
+
+    color:#d88916;
+
+}
+
+
+
+
+
+.lesson-group{
+
+    border:1px solid #d88916;
+
+}
+
+
+
+.lesson-title{
+
+    padding:10px 15px;
+
+    background:#292929;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    cursor:pointer;
+
+}
+
+
+
+.lesson-title i{
+
+    color:#d88916;
+
+}
+
+
+
+.lesson-detail{
+
+    padding:8px 15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-top:1px solid #d88916;
+
+}
+
+
+
+.lesson-detail i{
+
+    color:#d88916;
+
+    margin-right:10px;
+
+}
