@@ -20,7 +20,7 @@
 
 .help-container{
 
-    width:90%;
+    width:75%;
 
     margin:auto;
 
@@ -32,21 +32,57 @@
 
     color:#aaa;
 
-    font-size:12px;
+    font-size:16px;
+
+    font-family:"Kanit",sans-serif;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
 
 }
+
+
+
+.breadcrumb a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+.breadcrumb a:hover{
+
+    color:#d88916;
+
+}
+
 
 
 .breadcrumb span{
 
-    margin:0 10px;
+    color:#aaa;
+
+    margin:0 5px;
 
 }
+
 
 
 .breadcrumb b{
 
     color:#d88916;
+
+    font-weight:600;
 
 }
 
@@ -83,9 +119,11 @@
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3, 1fr);
 
-    gap:15px;
+    gap:25px;
+
+    justify-content:center;
 
 }
 

@@ -1,0 +1,369 @@
+<div class="payment-method">
+
+
+    <div class="payment-header">
+
+        <h3>
+            Payment
+        </h3>
+
+        <p>
+            Select a Payment Method
+        </p>
+
+    </div>
+
+
+
+
+
+    <!-- Credit Card -->
+
+    <div class="payment-option" onclick="openPaymentModal('card')">
+
+
+        <div class="payment-icon">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+        </div>
+
+
+        <div class="payment-text">
+
+            <b>
+                Pay with Credit Card
+            </b>
+
+            <span>
+                Start Learning Immediately After Payment
+            </span>
+
+        </div>
+
+
+
+        <div class="card-brand">
+
+            <img 
+            src="assets/images/logo/bank.png"
+            alt="Payment Bank">
+
+        </div>
+
+
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Promptpay -->
+
+    <div class="payment-option" onclick="openPaymentModal('qr')">
+
+
+        <div class="payment-icon">
+
+            <i class="fa-solid fa-qrcode"></i>
+
+        </div>
+
+
+
+        <div class="payment-text">
+
+            <b>
+                PromptPay QR Code
+            </b>
+
+
+            <span>
+                You can start learning right after payment
+            </span>
+
+
+        </div>
+
+
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Paypal -->
+
+    <div class="payment-option disabled">
+
+
+        <div class="payment-icon">
+
+            <img 
+            src="assets/images/logo/paypal.png"
+            alt="Paypal">
+
+        </div>
+
+
+
+        <div class="payment-text">
+
+            <b>
+                Payment via PayPal
+            </b>
+
+
+            <span>
+                You can start learning right after payment
+            </span>
+
+
+        </div>
+
+
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Bank -->
+
+    <div class="payment-option disabled">
+
+
+        <div class="payment-icon">
+
+            <i class="fa-solid fa-building-columns"></i>
+
+        </div>
+
+
+
+        <div class="payment-text">
+
+            <b>
+                Pay by bank transfer
+            </b>
+
+
+            <span>
+                You can start learning within 24 hours after payment.
+            </span>
+
+
+        </div>
+
+
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ================= CARD MODAL ================= -->
+
+
+<div class="payment-modal" id="cardModal">
+
+
+    <div class="modal-box card-modal-box">
+
+
+        <i class="fa-solid fa-xmark" onclick="closePaymentModal()"></i>
+
+
+
+        <h4>
+            Pay with Credit Card
+        </h4>
+
+
+
+        <p>
+            Please complete all required fields.
+        </p>
+
+
+
+
+
+        <div class="total-box">
+
+            <span>
+                Total Price (VAT Included)
+            </span>
+
+            <strong>
+                19608.00 baht
+            </strong>
+
+        </div>
+
+        <div class="card-info-header">
+
+            <h5>
+                Card Information
+            </h5>
+
+
+            <img 
+            src="assets/images/logo/bank.png"
+            alt="Card Brand">
+
+        </div>
+
+
+
+
+
+
+        <label>
+            Card Number (16 digits)
+        </label>
+
+        <input type="text" placeholder="Enter card number">
+
+
+
+
+
+        <label>
+            Cardholder Name
+        </label>
+
+
+        <input type="text" placeholder="Enter cardholder name">
+
+
+
+
+
+        <div class="input-row">
+
+
+            <div>
+
+                <label>
+                    Expiration Date (MM/YY)
+                </label>
+
+                <input placeholder="MM/YY">
+
+            </div>
+
+
+
+
+            <div>
+
+                <label>
+                    CVV (3-digit code)
+                </label>
+
+                <input placeholder="Enter CVV">
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <button>
+            Confirm Payment
+        </button>
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ================= QR MODAL ================= -->
+
+<div class="payment-modal" id="qrModal">
+
+    <div class="modal-box qr-box">
+
+        <i class="fa-solid fa-xmark close" onclick="closePaymentModal()"></i>
+
+        <div class="qr-frame">
+            <img src="assets/images/logo/qrcode.png" alt="PromptPay QR">
+        </div>
+
+        <h5>
+            Please make the payment by
+            <span>09:40</span>
+            minute
+        </h5>
+
+        <p>
+            And please don't close/change or refresh this window while making the payment.
+        </p>
+
+        <p class="warning">
+            Because it might make your order incomplete
+        </p>
+
+        <div class="qr-total">
+
+            <small>Net price (including VAT)</small>
+
+            <strong>19608.00 baht</strong>
+
+            <div class="payto">
+                pay to:
+                <span>THREE SIX O ACADEMIC CENTER CO.,LTD</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

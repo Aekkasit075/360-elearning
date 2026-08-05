@@ -1,0 +1,333 @@
+.payment-container{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:60px 0;
+
+    font-family:"Kanit", sans-serif;
+
+    color:white;
+
+}
+
+
+
+/* ================= Header ================= */
+
+
+.payment-header{
+
+    margin-bottom:40px;
+
+}
+
+
+.payment-header h3{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+
+.payment-header p{
+
+    font-size:15px;
+
+    font-weight:300;
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+/* ================= List ================= */
+
+
+.payment-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.payment-item{
+
+    background:#fff;
+
+    border-radius:6px;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.payment-question{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 25px;
+
+    cursor:pointer;
+
+    color:#333;
+
+    font-size:16px;
+
+}
+
+
+
+.payment-question i{
+
+    color:#d88a1d;
+
+}
+
+
+
+
+
+
+.payment-answer{
+
+    display:none;
+
+    padding:0 25px 20px;
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+
+.payment-item.active .payment-answer{
+
+    display:block;
+
+}
+
+
+
+
+
+
+
+
+/* ================= Footer ================= */
+
+
+.payment-footer{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:8px;
+
+}
+
+
+
+
+
+
+.course-mini{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+
+.course-mini img{
+
+    width:120px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:5px;
+
+}
+
+
+
+.course-mini span{
+
+    display:block;
+
+    color:#d88a1d;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.course-mini b{
+
+    color:#222;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* ================= Price ================= */
+
+
+.price-box{
+
+    text-align:right;
+
+}
+
+
+
+.price-box h4{
+
+    color:#222;
+
+    font-size:32px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.price-box a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    
+
+    width:260px;
+
+    height:55px;
+
+
+    background:#d88a1d;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:5px;
+
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+.price-box a:hover{
+
+    background:#ef9c23;
+
+}
+
+
+
+
+
+
+/* ================= Responsive ================= */
+
+
+@media(max-width:768px){
+
+
+    .payment-footer{
+
+        flex-direction:column;
+
+        gap:30px;
+
+        align-items:flex-start;
+
+    }
+
+
+    .price-box{
+
+        width:100%;
+
+        text-align:left;
+
+    }
+
+
+    .price-box a{
+
+        width:100%;
+
+    }
+
+
+}

@@ -1,0 +1,1037 @@
+.payment-method{
+
+    width:61%;
+
+    padding:40px 4%;
+
+    font-family:"Kanit",sans-serif;
+
+    color:white;
+
+}
+
+
+/* ================= HEADER ================= */
+
+
+.payment-header h3{
+
+    font-size:22px;
+
+    margin-bottom:5px;
+
+}
+
+
+.payment-header p{
+
+    color:#ddd;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+/* ================= PAYMENT OPTION ================= */
+
+
+.payment-option{
+
+    width:100%;
+
+    height:75px;
+
+    background:#050505;
+
+    border-radius:8px;
+
+    margin-bottom:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+
+.payment-option:hover{
+
+    background:#111;
+
+}
+
+
+
+
+/* icon circle */
+
+
+.payment-icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#888;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+
+
+.payment-icon i{
+
+    color:#d88918;
+
+    font-size:22px;
+
+}
+
+
+
+
+/* image icon */
+
+
+.payment-icon img{
+
+    width:28px;
+
+    height:28px;
+
+    object-fit:contain;
+
+}
+
+
+
+
+
+
+/* paypal image */
+
+
+.payment-icon img[alt="Paypal"]{
+
+    width:32px;
+
+    height:32px;
+
+}
+
+
+
+
+
+/* text */
+
+
+.payment-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-left:18px;
+
+    flex:1;
+
+}
+
+
+
+.payment-text b{
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+
+.payment-text span{
+
+    font-size:12px;
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+/* card logo */
+
+
+.card-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.card-brand img{
+
+    width:360px;
+
+    height:140px;
+
+    object-fit:contain;
+
+}
+
+
+
+
+
+
+/* arrow */
+
+
+.payment-option > i{
+
+    color:#d88918;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+
+
+
+/* ================= MODAL ================= */
+
+
+.payment-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+
+
+.modal-box{
+
+    width:600px;
+
+    max-width:90%;
+
+    background:linear-gradient(
+        135deg,
+        #303030,
+        #171717
+    );
+
+    padding:35px;
+
+    border-radius:8px;
+
+    color:white;
+
+    position:relative;
+
+}
+
+
+/* Title */
+
+
+.modal-box h4{
+
+    font-size:22px;
+
+    margin:0 0 5px;
+
+}
+
+
+
+.modal-box > p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+
+
+/* Total */
+
+
+.total-box{
+
+    background:#303035;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:5px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.total-box span{
+
+    font-size:18px;
+
+}
+
+
+
+.total-box strong{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#d88918;
+
+    font-size:30px;
+
+}
+
+
+
+
+
+
+
+
+/* Card Information + Logo */
+
+
+.card-info-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card-info-header h5{
+
+    font-size:18px;
+
+    margin:0;
+
+}
+
+
+
+.card-info-header img{
+
+    width:220px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}
+
+
+
+
+
+
+
+/* Labels */
+
+
+.modal-box label{
+
+    display:block;
+
+    font-size:16px;
+
+    margin:15px 0 10px;
+
+}
+
+
+
+.modal-box label::before{
+
+    content:"* ";
+
+    color:red;
+
+}
+
+
+
+
+
+
+
+/* Input */
+
+
+.modal-box input{
+
+    width:100%;
+
+    height:55px;
+
+    background:#333;
+
+    border:1px solid #d88918;
+
+    color:white;
+
+    padding:0 15px;
+
+    font-size:16px;
+
+    border-radius:4px;
+
+}
+
+
+
+
+
+
+
+.input-row{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+
+
+.input-row div{
+
+    width:50%;
+
+}
+
+
+
+
+
+
+
+/* Button */
+
+
+.modal-box button{
+
+    width:100%;
+
+    height:50px;
+
+    margin-top:35px;
+
+    background:#d88918;
+
+    color:white;
+
+    border:none;
+
+    border-radius:3px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+/* ================= QR MODAL ================= */
+
+
+.qr-box{
+
+    width:620px;
+    max-width:95%;
+
+    padding:22px 22px 0;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#2f2f2f,#171717);
+
+    border-radius:6px;
+
+    position:relative;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.6);
+
+}
+
+.qr-box .close{
+
+    position:absolute;
+
+    right:22px;
+    top:18px;
+
+    font-size:52px;
+
+    color:#d88918;
+
+    cursor:pointer;
+
+}
+
+.qr-box .close:hover{
+
+    transform:rotate(90deg);
+
+}
+
+.qr-frame{
+
+    width:230px;      /* เดิม 315px */
+
+    margin:30px auto 15px;
+
+    padding:0;
+
+    background:transparent;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+}
+
+.qr-frame img{
+
+    width:100%;
+
+    display:block;
+
+    background:transparent;
+
+}
+
+.qr-box h5{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin:16px 0 12px;
+
+}
+
+.qr-box h5 span{
+
+    color:#FF6200;
+
+    font-size:20px;
+
+}
+
+.qr-box p{
+
+    color:#ececec;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+.warning{
+
+    margin-top:12px !important;
+
+    margin-bottom:40px !important;
+
+}
+
+.qr-total{
+
+    background:#2f2f35;
+
+    border-radius:4px;
+
+    padding:22px;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.04);
+
+}
+
+.qr-total small{
+
+    display:block;
+
+    color:#d7d7d7;
+
+    font-size:16px;
+
+    margin-bottom:8px;
+
+}
+
+.qr-total strong{
+
+    display:block;
+
+    color:#d88918;
+
+    font-size:44px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.payto{
+
+    font-size:18px;
+
+    color:#f0f0f0;
+
+}
+
+.payto span{
+
+    font-weight:500;
+
+}
+
+
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+
+    .modal-box{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+
+
+    .card-info-header img{
+
+        width:130px;
+
+    }
+
+
+
+    .input-row{
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+
+
+    .input-row div{
+
+        width:100%;
+
+    }
+
+
+}
+
+
+/* ================= CARD PAYMENT MODAL ONLY ================= */
+
+
+.card-modal-box{
+
+    width:620px;
+
+    max-width:90%;
+
+    background:linear-gradient(
+        135deg,
+        #353535,
+        #171717
+    );
+
+    padding:30px;
+
+    border-radius:8px;
+
+    color:white;
+
+    position:relative;
+
+}
+
+
+
+/* X icon */
+
+.card-modal-box > .fa-xmark{
+
+    position:absolute;
+
+    right:18px;
+
+    top:12px;
+
+    color:#d88918;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* title */
+
+
+.card-modal-box h4{
+
+    font-size:18px;
+
+    margin:0 0 5px;
+
+}
+
+
+
+
+
+.card-modal-box > p{
+
+    font-size:14px;
+
+    color:#ddd;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+/* total */
+
+
+.card-modal-box .total-box{
+
+    background:#303035;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+    border-radius:5px;
+
+}
+
+
+
+.card-modal-box .total-box span{
+
+    font-size:14px;
+
+}
+
+
+
+.card-modal-box .total-box strong{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#d88918;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+/* Card Information */
+
+
+.card-modal-box .card-info-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    height:60px;
+
+    overflow:visible;
+
+}
+
+
+
+.card-modal-box .card-info-header h5{
+
+    font-size:18px;
+
+    margin:0;
+
+    flex-shrink:0;
+
+}
+
+
+
+.card-modal-box .card-info-header img{
+
+    width:360px;
+
+    height:140px;
+
+    object-fit:contain;
+
+    position:relative;
+
+    top:0;
+
+    margin-right:-20px;
+
+}
+
+
+
+
+
+/* label */
+
+
+.card-modal-box label{
+
+    display:block;
+
+    font-size:13px;
+
+    margin:10px 0 6px;
+
+}
+
+
+
+.card-modal-box label::before{
+
+    content:"* ";
+
+    color:red;
+
+}
+
+
+
+
+
+
+/* input */
+
+
+.card-modal-box input{
+
+    width:100%;
+
+    height:40px;
+
+    background:#333;
+
+    border:1px solid #d88918;
+
+    color:white;
+
+    padding:0 12px;
+
+    font-size:14px;
+
+    border-radius:4px;
+
+}
+
+
+
+
+
+/* MM/YY + CVV */
+
+
+.card-modal-box .input-row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.card-modal-box .input-row div{
+
+    width:50%;
+
+}
+
+
+
+
+
+/* button */
+
+
+.card-modal-box button{
+
+    width:100%;
+
+    height:42px;
+
+    margin-top:22px;
+
+    background:#d88918;
+
+    color:white;
+
+    border:none;
+
+    border-radius:3px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* responsive */
+
+
+@media(max-width:768px){
+
+
+    .card-modal-box{
+
+        width:95%;
+
+        padding:20px;
+
+    }
+
+
+
+    .card-modal-box .input-row{
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+
+
+    .card-modal-box .input-row div{
+
+        width:100%;
+
+    }
+
+
+}

@@ -8,53 +8,318 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>360 E-learning | Short Courses</title>
+    <title>360 E-learning | FAQ</title>
+
 
     <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
     <link rel="stylesheet" href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
 
     <!-- Shared CSS -->
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/report-problem.css">
+
+    <!-- FAQ CSS -->
+    <link rel="stylesheet" href="assets/css/faq.css">
+
 
 </head>
 
-<body class="home-page">
 
-    <div class="home-background">
+
+<body class="faq-page">
+
+
+    <div class="faq-background">
+
 
         <!-- Header -->
         <header id="header"></header>
 
-        <!-- Main -->
+
+
         <main>
 
-            <!-- Content will be added later -->
-            <section class="py-5">
+
+            <section class="faq-section">
+
+
                 <div class="container">
 
+
+                    <!-- Breadcrumb -->
+
+                    <div class="breadcrumb-box">
+
+                        <a href="index.html">
+                            HOME
+                        </a>
+
+                        <span>></span>
+
+                        <span>
+                            FAQ
+                        </span>
+
+                    </div>
+
+
+
+
+                    <!-- FAQ -->
+
+                    <div class="faq-container">
+
+
+                        <div class="faq-item active">
+
+
+                            <div class="faq-question">
+
+                                <span>
+                                    1. What is 360 E-learning?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-up"></i>
+
+                            </div>
+
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    360 E-learning is an online learning platform that provides
+                                    various courses designed to develop knowledge and skills.
+                                    Learners can study anytime and anywhere through an easy-to-use
+                                    online learning system.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="faq-item">
+
+
+                            <div class="faq-question">
+
+                                <span>
+                                    2. How can I enroll in an online course?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down"></i>
+
+                            </div>
+
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    You can register an account on our website, choose the course
+                                    you are interested in, and complete the enrollment process.
+                                    After registration, you can access your lessons immediately.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="faq-item">
+
+
+                            <div class="faq-question">
+
+                                <span>
+                                    3. What devices can I use to access the courses?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down"></i>
+
+                            </div>
+
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    You can access our courses using a computer, laptop, tablet,
+                                    or smartphone with an internet connection. The platform supports
+                                    modern web browsers for convenient learning.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="faq-item">
+
+
+                            <div class="faq-question">
+
+                                <span>
+                                    4. Will I receive a certificate after completing a course?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down"></i>
+
+                            </div>
+
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    Yes. Learners who complete the required course conditions
+                                    will receive a certificate of completion as proof of their
+                                    learning achievement and skill development.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="faq-item">
+
+
+                            <div class="faq-question">
+
+                                <span>
+                                    5. What should I do if I have problems using the platform?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down"></i>
+
+                            </div>
+
+
+                            <div class="faq-answer">
+
+                                <p>
+                                    If you experience any issues, you can contact our support team
+                                    for assistance. We are ready to help you with technical problems
+                                    and questions about your courses.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
                 </div>
+
+
             </section>
 
+
+
         </main>
+
+
+
 
         <!-- Footer -->
         <footer id="footer"></footer>
 
+
+
     </div>
+
+
 
     <script src="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 
+
     <script src="assets/js/layout.js"></script>
-    <script src="assets/js/report-problem.js"></script>
-    <script src="assets/js/scroll-animation.js"></script>
+
+
+    <script>
+
+
+        const faqItems = document.querySelectorAll(".faq-item");
+
+
+        faqItems.forEach(item => {
+
+
+            item.querySelector(".faq-question")
+                .addEventListener("click", () => {
+
+
+                    faqItems.forEach(other => {
+
+
+                        if (other !== item) {
+
+                            other.classList.remove("active");
+
+                            other.querySelector("i")
+                                .className = "fa-solid fa-chevron-down";
+
+                        }
+
+
+                    });
+
+
+
+                    item.classList.toggle("active");
+
+
+
+                    const icon = item.querySelector("i");
+
+
+                    if (item.classList.contains("active")) {
+
+                        icon.className = "fa-solid fa-chevron-up";
+
+                    }
+                    else {
+
+                        icon.className = "fa-solid fa-chevron-down";
+
+                    }
+
+
+
+                });
+
+
+        });
+
+
+    </script>
+
 
 </body>
 

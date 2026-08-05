@@ -53,12 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    if (document.getElementById("reviews")) {
+    if (document.getElementById("home_reviews")) {
 
         fetch("components/home/reviews/reviews.html")
             .then(response => response.text())
             .then(data => {
-                document.getElementById("reviews").innerHTML = data;
+                document.getElementById("home_reviews").innerHTML = data;
             });
 
     }
@@ -199,6 +199,70 @@ document.addEventListener("DOMContentLoaded", function () {
                         document.getElementById("courseGrid").innerHTML = html;
 
 
+                        const cards =
+                            document.querySelectorAll(".course-card-link");
+
+
+
+                        cards.forEach((card, index) => {
+
+
+
+                            const footer =
+                                card.querySelector(".course-footer");
+
+
+
+                            const info =
+                                card.querySelector(".course-info");
+
+
+
+                            // 4 Courses แรก = Free Course
+
+                            if (index < 4) {
+
+
+                                // ไปหน้า course-detail.html
+
+                                card.href = "course-detail.html";
+
+
+                                // เอา 1,500 For Credit ออก
+
+                                info.style.display = "none";
+
+
+
+                                // เปลี่ยนราคาเป็น FREE
+
+                                footer.innerHTML = `
+
+                                    <button class="free-btn">
+                                        FREE
+                                    </button>
+
+                                `;
+
+
+                            }
+
+
+                            // Course ที่เหลือ = Paid Course
+
+                            else {
+
+
+                                card.href = "course-payment.html";
+
+
+                            }
+
+
+
+                        });
+
+
                     });
 
 
@@ -292,6 +356,19 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
 
                 document.getElementById("course_detail_banner").innerHTML = data;
+
+            });
+
+    }
+
+
+    if (document.getElementById("course_payment_banner")) {
+
+        fetch("components/course-detail/banner/banner_payment.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("course_payment_banner").innerHTML = data;
 
             });
 
@@ -589,7 +666,155 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    
+    if (document.getElementById("payment-bank")) {
+
+
+        fetch("components/course-detail/payment/payment-bank.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+
+                document.getElementById("payment-bank").innerHTML = data;
+
+
+
+                const items =
+                    document.querySelectorAll(".payment-item");
+
+
+
+                items.forEach(item => {
+
+
+                    const question =
+                        item.querySelector(".payment-question");
+
+
+                    question.addEventListener("click", () => {
+
+
+                        items.forEach(other => {
+
+
+                            if (other !== item) {
+
+                                other.classList.remove("active");
+
+                            }
+
+
+                        });
+
+
+
+                        item.classList.toggle("active");
+
+
+
+                    });
+
+
+                });
+
+
+
+            });
+
+
+    }
+
+
+    // ===== Order Course =====
+
+
+    if (document.getElementById("order_summary")) {
+
+
+        fetch("components/order-course/order-summary.html")
+
+            .then(res => res.text())
+
+            .then(data => {
+
+
+                document
+                    .getElementById("order_summary")
+                    .innerHTML = data;
+
+
+            });
+
+
+    }
+
+
+    if(document.getElementById("payment_method")){
+
+        fetch("components/order-course/payment-method.html")
+        .then(res=>res.text())
+        .then(data=>{
+
+
+            document.getElementById("payment_method").innerHTML=data;
+
+
+
+            // โหลด function หลัง component เข้าแล้ว
+
+            window.openPaymentModal = function(type){
+
+
+                document.querySelectorAll(".payment-modal")
+                .forEach(modal=>{
+
+                    modal.style.display="none";
+
+                });
+
+
+
+                if(type==="card"){
+
+                    document.getElementById("cardModal")
+                    .style.display="flex";
+
+                }
+
+
+
+                if(type==="qr"){
+
+                    document.getElementById("qrModal")
+                    .style.display="flex";
+
+                }
+
+
+            };
+
+
+
+
+            window.closePaymentModal = function(){
+
+
+                document.querySelectorAll(".payment-modal")
+                .forEach(modal=>{
+
+                    modal.style.display="none";
+
+                });
+
+
+            };
+
+
+        });
+
+
+    }
 
 
     fetch("components/footer/footer.html")
