@@ -29,19 +29,61 @@
     <link rel="stylesheet" href="assets/css/report-problem.css">
 
     <!-- Course Online CSS -->
-    
+    <link rel="stylesheet" href="assets/css/course-online.css">
 
 </head>
 
 <body class="home-page">
-
     <div class="home-background">
-
-        <header id="header"></header>
-
+     <header id="header"></header>
         <main>
 
-            
+        <section class="course-player-section">
+            <div class="container course-container">
+                
+                <div class="player-top-nav">
+                    <a href="course-detail.html" class="nav-link">
+                        <i class="fa-solid fa-chevron-left"></i> Back to Courses
+                    </a>
+                    <a href="#" class="nav-link">
+                        Browse Courses <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+
+                <div class="video-player-wrapper">  
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop" alt="Course Video" class="video-element">
+                    <div class="center-play-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+
+                    <div class="video-controls">
+                        
+                        <div class="progress-area">
+                            <div class="progress-bar-bg">
+                                <div class="progress-fill" style="width: 52%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="controls-row">
+                            <div class="controls-left">
+                                <i class="fa-solid fa-play control-icon"></i>
+                                <i class="fa-solid fa-forward-step control-icon"></i>
+                                <i class="fa-solid fa-volume-high control-icon"></i>
+                                <span class="time-display">12:45 / 24:30</span>
+                            </div>
+
+                            <div class="controls-right">
+                                <span class="playback-speed">1.0x</span>
+                                <i class="fa-solid fa-gear control-icon"></i>
+                                <i class="fa-solid fa-expand control-icon"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         </main>
 
