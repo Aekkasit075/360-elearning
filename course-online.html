@@ -116,27 +116,306 @@
                         <aside class="lesson-sidebar">
 
                             <!-- ==========================
-         TOP MENU
-    =========================== -->
+                                TOP MENU
+                            =========================== -->
                             <div class="sidebar-top">
 
-                                <button class="sidebar-btn active">
+                                <button class="sidebar-btn active" data-tab="lesson">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </button>
 
-                                <button class="sidebar-btn">
+                                <button class="sidebar-btn" data-tab="discussion">
                                     <i class="fa-regular fa-message"></i>
                                 </button>
 
-                                <button class="sidebar-btn">
+                                <button class="sidebar-btn" data-tab="favorite">
                                     <i class="fa-regular fa-star"></i>
                                 </button>
 
                             </div>
 
+
                             <!-- ==========================
-         CERTIFICATE
-    =========================== -->
+                                DISCUSSION PAGE
+                            =========================== -->
+
+                            <div class="discussion-panel">
+
+
+                                <h3>
+                                    Start Discussion
+                                </h3>
+
+
+                                <textarea 
+                                    placeholder="Enter question or comment..."
+                                    maxlength="3000"></textarea>
+
+
+                                <div class="discussion-count">
+                                    0/3000
+                                </div>
+
+
+                                <p class="error-text">
+                                    Please enter a question or comment.
+                                </p>
+
+
+                                <button class="start-discussion-btn">
+                                    Start Discussion
+                                </button>
+
+
+
+                                <h3 class="all-discussion-title">
+                                    All Discussions
+                                </h3>
+
+
+                                <div class="search-discussion">
+
+                                    <input 
+                                        type="text"
+                                        placeholder="Search messages...">
+
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- ==========================
+                                FAVORITE / REVIEW PAGE
+                            =========================== -->
+
+                            <div class="review-panel">
+
+
+                                <!-- Total Review -->
+
+                                <div class="review-box">
+
+                                    <h3>
+                                        Total Review
+                                    </h3>
+
+
+                                    <div class="rating-summary">
+
+                                        <div class="rating-score">
+
+                                            <i class="fa-solid fa-star"></i>
+                                            4.9
+
+                                            <small>
+                                                (367 review)
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="rating-bars">
+
+
+                                            <div>
+                                                <span>5</span>
+                                                <div class="bar">
+                                                    <div style="width:90%"></div>
+                                                </div>
+                                                <small>332</small>
+                                            </div>
+
+
+                                            <div>
+                                                <span>4</span>
+                                                <div class="bar">
+                                                    <div style="width:35%"></div>
+                                                </div>
+                                                <small>31</small>
+                                            </div>
+
+
+                                            <div>
+                                                <span>3</span>
+                                                <div class="bar">
+                                                    <div style="width:10%"></div>
+                                                </div>
+                                                <small>4</small>
+                                            </div>
+
+
+                                            <div>
+                                                <span>2</span>
+                                                <div class="bar">
+                                                    <div style="width:5%"></div>
+                                                </div>
+                                                <small>0</small>
+                                            </div>
+
+
+                                            <div>
+                                                <span>1</span>
+                                                <div class="bar">
+                                                    <div style="width:5%"></div>
+                                                </div>
+                                                <small>0</small>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <!-- Your Review -->
+
+                                <div class="your-review">
+
+                                    <h3>
+                                        Your Review
+                                    </h3>
+
+
+                                    <div class="star-select">
+
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+
+                                    </div>
+
+
+
+                                    <button class="confirm-review">
+                                        Confirm
+                                    </button>
+
+
+                                </div>
+
+
+
+                                <!-- All Review -->
+
+                                <div class="all-review">
+
+
+                                    <h3>
+                                        All Review
+                                    </h3>
+
+
+                                    <div class="review-item">
+
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="review-avatar">
+
+                                        <div class="review-content">
+
+                                            <b>Emily Carter</b>
+
+                                            <div class="small-stars">
+                                                ★★★★★
+                                            </div>
+
+                                            <p>
+                                                Very useful. The content is easy to understand.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="review-item">
+
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="review-avatar">
+
+                                        <div class="review-content">
+
+                                            <b>Michael Johnson</b>
+
+                                            <div class="small-stars">
+                                                ★★★★★
+                                            </div>
+
+                                            <p>
+                                                Amazing course! Highly recommended.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="review-item">
+
+                                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="review-avatar">
+
+                                        <div class="review-content">
+
+                                            <b>Sophia Williams</b>
+
+                                            <div class="small-stars">
+                                                ★★★★★
+                                            </div>
+
+                                            <p>
+                                                Clear explanations and easy-to-understand lessons.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="review-item">
+
+                                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="review-avatar">
+
+                                        <div class="review-content">
+
+                                            <b>Daniel Brown</b>
+
+                                            <div class="small-stars">
+                                                ★★★★★
+                                            </div>
+
+                                            <p>
+                                                The instructor is knowledgeable.
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <button class="more-review">
+                                        More
+                                    </button>
+
+
+                                </div>
+
+
+                            </div>
+
+                            <!-- ==========================
+                                CERTIFICATE
+                            =========================== -->
                             <div class="certificate-card">
 
                                 <div class="certificate-icon">
@@ -156,8 +435,8 @@
                             </div>
 
                             <!-- ==========================
-         LESSON LIST
-    =========================== -->
+                                LESSON LIST
+                            =========================== -->
 
                             <div class="lesson-list">
 

@@ -551,3 +551,530 @@
     }
 
 }
+
+
+/* ==========================
+   DISCUSSION PANEL
+========================== */
+
+.discussion-panel{
+
+    display:none;
+
+    padding:28px 22px;
+
+    color:white;
+
+}
+
+
+
+/* หัวข้อ */
+
+.discussion-panel h3{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+    line-height:1.4;
+
+}
+
+
+
+/* ช่องกรอกข้อความ */
+
+.discussion-panel textarea{
+
+    width:100%;
+
+    height:120px;
+
+    background:#151515;
+
+    border:1px solid #b97800;
+
+    border-radius:14px;
+
+    color:white;
+
+    padding:16px;
+
+    resize:none;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    outline:none;
+
+}
+
+
+
+.discussion-panel textarea:focus{
+
+    border-color:#D17D10;
+
+    box-shadow:0 0 8px rgba(209,125,16,.35);
+
+}
+
+
+
+.discussion-panel textarea::placeholder{
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+
+
+
+/* ตัวนับจำนวน */
+
+.discussion-count{
+
+    text-align:right;
+
+    font-size:13px;
+
+    margin-top:8px;
+
+    color:#aaa;
+
+}
+
+
+
+/* Error */
+
+.error-text{
+
+    color:#ff3b30;
+
+    font-size:13px;
+
+    margin-top:8px;
+
+}
+
+
+
+/* ปุ่ม Start Discussion */
+
+.start-discussion-btn{
+
+    width:100%;
+
+    height:42px;
+
+    background:transparent;
+
+    border:1px solid #b97800;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:15px;
+
+    margin-top:12px;
+
+    transition:.25s;
+
+}
+
+
+
+.start-discussion-btn:hover{
+
+    background:#b97800;
+
+}
+
+
+
+/* All Discussion */
+
+.all-discussion-title{
+
+    margin-top:65px;
+
+    font-size:22px !important;
+
+}
+
+
+
+/* Search */
+
+.search-discussion{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #b97800;
+
+    border-radius:12px;
+
+    height:42px;
+
+    overflow:hidden;
+
+    margin-top:18px;
+
+}
+
+
+
+.search-discussion input{
+
+    flex:1;
+
+    height:100%;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    padding:0 15px;
+
+    font-size:14px;
+
+}
+
+
+
+.search-discussion input::placeholder{
+
+    color:#aaa;
+
+}
+
+
+
+.search-discussion i{
+
+    color:#e8a000;
+
+    margin-right:15px;
+
+    font-size:15px;
+
+}
+
+
+
+/* ==========================
+   REVIEW PANEL
+========================== */
+
+
+.review-panel{
+
+    display:none;
+
+    padding:30px;
+
+    color:white;
+
+}
+
+
+
+/* Title */
+
+.review-panel h3{
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ==========================
+   Total Review
+========================== */
+
+
+.rating-summary{
+
+    border-bottom:1px solid #333;
+
+    padding-bottom:20px;
+
+}
+
+
+
+.rating-score{
+
+    font-size:18px;
+
+}
+
+
+
+.rating-score i{
+
+    color:#D17D10;
+
+}
+
+
+
+.rating-score small{
+
+    color:#aaa;
+
+    font-size:13px;
+
+}
+
+
+
+.rating-bars div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:10px 0;
+
+}
+
+
+
+.rating-bars span{
+
+    width:20px;
+
+    font-size:14px;
+
+}
+
+
+
+.bar{
+
+    flex:1;
+
+    height:8px;
+
+    background:#555;
+
+}
+
+
+
+.bar div{
+
+    height:100%;
+
+    background:#D17D10;
+
+}
+
+
+
+.rating-bars small{
+
+    width:45px;
+
+    font-size:13px;
+
+}
+
+
+
+/* ==========================
+   Your Review
+========================== */
+
+
+.your-review{
+
+    padding:25px 0;
+
+    border-bottom:1px solid #333;
+
+}
+
+
+
+.star-select i{
+
+    color:#D17D10;
+
+    cursor:pointer;
+
+    font-size:25px;
+
+}
+
+
+
+.confirm-review{
+
+    margin-top:50px;
+
+    width:100%;
+
+    height:45px;
+
+    background:transparent;
+
+    border:1px solid #D17D10;
+
+    color:white;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+
+
+.confirm-review:hover{
+
+    background:#D17D10;
+
+}
+
+
+
+/* ==========================
+   Review List
+========================== */
+
+
+.all-review{
+
+    margin-top:25px;
+
+}
+
+
+
+.review-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    padding:18px;
+
+    border-bottom:1px solid #9a6716;
+
+    font-size:14px;
+
+}
+
+
+
+/* Profile Image */
+
+
+.review-avatar{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    flex-shrink:0;
+
+}
+
+
+
+.review-content{
+
+    flex:1;
+
+}
+
+
+
+.review-item b{
+
+    font-size:15px;
+
+}
+
+
+
+.small-stars{
+
+    color:#D17D10;
+
+    font-size:14px;
+
+}
+
+
+
+.review-item p{
+
+    margin:5px 0;
+
+    color:#ccc;
+
+    font-size:13px;
+
+}
+
+
+
+/* More Button */
+
+
+.more-review{
+
+    width:100%;
+
+    height:40px;
+
+    margin-top:15px;
+
+    border:1px solid #D17D10;
+
+    border-radius:8px;
+
+    background:none;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+
+
+.more-review:hover{
+
+    background:#D17D10;
+
+}

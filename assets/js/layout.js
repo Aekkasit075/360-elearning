@@ -866,3 +866,91 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+const buttons = document.querySelectorAll(".sidebar-btn");
+
+const lessonList = document.querySelector(".lesson-list");
+
+const discussion = document.querySelector(".discussion-panel");
+
+const certificate = document.querySelector(".certificate-card");
+
+const reviewPanel = document.querySelector(".review-panel");
+
+
+
+buttons.forEach(btn=>{
+
+
+    btn.addEventListener("click",()=>{
+
+
+        buttons.forEach(b=>b.classList.remove("active"));
+
+        btn.classList.add("active");
+
+
+        let tab = btn.dataset.tab;
+
+
+
+        // ซ่อนทุกหน้าไว้ก่อน
+
+        lessonList.style.display="none";
+
+        certificate.style.display="none";
+
+        discussion.style.display="none";
+
+        reviewPanel.style.display="none";
+
+
+
+
+        // Lesson
+
+        if(tab==="lesson"){
+
+
+            lessonList.style.display="block";
+
+            certificate.style.display="flex";
+
+
+        }
+
+
+
+        // Discussion
+
+        else if(tab==="discussion"){
+
+
+            discussion.style.display="block";
+
+
+        }
+
+
+
+        // Favorite / Review
+
+        else if(tab==="favorite"){
+
+
+            reviewPanel.style.display="block";
+
+
+        }
+
+
+
+    });
+
+
+});
+
+
+});
