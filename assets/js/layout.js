@@ -750,83 +750,83 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    if(document.getElementById("payment_method")){
+    if (document.getElementById("payment_method")) {
 
         fetch("components/order-course/payment-method.html")
-        .then(res=>res.text())
-        .then(data=>{
+            .then(res => res.text())
+            .then(data => {
 
 
-            document.getElementById("payment_method").innerHTML=data;
-
-
-
-            // โหลด function หลัง component เข้าแล้ว
-
-            window.openPaymentModal = function(type){
-
-
-                document.querySelectorAll(".payment-modal")
-                .forEach(modal=>{
-
-                    modal.style.display="none";
-
-                });
+                document.getElementById("payment_method").innerHTML = data;
 
 
 
-                if(type==="card"){
+                // โหลด function หลัง component เข้าแล้ว
 
-                    document.getElementById("cardModal")
-                    .style.display="flex";
-
-                }
+                window.openPaymentModal = function (type) {
 
 
+                    document.querySelectorAll(".payment-modal")
+                        .forEach(modal => {
 
-                if(type==="qr"){
+                            modal.style.display = "none";
 
-                    document.getElementById("qrModal")
-                    .style.display="flex";
-
-                }
-
-
-                if(type==="paypal"){
-
-                    document.getElementById("paypalModal")
-                    .style.display="flex";
-
-                }
-                
-
-                if(type==="bank"){
-
-                    document.getElementById("bankModal").style.display="flex";
-
-                }
-
-
-            };
+                        });
 
 
 
+                    if (type === "card") {
 
-            window.closePaymentModal = function(){
+                        document.getElementById("cardModal")
+                            .style.display = "flex";
 
-
-                document.querySelectorAll(".payment-modal")
-                .forEach(modal=>{
-
-                    modal.style.display="none";
-
-                });
+                    }
 
 
-            };
+
+                    if (type === "qr") {
+
+                        document.getElementById("qrModal")
+                            .style.display = "flex";
+
+                    }
 
 
-        });
+                    if (type === "paypal") {
+
+                        document.getElementById("paypalModal")
+                            .style.display = "flex";
+
+                    }
+
+
+                    if (type === "bank") {
+
+                        document.getElementById("bankModal").style.display = "flex";
+
+                    }
+
+
+                };
+
+
+
+
+                window.closePaymentModal = function () {
+
+
+                    document.querySelectorAll(".payment-modal")
+                        .forEach(modal => {
+
+                            modal.style.display = "none";
+
+                        });
+
+
+                };
+
+
+            });
 
 
     }
@@ -866,91 +866,860 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
 
-const buttons = document.querySelectorAll(".sidebar-btn");
+    /* ==========================
+        SIDEBAR TAB
+    ========================== */
 
-const lessonList = document.querySelector(".lesson-list");
+    const buttons = document.querySelectorAll(".sidebar-btn");
 
-const discussion = document.querySelector(".discussion-panel");
-
-const certificate = document.querySelector(".certificate-card");
-
-const reviewPanel = document.querySelector(".review-panel");
-
-
-
-buttons.forEach(btn=>{
+    const lessonList = document.querySelector(".lesson-list");
+    const discussion = document.querySelector(".discussion-panel");
+    const certificate = document.querySelector(".certificate-card");
+    const reviewPanel = document.querySelector(".review-panel");
 
 
-    btn.addEventListener("click",()=>{
+    buttons.forEach(btn => {
 
 
-        buttons.forEach(b=>b.classList.remove("active"));
-
-        btn.classList.add("active");
+        btn.addEventListener("click", () => {
 
 
-        let tab = btn.dataset.tab;
+            buttons.forEach(b =>
+                b.classList.remove("active")
+            );
 
 
+            btn.classList.add("active");
 
-        // ซ่อนทุกหน้าไว้ก่อน
 
-        lessonList.style.display="none";
+            const tab = btn.dataset.tab;
 
-        certificate.style.display="none";
 
-        discussion.style.display="none";
-
-        reviewPanel.style.display="none";
+            lessonList.style.display = "none";
+            certificate.style.display = "none";
+            discussion.style.display = "none";
+            reviewPanel.style.display = "none";
 
 
 
+            if(tab === "lesson"){
 
-        // Lesson
+                lessonList.style.display = "block";
+                certificate.style.display = "flex";
 
-        if(tab==="lesson"){
-
-
-            lessonList.style.display="block";
-
-            certificate.style.display="flex";
+            }
 
 
-        }
+            else if(tab === "discussion"){
+
+                discussion.style.display = "block";
+
+            }
 
 
+            else if(tab === "favorite"){
 
-        // Discussion
+                reviewPanel.style.display = "block";
 
-        else if(tab==="discussion"){
-
-
-            discussion.style.display="block";
+            }
 
 
-        }
-
-
-
-        // Favorite / Review
-
-        else if(tab==="favorite"){
-
-
-            reviewPanel.style.display="block";
-
-
-        }
-
+        });
 
 
     });
 
 
-});
+
+
+
+    /* ==========================
+        EXAM SYSTEM
+    ========================== */
+
+
+    const videoContent =
+        document.getElementById("videoContent");
+
+
+    const defaultVideo =
+        videoContent.innerHTML;
+
+
+    const exercises =
+        document.querySelectorAll(".lesson-exercise");
+
+
+    const lessonVideo =
+        document.querySelector(".lesson-video");
+
+
+
+    let currentQuestion = 0;
+
+    let score = 0;
+
+    let userAnswers = [];
+
+
+
+
+
+    const questions = [
+
+
+        {
+            q:"Why diversify your investments?",
+
+            options:[
+                "To reduce risk by spreading investments across different assets",
+                "To guarantee that you will never lose money",
+                "To invest all your money in one company",
+                "To avoid investing in different types of assets"
+            ],
+
+            answer:0
+        },
+
+
+
+        {
+            q:"What is Canva mainly used for?",
+
+            options:[
+                "Creating designs",
+                "Programming",
+                "Database management",
+                "System security"
+            ],
+
+            answer:0
+        },
+
+
+
+        {
+            q:"AI can help with?",
+
+            options:[
+                "Creating content",
+                "Deleting computer",
+                "Breaking system",
+                "Removing files"
+            ],
+
+            answer:0
+        }
+
+
+    ];
+
+
+
+
+
+
+
+    /* ==========================
+        OPEN QUIZ
+    ========================== */
+
+
+    exercises.forEach(exercise => {
+
+
+        exercise.onclick = () => {
+
+
+            videoContent.innerHTML = `
+
+
+<div class="exam-page">
+
+
+    <div class="exam-title">
+
+        <h1>
+            Post-Lesson Test
+        </h1>
+
+    </div>
+
+
+
+    <div class="exam-start-content">
+
+
+        <div class="exam-type">
+            Quiz
+        </div>
+
+
+        <h2>
+            Post-Lesson Test
+        </h2>
+
+
+
+        <p>
+            15 questions |
+            Total score: 15 points |
+            Unlimited attempts
+        </p>
+
+
+
+        <button id="startExam">
+
+            Start the quiz
+
+        </button>
+
+
+
+    </div>
+
+
+</div>
+
+
+`;
+
+
+
+            document
+            .getElementById("startExam")
+            .onclick = () => {
+
+
+                currentQuestion = 0;
+
+                score = 0;
+
+                userAnswers = [];
+
+
+                showQuestion();
+
+
+            };
+
+
+
+        };
+
+
+    });
+
+
+
+
+
+
+
+
+
+    /* ==========================
+        SHOW QUESTION
+    ========================== */
+
+
+    function showQuestion(){
+
+
+        const data = questions[currentQuestion];
+
+
+
+        videoContent.innerHTML = `
+
+
+    <div class="exam-page">
+
+
+        <div class="exam-title">
+
+            <h1>
+                Post-Lesson Test
+            </h1>
+
+        </div>
+
+
+
+
+        <div class="question-page">
+
+
+
+            <div class="exam-inner">
+
+
+                <div class="question-count">
+
+                    Question ${currentQuestion + 1}
+                    of ${questions.length}
+
+                </div>
+
+
+
+
+                <div class="point-box">
+
+
+                    <b>
+                        ${score}
+                    </b>
+
+
+                    <span>
+                        Point
+                    </span>
+
+
+                </div>
+
+
+
+
+
+                <p class="question-text">
+
+                    ${data.q}
+
+                </p>
+
+
+
+
+
+                <div class="answer-list">
+
+
+                    ${data.options.map((option,index)=>`
+
+
+                        <label>
+
+
+                            <input 
+                                type="radio"
+                                name="answer"
+                                value="${index}"
+                                ${
+                                    userAnswers[currentQuestion] === index
+                                    ?
+                                    "checked"
+                                    :
+                                    ""
+                                }
+                            >
+
+
+                            <span></span>
+
+
+                            ${String.fromCharCode(65 + index)}.
+                            ${option}
+
+
+                        </label>
+
+
+                    `).join("")}
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="question-footer 
+                    ${currentQuestion === 0 ? "first-question":""}">
+
+
+                    ${
+                        currentQuestion > 0
+                        ?
+
+                        `
+                        <button 
+                            id="previousQuestion"
+                            class="previous-question">
+
+                            ◀ Previous question
+
+                        </button>
+                        `
+
+                        :
+
+                        `
+                        <div></div>
+                        `
+                    }
+
+
+
+
+
+                    <button id="nextQuestion">
+
+
+                        ${
+                            currentQuestion === questions.length - 1
+                            ?
+                            "Press to confirm the answer"
+                            :
+                            "Next question"
+                        }
+
+
+                    </button>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    `;
+
+
+
+
+
+
+        /*
+            NEXT BUTTON
+        */
+
+
+        document
+        .getElementById("nextQuestion")
+        .onclick = () => {
+
+
+            const selected =
+            document.querySelector(
+                "input[name='answer']:checked"
+            );
+
+
+
+            if(!selected){
+
+                return;
+
+            }
+
+
+
+
+            // บันทึกคำตอบ
+
+            userAnswers[currentQuestion] =
+            Number(selected.value);
+
+
+
+
+
+            // คำนวณคะแนนใหม่ทั้งหมด
+
+            score = 0;
+
+
+            userAnswers.forEach((answer,index)=>{
+
+
+                if(
+                    answer === questions[index].answer
+                ){
+
+                    score++;
+
+                }
+
+
+            });
+
+
+
+
+
+
+            currentQuestion++;
+
+
+
+
+
+            if(currentQuestion < questions.length){
+
+
+                showQuestion();
+
+
+            }
+
+            else{
+
+
+                submitPopup();
+
+
+            }
+
+
+
+        };
+
+
+
+
+
+
+
+
+        /*
+            PREVIOUS BUTTON
+        */
+
+
+        const previousButton =
+        document.getElementById("previousQuestion");
+
+
+
+        if(previousButton){
+
+
+            previousButton.onclick = () => {
+
+
+
+                const previousIndex =
+                currentQuestion - 1;
+
+
+
+
+
+                // ลบคำตอบข้อก่อนหน้า
+
+                userAnswers[previousIndex] = undefined;
+
+
+
+
+
+                // คำนวณคะแนนใหม่
+
+                score = 0;
+
+
+                userAnswers.forEach((answer,index)=>{
+
+
+                    if(
+                        answer === questions[index].answer
+                    ){
+
+                        score++;
+
+                    }
+
+
+                });
+
+
+
+
+
+                currentQuestion--;
+
+
+
+
+
+                showQuestion();
+
+
+
+            };
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* ==========================
+        SUBMIT POPUP
+    ========================== */
+
+
+    function submitPopup(){
+
+
+
+        const popup =
+        document.createElement("div");
+
+
+
+        popup.className =
+        "global-submit-popup";
+
+
+
+        popup.innerHTML = `
+
+
+<div class="submit-box">
+
+
+<h3>
+
+Do you want to submit all answers?
+
+</h3>
+
+
+
+<p>
+
+Once confirmed, the system will record your score.
+
+</p>
+
+
+
+
+<button id="cancelSubmit">
+
+Cancel
+
+</button>
+
+
+
+<button id="submitAnswer">
+
+Submit
+
+</button>
+
+
+
+</div>
+
+
+
+`;
+
+
+
+        document.body.appendChild(popup);
+
+
+
+
+
+        document
+        .getElementById("cancelSubmit")
+        .onclick = () => {
+
+
+            popup.remove();
+
+
+            currentQuestion--;
+
+            showQuestion();
+
+
+        };
+
+
+
+
+
+
+
+        document
+        .getElementById("submitAnswer")
+        .onclick = () => {
+
+
+            popup.remove();
+
+
+            showResult();
+
+
+        };
+
+
+
+
+    }
+
+
+
+    /* ==========================
+        RESULT
+    ========================== */
+
+
+    function showResult(){
+
+
+        videoContent.innerHTML = `
+
+
+
+<div class="result-page">
+
+
+<h1>
+
+Post-Test
+
+</h1>
+
+
+
+
+<h3>
+
+Your score has been recorded successfully.
+
+</h3>
+
+
+
+
+<div class="result-line"></div>
+
+
+
+
+<p>
+
+Your score is
+
+</p>
+
+
+
+
+<strong>
+
+${score}/${questions.length}
+
+</strong>
+
+
+
+<span>
+
+Score
+
+</span>
+
+
+
+
+
+<div class="result-line"></div>
+
+
+
+
+<button id="tryAgain">
+
+↻ Try Again
+
+</button>
+
+
+
+</div>
+
+
+
+`;
+
+
+
+
+
+        document
+        .getElementById("tryAgain")
+        .onclick = () => {
+
+
+            exercises[0].click();
+
+
+        };
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* ==========================
+        BACK TO VIDEO
+    ========================== */
+
+
+    lessonVideo.onclick = () => {
+
+
+        videoContent.innerHTML =
+        defaultVideo;
+
+
+    };
+
 
 
 });

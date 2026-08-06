@@ -1100,3 +1100,1309 @@
     background:#D17D10;
 
 }
+
+
+
+.quiz-intro {
+
+    width:100%;
+    height:100%;
+
+    background:#111;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px;
+
+    color:white;
+
+}
+
+
+.quiz-intro-box {
+
+    max-width:700px;
+
+    text-align:center;
+
+}
+
+
+.quiz-intro-icon {
+
+    font-size:60px;
+    color:#d99a1e;
+
+    margin-bottom:25px;
+
+}
+
+
+.quiz-intro h1 {
+
+    font-size:32px;
+    margin-bottom:20px;
+
+}
+
+
+.quiz-intro p {
+
+    color:#ccc;
+    line-height:1.8;
+    font-size:16px;
+
+}
+
+
+.quiz-info {
+
+    margin-top:30px;
+
+    background:#1d1d1d;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+
+.quiz-start {
+
+    margin-top:25px;
+
+    background:#d99a1e;
+
+    color:#000;
+
+    border:none;
+
+    padding:12px 40px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+
+.exercise-intro{
+
+    height:100%;
+
+    min-height:220px; /* ลดจาก 280 */
+
+    background:#050505;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:25px; /* ลดจาก 40 */
+
+}
+
+
+.exercise-intro h2{
+
+    color:#C97B19;
+
+    font-size:22px; /* ลดจาก 28 */
+
+    margin-bottom:12px;
+
+}
+
+
+.exercise-intro p{
+
+    color:#ddd;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+.instruction-box{
+
+    margin-top:15px;
+
+    width:75%; /* ลดจาก 80% */
+
+    background:#1A1C1C;
+
+    border:1px solid #C97B19;
+
+    padding:15px; /* ลดจาก 20 */
+
+    text-align:left;
+
+}
+
+
+.instruction-box h3{
+
+    color:#C97B19;
+
+    font-size:17px;
+
+}
+
+
+.instruction-box li{
+
+    margin-bottom:6px;
+
+    color:#ddd;
+
+    font-size:13px;
+
+}
+
+
+.start-exam-btn{
+
+    margin-top:15px;
+
+    background:#C97B19;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 30px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+    font-size:14px;
+
+}
+
+
+
+/* =================================
+   HOVER ONLY LESSON 1 + EXERCISE
+================================= */
+
+/* Lesson 1 */
+.lesson-video:hover {
+
+    background:#5a3c16;
+    cursor:pointer;
+
+}
+
+
+.lesson-video:hover .lesson-content span {
+
+    color:#D17D10;
+
+}
+
+
+.lesson-video:hover .lesson-content small {
+
+    color:#fff;
+
+}
+
+
+.lesson-video:hover .lesson-dot {
+
+    box-shadow:0 0 8px #D17D10;
+
+}
+
+
+
+/* Lesson 2 Exercise */
+.lesson-exercise:hover {
+
+    background:#5a3c16;
+    cursor:pointer;
+
+}
+
+
+.lesson-exercise:hover .lesson-content span {
+
+    color:#D17D10;
+
+}
+
+
+.lesson-exercise:hover .lesson-content small {
+
+    color:#fff;
+
+}
+
+
+.lesson-exercise:hover .lesson-dot {
+
+    box-shadow:0 0 8px #D17D10;
+
+}
+
+
+
+.submit-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+
+.submit-box{
+    background:#fff;
+    color:#111;
+    width:320px;
+    padding:30px;
+    text-align:center;
+    border-radius:5px;
+}
+
+
+.submit-box button{
+    margin:10px;
+    padding:10px 25px;
+    border:none;
+    background:#d88900;
+    color:white;
+}
+
+
+
+.answer-list label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+    color:#ddd;
+}
+
+
+.answer-list input{
+    display:none;
+}
+
+
+.answer-list span{
+    width:12px;
+    height:12px;
+    border:2px solid #e88b00;
+    border-radius:50%;
+}
+
+
+.answer-list input:checked + span{
+    background:#e88b00;
+}
+
+
+
+.result-page{
+    padding:40px;
+    color:white;
+}
+
+
+.score-line{
+    border-top:1px solid #d88900;
+    margin:30px 0;
+}
+
+
+.result-page strong{
+    display:block;
+    font-size:40px;
+    color:#e88b00;
+}
+
+
+
+/* ==========================
+ EXAM FULL PAGE
+========================== */
+
+
+.exam-page,
+.result-page{
+
+width:100%;
+height:100%;
+
+min-height:100%;
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+);
+
+color:white;
+
+font-family:"Kanit",sans-serif;
+
+}
+
+
+
+.exam-title{
+
+height:80px;
+
+border-bottom:1px solid #9a6716;
+
+padding:25px 45px;
+
+}
+
+
+.exam-title h1{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+
+
+
+.exam-start-content{
+
+padding:40px 100px;
+
+
+}
+
+
+
+.exam-type{
+
+font-size:12px;
+color:#ddd;
+
+}
+
+
+
+.exam-start-content h2{
+
+font-size:28px;
+
+margin-top:15px;
+
+}
+
+
+
+.exam-start-content p{
+
+color:#ddd;
+
+font-size:13px;
+
+}
+
+
+
+.exam-start-content button,
+#startExam{
+
+margin-top:100px;
+
+width:150px;
+
+height:40px;
+
+border:none;
+
+border-radius:6px;
+
+background:#d88900;
+
+color:white;
+
+font-family:"Kanit";
+
+font-weight:600;
+
+}
+
+
+
+
+
+/* QUESTION */
+
+
+.question-page{
+
+padding:40px 50px;
+
+position:relative;
+
+}
+
+
+
+.question-count{
+
+font-size:12px;
+
+margin-bottom:70px;
+
+}
+
+
+
+.point-box{
+
+position:absolute;
+
+right:20px;
+top:10px;
+
+background:white;
+
+color:#111;
+
+width:45px;
+height:35px;
+
+border-radius:3px;
+
+text-align:center;
+
+}
+
+
+.point-box span{
+
+display:block;
+
+font-size:8px;
+
+}
+
+
+
+.question-text{
+
+margin-top:40px;
+
+font-size:15px;
+
+}
+
+
+
+.answer-list label{
+
+display:flex;
+
+gap:15px;
+
+margin:20px 0;
+
+font-size:13px;
+
+cursor:pointer;
+
+}
+
+
+
+.answer-list span{
+
+width:12px;
+height:12px;
+
+border-radius:50%;
+
+border:2px solid #d88900;
+
+}
+
+
+
+.answer-list input{
+
+display:none;
+
+}
+
+
+
+.answer-list input:checked + span{
+
+background:#d88900;
+
+}
+
+
+
+.question-footer{
+
+    margin-top:80px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+#nextQuestion{
+
+background:#d88900;
+
+border:none;
+
+color:white;
+
+padding:10px 25px;
+
+}
+
+
+
+
+
+.previous-question{
+
+color:#d88900;
+
+}
+
+
+
+/* ==========================
+ POPUP OUTSIDE
+========================== */
+
+
+.global-submit-popup{
+
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.75);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:9999;
+
+
+}
+
+
+.submit-box{
+
+background:white;
+
+width:350px;
+
+padding:30px;
+
+text-align:center;
+
+color:#111;
+
+}
+
+
+
+.submit-box button{
+
+margin:10px;
+
+padding:10px 30px;
+
+border:none;
+
+background:#d88900;
+
+color:white;
+
+}
+
+
+
+
+
+/* RESULT */
+
+
+.result-page{
+
+padding:40px;
+
+}
+
+
+
+.result-page h1{
+
+font-size:24px;
+
+}
+
+
+.result-page strong{
+
+display:block;
+
+font-size:38px;
+
+color:#d88900;
+
+text-align:center;
+
+}
+
+
+
+.result-line{
+
+height:1px;
+
+background:#9a6716;
+
+margin:30px 0;
+
+}
+
+
+#tryAgain{
+
+margin-top:30px;
+
+background:none;
+
+border:none;
+
+color:#d88900;
+
+}
+
+
+.video-player-wrapper:has(.exam-page),
+.video-player-wrapper:has(.result-page){
+    aspect-ratio:auto;
+    min-height:620px;
+}
+
+
+
+/* =========================================
+   POST TEST STYLE SAME AS LESSON / EXERCISE
+========================================= */
+
+
+/* กล่อง Post Test ทั้งหมด */
+.exam-page,
+.result-page {
+
+    background:
+    linear-gradient(
+        rgba(20,20,20,.85),
+        rgba(20,20,20,.85)
+    ),
+    #232323;
+
+    color:white;
+
+    border-radius:0;
+
+}
+
+
+/* Header Post Test */
+
+.exam-title{
+
+    height:80px;
+
+    background:#2b2b2b;
+
+    border-bottom:1px solid #D17D10;
+
+    padding:25px 45px;
+
+}
+
+
+.exam-title h1{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+
+
+/* =================================
+   START QUIZ PAGE
+================================= */
+
+
+.exam-start-content{
+
+    padding:50px 70px;
+
+}
+
+
+
+.exam-type{
+
+    display:inline-block;
+
+    padding:5px 18px;
+
+    border-radius:20px;
+
+    background:#D17D10;
+
+    color:white;
+
+    font-size:12px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.exam-start-content h2{
+
+    color:#D17D10;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.exam-start-content p{
+
+    color:#ccc;
+
+    font-size:14px;
+
+}
+
+
+
+/* ปุ่ม Start */
+
+.exam-start-content button,
+#startExam{
+
+
+    margin-top:80px;
+
+    width:170px;
+
+    height:45px;
+
+    background:#D17D10;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-family:"Kanit";
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+
+
+.exam-start-content button:hover,
+#startExam:hover{
+
+    background:#b86b08;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+/* =================================
+ QUESTION PAGE
+================================= */
+
+
+.question-page{
+
+    padding:45px 60px;
+
+}
+
+
+
+.question-count{
+
+    color:#aaa;
+
+    font-size:13px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.point-box{
+
+    background:#D17D10;
+
+    color:white;
+
+    width:55px;
+
+    height:45px;
+
+    border-radius:8px;
+
+    top:25px;
+
+    right:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.point-box b{
+
+    font-size:18px;
+
+}
+
+
+.point-box span{
+
+    font-size:10px;
+
+}
+
+
+
+/* คำถาม */
+
+.question-text{
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* ตัวเลือก */
+
+.answer-list label{
+
+
+    background:#232323;
+
+    border:1px solid #444;
+
+    padding:15px 18px;
+
+    border-radius:10px;
+
+    transition:.25s;
+
+}
+
+
+
+.answer-list label:hover{
+
+
+    background:#4b3722;
+
+    border-color:#D17D10;
+
+
+}
+
+
+
+.answer-list input:checked + span{
+
+
+    background:#D17D10;
+
+
+}
+
+
+
+/* ปุ่ม Next */
+
+
+#nextQuestion{
+
+
+    background:#D17D10;
+
+    border-radius:8px;
+
+    padding:12px 35px;
+
+    font-family:"Kanit";
+
+    font-weight:600;
+
+}
+
+
+
+#nextQuestion:hover{
+
+
+    background:#b86b08;
+
+
+}
+
+
+
+.previous-question{
+
+
+    color:#D17D10;
+
+    font-weight:500;
+
+}
+
+
+
+
+
+/* =================================
+ RESULT PAGE
+================================= */
+
+
+.result-page{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+
+}
+
+
+
+.result-page h1{
+
+
+    color:#D17D10;
+
+    font-size:30px;
+
+
+}
+
+
+
+.result-page h3{
+
+
+    color:#ddd;
+
+    font-size:18px;
+
+
+}
+
+
+
+.result-page strong{
+
+
+    color:#D17D10;
+
+    font-size:55px;
+
+    margin:20px 0;
+
+
+}
+
+
+
+.result-line{
+
+
+    width:70%;
+
+    height:1px;
+
+    background:#D17D10;
+
+    opacity:.5;
+
+
+}
+
+
+
+#tryAgain{
+
+
+    margin-top:30px;
+
+    padding:12px 30px;
+
+    border:1px solid #D17D10;
+
+    border-radius:8px;
+
+    color:#fff;
+
+    background:transparent;
+
+}
+
+
+
+#tryAgain:hover{
+
+
+    background:#D17D10;
+
+
+}
+
+
+
+/* =================================
+ HOVER POST TEST ITEM
+================================= */
+
+
+.lesson-posttest:hover{
+
+
+    background:#5a3c16;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.lesson-posttest:hover .lesson-content span{
+
+
+    color:#D17D10;
+
+
+}
+
+
+
+.lesson-posttest:hover .lesson-content small{
+
+
+    color:white;
+
+
+}
+
+
+
+.lesson-posttest:hover .lesson-dot{
+
+
+    box-shadow:0 0 8px #D17D10;
+
+
+}
+
+
+
+/* Post test icon */
+
+.lesson-posttest .lesson-dot{
+
+
+    border-color:#D17D10;
+
+
+}
+
+
+.lesson-posttest .lesson-dot::after{
+
+
+    content:"";
+
+    display:block;
+
+    width:8px;
+
+    height:8px;
+
+    background:#D17D10;
+
+    border-radius:50%;
+
+    margin:3px;
+
+
+}
+
+
+.question-footer.first-question{
+
+    justify-content:flex-end;
+
+}
+
+
+.question-footer{
+    margin-top:80px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.question-footer.first-question{
+    justify-content:flex-end;
+}
+
+
+
+.previous-question{
+
+    background:none;
+    border:none;
+    color:#D17D10;
+    font-family:"Kanit";
+    cursor:pointer;
+
+}
+
+
+
+#nextQuestion{
+
+    background:#D17D10;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:12px 35px;
+    font-family:"Kanit";
+    cursor:pointer;
+
+}
+
+
+/* ==========================
+   CANCEL SUBMIT BUTTON
+========================== */
+
+#cancelSubmit{
+
+    background:transparent;
+
+    color:#111;
+
+}
+
+
+#cancelSubmit:hover{
+
+    background:#eee;
+
+}
+
+
+.exam-inner{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+
+
