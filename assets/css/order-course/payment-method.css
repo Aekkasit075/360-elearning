@@ -1035,3 +1035,1050 @@
 
 
 }
+
+/* ================= PAYPAL MODAL ================= */
+
+.paypal-box{
+
+    width:900px;
+    max-width:92%;
+    min-height:610px;
+
+    background:#fff;
+
+    border-radius:8px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    font-family:"Kanit",sans-serif;
+
+}
+
+
+/* ================= CLOSE BUTTON ================= */
+
+.paypal-close{
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    font-size:26px;
+
+    color:#777;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.paypal-close:hover{
+
+    color:#111;
+
+}
+
+
+/* ================= LOGIN CARD ================= */
+
+.paypal-window{
+
+    width:340px;
+
+    margin:45px auto 0;
+
+    padding:28px;
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+
+/* Logo */
+
+.paypal-logo{
+
+    width:62px;
+
+    display:block;
+
+    margin:0 auto 15px;
+
+}
+
+
+/* Title */
+
+.paypal-window h3{
+
+    margin:0;
+
+    color:#222;
+
+    font-size:23px;
+
+    font-weight:600;
+
+}
+
+
+/* Subtitle */
+
+.paypal-title{
+
+    margin:10px 0 20px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+/* Email Input */
+
+.paypal-window input{
+
+    width:100%;
+
+    height:44px;
+
+    border:1px solid #cfcfcf;
+
+    border-radius:6px;
+
+    padding:0 14px;
+
+    font-size:14px;
+
+    font-family:"Kanit",sans-serif;
+
+    margin-bottom:14px;
+
+}
+
+.paypal-window input:focus{
+
+    outline:none;
+
+    border-color:#0070e0;
+
+}
+
+
+/* Forgot Email */
+
+.forgot-link{
+
+    display:block;
+
+    text-align:left;
+
+    text-decoration:none;
+
+    color:#0070e0;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* Next Button */
+
+.paypal-next{
+
+    width:100%;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#0070e0;
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.paypal-next:hover{
+
+    background:#005fd0;
+
+}
+
+
+/* OR */
+
+.paypal-or{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:18px 0;
+
+}
+
+.paypal-or span{
+
+    flex:1;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.paypal-or b{
+
+    color:#888;
+
+    font-size:13px;
+
+    font-weight:400;
+
+}
+
+
+/* Debit / Credit Card Button */
+
+.paypal-card{
+
+    width:100%;
+
+    height:44px;
+
+    border:1px solid #888;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.paypal-card:hover{
+
+    background:#f8f8f8;
+
+}
+
+.paypal-card i{
+
+    margin-right:8px;
+
+}
+
+
+/* ================= RETURN ================= */
+
+.paypal-return{
+
+    margin-top:22px;
+
+    margin-bottom:14px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+}
+
+.paypal-return strong{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#0070e0;
+
+    font-weight:500;
+
+}
+
+
+/* ================= LANGUAGE ================= */
+
+.paypal-language{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:6px;
+
+    color:#666;
+
+    font-size:12px;
+
+}
+
+.paypal-language img{
+
+    width:18px;
+
+    height:13px;
+
+    border:1px solid #ddd;
+
+}
+
+.divider{
+
+    color:#bbb;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+.paypal-bottom{
+
+    width:100%;
+
+    background:#f4f4f4;
+
+    border-top:1px solid #ddd;
+
+    padding:15px 18px;
+
+    text-align:center;
+
+}
+
+.paypal-footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    font-size:12px;
+
+}
+
+.paypal-footer a{
+
+    color:#666;
+
+    text-decoration:none;
+
+    transition:.2s;
+
+}
+
+.paypal-footer a:hover{
+
+    color:#0070e0;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .paypal-box{
+
+        width:95%;
+
+        height:auto;
+
+    }
+
+    .paypal-window{
+
+        width:90%;
+
+        margin:40px auto 20px;
+
+        padding:24px;
+
+    }
+
+    .paypal-window h3{
+
+        font-size:21px;
+
+    }
+
+    .paypal-bottom{
+
+        padding:15px;
+
+    }
+
+    .paypal-language{
+
+        flex-wrap:wrap;
+
+    }
+
+    .paypal-footer{
+
+        gap:8px;
+
+    }
+
+}
+
+
+/* ================= BANK MODAL ================= */
+
+.payment-modal{
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    position:fixed;
+
+    inset:0;
+
+    padding-top:60px;
+
+    background:rgba(0,0,0,.65);
+
+    z-index:9999;
+
+    overflow:hidden;
+
+}
+
+#bankModal{
+
+    align-items:flex-start;
+
+    padding-top:40px;
+
+    overflow-y:auto;
+
+}
+
+.bank-box{
+
+    width:620px;
+
+    max-width:92%;
+
+    height:auto;
+
+    max-height:none;
+
+    overflow:visible;
+
+    background:linear-gradient(
+        180deg,
+        #3a3a3a 0%,
+        #2f2f2f 45%,
+        #252525 100%
+    );
+
+    border-radius:12px;
+
+    color:#fff;
+
+    padding:18px;
+
+    position:relative;
+
+    font-family:"Kanit",sans-serif;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.45);
+
+}
+
+body.modal-open{
+
+    overflow:hidden;
+
+}
+
+/* CLOSE */
+
+.bank-close{
+
+    position:absolute;
+
+    right:18px;
+
+    top:12px;
+
+    font-size:28px;
+
+    color:#d7831c;
+
+    cursor:pointer;
+
+}
+
+
+
+/* HEADER */
+
+.bank-header h3{
+
+    margin:0;
+
+    font-size:21px;
+
+    font-weight:600;
+
+}
+
+
+.bank-header p{
+
+    margin:8px 0 14px;
+
+    color:#ddd;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+
+/* TOTAL */
+
+.bank-total{
+
+    border:1px solid #9b6b26;
+
+    border-radius:8px;
+
+    text-align:center;
+
+    padding:10px;
+
+    margin-bottom:14px;
+
+    background:rgba(0,0,0,.18);
+
+}
+
+
+.bank-total small{
+
+    display:block;
+
+    color:#f2f2f2;
+
+    font-size:12px;
+
+}
+
+
+.bank-total strong{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#d98a18;
+
+    font-size:28px;
+
+    font-weight:600;
+
+}
+
+
+
+/* STEP */
+
+.bank-step{
+
+    margin-top:14px;
+
+}
+
+
+.bank-step h4{
+
+    margin:0 0 5px;
+
+    font-size:16px;
+
+}
+
+
+.bank-step p{
+
+    margin:0;
+
+    color:#dadada;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+
+/* BANK CARD */
+
+.bank-account-list{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin:15px 0 22px;
+
+}
+
+
+
+.bank-card{
+
+    border:1px solid #a56f23;
+
+    border-radius:8px;
+
+    padding:12px;
+
+    background:rgba(255,255,255,.03);
+
+}
+
+
+
+.bank-card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+
+
+.bank-left{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+.bank-left img{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    padding:2px;
+
+}
+
+
+.bank-left h5{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+.bank-left span{
+
+    color:#d9d9d9;
+
+    font-size:12px;
+
+}
+
+
+
+.bank-card button{
+
+    border:none;
+
+    background:none;
+
+    color:#d68b23;
+
+    cursor:pointer;
+
+    font-family:"Kanit",sans-serif;
+
+    font-size:12px;
+
+}
+
+
+
+.bank-detail{
+
+    margin-top:10px;
+
+    color:#ddd;
+
+    line-height:1.6;
+
+    font-size:12px;
+
+}
+
+
+.bank-detail p{
+
+    margin:3px 0;
+
+}
+
+
+
+/* FORM */
+
+.bank-form{
+
+    margin-top:14px;
+
+}
+
+
+.bank-form label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#fff;
+
+    font-size:13px;
+
+}
+
+
+
+.bank-radio{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:10px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.bank-radio label{
+
+    display:flex;
+
+    align-items:center;
+
+    font-weight:200;
+
+    font-size:12px;
+
+    gap:8px;
+
+}
+
+
+
+.bank-radio img{
+
+    width:15px;
+
+    height:15px;
+
+}
+
+.bank-radio input{
+
+    transform:scale(.75);
+
+}
+
+/* INPUT */
+
+.bank-row{
+
+    margin-bottom:14px;
+
+}
+
+
+
+.two-column{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+}
+
+
+
+.bank-form input{
+
+    width:100%;
+
+    height:40px;
+
+    border:1px solid #b27a2d;
+
+    background:#333;
+
+    color:#fff;
+
+    border-radius:6px;
+
+    padding:0 12px;
+
+    font-family:"Kanit",sans-serif;
+
+    font-size:13px;
+
+}
+
+
+
+.bank-form input::placeholder{
+
+    color:#999;
+
+}
+
+
+
+/* UPLOAD */
+
+.upload-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:10px 0 16px;
+
+}
+
+
+.upload-box button{
+
+    width:150px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#d98a18;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-family:"Kanit",sans-serif;
+
+    font-size:13px;
+
+}
+
+
+.upload-box span{
+
+    color:#ccc;
+
+    font-size:12px;
+
+}
+
+
+
+/* CONFIRM */
+
+.bank-confirm{
+
+    width:100%;
+
+    height:44px;
+
+    margin-top:80px;
+
+    border:none;
+
+    border-radius:4px;
+
+    background:#d98a18;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-family:"Kanit",sans-serif;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+
+.bank-confirm::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-16px;
+
+    left:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(255,255,255,.2);
+
+}
+
+
+.bank-confirm:hover{
+
+    background:#c57910;
+
+}
+
+
+
+/* SCROLL */
+
+.bank-box::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+
+.bank-box::-webkit-scrollbar-thumb{
+
+    background:#8a8a8a;
+
+    border-radius:20px;
+
+}
+
+
+.bank-box::-webkit-scrollbar-track{
+
+    background:#2b2b2b;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .bank-account-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .two-column{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .bank-radio{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+
+    .bank-total strong{
+
+        font-size:24px;
+
+    }
+
+}

@@ -1,0 +1,51 @@
+.invoice-tax-info{
+
+    color:white;
+
+    font-family:"Kanit",sans-serif;
+
+    padding:40px 4%;
+
+}
+
+
+.invoice-tax-info h3{
+
+    margin:0 0 10px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+
+.invoice-tax-info p{
+
+    margin:0 0 12px;
+
+    font-size:18px;
+
+    line-height:1.5;
+
+}
+
+
+.invoice-tax-info ul{
+
+    margin:0;
+
+    padding-left:22px;
+
+}
+
+
+.invoice-tax-info li{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    margin-bottom:5px;
+
+}

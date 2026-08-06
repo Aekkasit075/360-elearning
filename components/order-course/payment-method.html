@@ -104,20 +104,14 @@
 
 
 
-    <!-- Paypal -->
-
-    <div class="payment-option disabled">
-
+    <div class="payment-option" onclick="openPaymentModal('paypal')">
 
         <div class="payment-icon">
 
-            <img 
-            src="assets/images/logo/paypal.png"
-            alt="Paypal">
+            <img src="assets/images/logo/paypal.png"
+                alt="Paypal">
 
         </div>
-
-
 
         <div class="payment-text">
 
@@ -125,18 +119,13 @@
                 Payment via PayPal
             </b>
 
-
             <span>
                 You can start learning right after payment
             </span>
 
-
         </div>
 
-
-
         <i class="fa-solid fa-chevron-right"></i>
-
 
     </div>
 
@@ -148,7 +137,7 @@
 
     <!-- Bank -->
 
-    <div class="payment-option disabled">
+    <div class="payment-option" onclick="openPaymentModal('bank')">
 
 
         <div class="payment-icon">
@@ -363,6 +352,400 @@
             </div>
 
         </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- ================= PAYPAL MODAL ================= -->
+
+<div class="payment-modal" id="paypalModal">
+
+    <div class="paypal-box">
+
+        <i class="fa-solid fa-xmark paypal-close"
+           onclick="closePaymentModal()"></i>
+
+        <div class="paypal-window">
+
+            <img
+                class="paypal-logo"
+                src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg"
+                alt="PayPal">
+
+            <h3>Welcome back</h3>
+
+            <p class="paypal-title">
+                Sign in with your email address to continue.
+            </p>
+
+            <input
+                type="email"
+                placeholder="Email or mobile number">
+
+            <a href="#" class="forgot-link">
+                Forgot email?
+            </a>
+
+            <button class="paypal-next">
+                Next
+            </button>
+
+            <div class="paypal-or">
+
+                <span></span>
+
+                <b>or</b>
+
+                <span></span>
+
+            </div>
+
+            <button class="paypal-card">
+
+                <i class="fa-regular fa-credit-card"></i>
+
+                Pay with Debit or Credit Card
+
+            </button>
+
+            <p class="paypal-return">
+
+                Cancel and return to
+
+                <strong>
+                    SKILLANE TECHNOLOGY PUBLIC COMPANY LIMITED
+                </strong>
+
+            </p>
+
+            <div class="paypal-language">
+
+                <img
+                    src="https://flagcdn.com/16x12/us.png"
+                    alt="US">
+
+                <span>English</span>
+
+                <span class="divider">|</span>
+
+                <span>Français</span>
+
+                <span class="divider">|</span>
+
+                <span>Español</span>
+
+                <span class="divider">|</span>
+
+                <span>中文</span>
+
+            </div>
+
+        </div>
+
+        <div class="paypal-bottom">
+
+            <div class="paypal-footer">
+
+                <a href="#">Contact Us</a>
+
+                <span class="divider">|</span>
+
+                <a href="#">Privacy</a>
+
+                <span class="divider">|</span>
+
+                <a href="#">Legal</a>
+
+                <span class="divider">|</span>
+
+                <a href="#">Worldwide</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= BANK TRANSFER MODAL ================= -->
+
+<div class="payment-modal" id="bankModal">
+
+    <div class="bank-box">
+
+        <i class="fa-solid fa-xmark bank-close"
+            onclick="closePaymentModal()"></i>
+
+        <div class="bank-header">
+
+            <h3>
+                Pay by Bank Transfer
+            </h3>
+
+            <p>
+                Please complete all the required steps (Your course will be available within 24 hours after your payment is confirmed)
+            </p>
+
+        </div>
+
+        <div class="bank-total">
+
+            <small>
+                Total Amount Payable (VAT Included)
+            </small>
+
+            <strong>
+                19608.00 Baht
+            </strong>
+
+        </div>
+
+        <div class="bank-step">
+
+            <h4>
+                Step 1: Transfer Funds via Bank Transfer
+            </h4>
+
+            <p>
+                Select your preferred bank account and transfer the payment according to the total amount due.
+            </p>
+
+        </div>
+
+        <div class="bank-account-list">
+
+            <div class="bank-card">
+
+                <div class="bank-card-top">
+
+                    <div class="bank-left">
+
+                        <img
+                            src="assets/images/logo/kbank.png"
+                            alt="Kasikornbank">
+
+                        <div>
+
+                            <h5>
+                                Kasikornbank
+                            </h5>
+
+                            <span>
+                                xxx-x-xxxxx-x
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button>
+
+                        <i class="fa-regular fa-copy"></i>
+
+                        copy
+
+                    </button>
+
+                </div>
+
+                <div class="bank-detail">
+
+                    <p>Account Name:</p>
+
+                    <p>Branch:</p>
+
+                    <p>Account Type:</p>
+
+                </div>
+
+            </div>
+
+            <div class="bank-card">
+
+                <div class="bank-card-top">
+
+                    <div class="bank-left">
+
+                        <img
+                            src="assets/images/logo/SCB.png"
+                            alt="SCB">
+
+                        <div>
+
+                            <h5>
+                                Siam Commercial Bank
+                            </h5>
+
+                            <span>
+                                xxx-xxxxxx-x
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button>
+
+                        <i class="fa-regular fa-copy"></i>
+
+                        copy
+
+                    </button>
+
+                </div>
+
+                <div class="bank-detail">
+
+                    <p>Account Name:</p>
+
+                    <p>Branch:</p>
+
+                    <p>Account Type:</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bank-step">
+
+            <h4>
+                Step 2: Payment Confirmation
+            </h4>
+
+            <p>
+                Once your payment has been completed, please fill out the payment confirmation form and upload your proof of payment.
+            </p>
+
+        </div>
+
+        <form class="bank-form">
+
+            <label>
+                * Select Bank
+            </label>
+
+            <div class="bank-radio">
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="bank">
+
+                    <img
+                        src="assets/images/logo/kbank.png">
+
+                    Kasikornbank (xxx-x-xxxxx-x)
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="bank">
+
+                    <img
+                        src="assets/images/logo/SCB.png">
+
+                    Siam Commercial Bank (xxx-xxxxxx-x)
+
+                </label>
+
+            </div>
+
+            <div class="bank-row">
+
+                <div>
+
+                    <label>
+                        * Amount
+                    </label>
+
+                    <input
+                        type="number"
+                        placeholder="0.00">
+
+                </div>
+
+            </div>
+
+            <div class="bank-row two-column">
+
+                <div>
+
+                    <label>
+                        * Transfer Date
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="xx/xx/xxxx">
+
+                </div>
+
+                <div>
+
+                    <label>
+                        * Transfer Time
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="00:00">
+
+                </div>
+
+            </div>
+
+            <label>
+                Upload Proof of Payment (Supported formats: .jpg, .jpeg, .png, .pdf, maximum file size: 5 MB)
+            </label>
+
+            <div class="upload-box">
+
+                <button
+                    type="button">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                    Select Files
+
+                </button>
+
+                <span>
+                    No file selected
+                </span>
+
+            </div>
+
+            <label>
+                * Contact Number
+            </label>
+
+            <input
+                type="text"
+                placeholder="Enter your phone number">
+
+            <button
+                type="button"
+                class="bank-confirm"
+                disabled>
+
+                Payment Confirmation
+
+            </button>
+
+        </form>
 
     </div>
 

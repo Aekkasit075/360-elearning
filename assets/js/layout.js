@@ -792,6 +792,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
 
+                if(type==="paypal"){
+
+                    document.getElementById("paypalModal")
+                    .style.display="flex";
+
+                }
+                
+
+                if(type==="bank"){
+
+                    document.getElementById("bankModal").style.display="flex";
+
+                }
+
+
             };
 
 
@@ -815,6 +830,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     }
+
+
+    fetch("components/order-course/invoice.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("invoice_method").innerHTML = data;
+        });
 
 
     fetch("components/footer/footer.html")
