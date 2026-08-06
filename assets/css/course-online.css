@@ -201,3 +201,353 @@
         font-size: 13px;
     }
 }
+
+
+/* ======================================================
+   PLAYER LAYOUT
+====================================================== */
+
+.player-layout{
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+}
+
+.video-side{
+    flex:1;
+    transition:.35s;
+}
+
+.player-layout.open .video-side{
+    flex:0 0 calc(100% - 365px);
+}
+
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.lesson-sidebar{
+
+    width:0;
+    overflow:hidden;
+
+    background:#202020;
+
+    border:1px solid #9a6716;
+    border-radius:2px;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.player-layout.open .lesson-sidebar{
+
+    width:340px;
+    opacity:1;
+
+}
+
+/* ======================================================
+   TOP MENU
+====================================================== */
+
+.sidebar-top{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    background:#252525;
+
+}
+
+.sidebar-btn{
+
+    height:56px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#cfcfcf;
+
+    border-right:1px solid #444;
+
+    font-size:17px;
+
+    transition:.25s;
+
+}
+
+.sidebar-btn:last-child{
+
+    border-right:none;
+
+}
+
+.sidebar-btn.active,
+.sidebar-btn:hover{
+
+    background:#D17D10;
+    color:#fff;
+
+}
+
+/* ======================================================
+   CERTIFICATE
+====================================================== */
+
+.certificate-card{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:18px 16px;
+
+    background:#b1731b;
+
+    color:#fff;
+
+}
+
+.certificate-icon{
+
+    width:44px;
+    height:44px;
+
+    border-radius:50%;
+
+    background:#fff;
+    color:#D17D10;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+
+}
+
+.certificate-title{
+
+    font-size:15px;
+    font-weight:600;
+
+}
+
+.certificate-card small{
+
+    color:#fff;
+    text-decoration:underline;
+    font-size:12px;
+
+}
+
+/* ======================================================
+   LESSON LIST
+====================================================== */
+
+.lesson-list{
+
+    overflow:visible;
+
+}
+
+/* ======================================================
+   LESSON GROUP
+====================================================== */
+
+.lesson-group{
+
+    border-bottom:1px solid #2d2d2d;
+
+}
+
+/* หัวข้อ Lesson */
+
+.lesson-title{
+
+    background:#d7d2cd;
+
+    color:#111;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    padding:10px 14px;
+
+    line-height:1.4;
+
+}
+
+/* Lesson ที่กำลังเรียน */
+
+.active-title{
+
+    background:#D17D10;
+
+    color:#fff;
+
+}
+
+/* ======================================================
+   LESSON ITEM
+====================================================== */
+
+.lesson{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+    padding:18px 14px;
+
+    background:#232323;
+
+    transition:.25s;
+
+}
+
+.lesson:hover{
+
+    background:#303030;
+
+}
+
+.lesson.active{
+
+    background:#4b3722;
+
+}
+
+/* ======================================================
+   LESSON STATUS DOT
+====================================================== */
+
+.lesson-dot{
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    border:2px solid #D17D10;
+
+    margin-top:5px;
+
+    flex-shrink:0;
+
+    position:relative;
+
+    background:transparent;
+
+}
+
+
+/* ===============================
+   วงกลมเต็ม (Completed / Current)
+================================ */
+
+.lesson-dot.current{
+
+    background:#D17D10;
+
+}
+
+
+/* ===============================
+   วงกลมครึ่ง (In Progress)
+================================ */
+
+.lesson-dot.progress{
+
+    background:
+    linear-gradient(
+        90deg,
+        #D17D10 50%,
+        transparent 50%
+    );
+
+}
+
+
+/* ===============================
+   วงกลมโล่ง (Not Started)
+================================ */
+
+.lesson-dot.empty{
+
+    background:transparent;
+
+}
+
+/* ======================================================
+   CONTENT
+====================================================== */
+
+.lesson-content{
+
+    flex:1;
+
+}
+
+.lesson-content span{
+
+    display:block;
+
+    color:#fff;
+
+    font-size:14px;
+
+    line-height:1.45;
+
+}
+
+.lesson-content small{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-top:6px;
+
+    color:#9d9d9d;
+
+    font-size:12px;
+
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:992px){
+
+    .player-layout{
+
+        flex-direction:column;
+
+    }
+
+    .lesson-sidebar{
+
+        width:100% !important;
+
+        opacity:1;
+
+    }
+
+    .player-layout.open .video-side{
+
+        flex:1;
+
+    }
+
+}
