@@ -1723,3 +1723,49 @@ Score
 
 
 });
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+    const certBtn =
+    document.getElementById("certificateBtn");
+
+
+    const popup =
+    document.getElementById("certificatePopup");
+
+
+    const close =
+    document.getElementById("closeCertificate");
+
+
+
+    certBtn.addEventListener("click",()=>{
+
+        popup.style.display="flex";
+
+    });
+
+
+
+    close.addEventListener("click",()=>{
+
+        popup.style.display="none";
+
+    });
+
+
+
+    popup.addEventListener("click",(e)=>{
+
+        if(e.target === popup){
+
+            popup.style.display="none";
+
+        }
+
+    });
+
+
+});

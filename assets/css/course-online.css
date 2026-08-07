@@ -2406,3 +2406,102 @@ color:#d88900;
 
 
 
+.certificate-popup-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+
+.certificate-popup{
+
+    width:380px;
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:6px;
+
+    position:relative;
+
+    text-align:center;
+
+}
+
+
+
+.popup-close{
+
+    position:absolute;
+
+    right:15px;
+
+    top:8px;
+
+    border:none;
+
+    background:none;
+
+    font-size:25px;
+
+    color:#aaa;
+
+    cursor:pointer;
+
+}
+
+
+
+.popup-icon{
+
+    font-size:42px;
+
+    color:#b9c2d0;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.certificate-popup h2{
+
+    color:#d17d10;
+
+    font-size:18px;
+
+}
+
+
+
+.popup-content{
+
+    text-align:left;
+
+    font-size:13px;
+
+    color:#333;
+
+}
+
+
+
+.popup-content ul{
+
+    padding-left:20px;
+
+}
