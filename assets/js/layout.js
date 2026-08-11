@@ -1769,3 +1769,65 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 });
+
+
+
+
+// ==========================================
+// How to Pay - Course Payment Page
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // ตรวจว่าหน้านี้มี payment-bank หรือไม่
+    const paymentBank =
+        document.getElementById("payment-bank");
+
+    if (!paymentBank) {
+        return;
+    }
+
+
+    // รอให้ Navbar โหลดเข้ามาก่อน
+    const navbar =
+        document.getElementById("course_detail_navbar");
+
+
+    if (!navbar) {
+        return;
+    }
+
+
+    // ใช้ MutationObserver รอ navbar.html โหลดเสร็จ
+    const observer =
+        new MutationObserver(() => {
+
+            const howToPay =
+                navbar.querySelector(
+                    'a[href="#payment"]'
+                );
+
+
+            if (howToPay) {
+
+                // เปลี่ยนเฉพาะหน้า Course Payment
+                howToPay.setAttribute(
+                    "href",
+                    "#payment-bank"
+                );
+
+
+                // ปิด observer หลังจากเจอแล้ว
+                observer.disconnect();
+
+            }
+
+        });
+
+
+    observer.observe(navbar, {
+        childList: true,
+        subtree: true
+    });
+
+});

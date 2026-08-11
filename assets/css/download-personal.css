@@ -1,0 +1,437 @@
+/* =========================================
+   DOWNLOAD PERSONAL PAGE
+========================================= */
+
+.download-personal-page {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: "Kanit", sans-serif;
+
+    color: #ffffff;
+
+    background: #222;
+}
+
+
+/* =========================================
+   Background
+========================================= */
+
+.download-personal-background {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/background/background1.png");
+
+    background-size: cover;
+
+    background-position: top center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================
+   Section
+========================================= */
+
+.personal-section {
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 90px 0;
+}
+
+
+
+/* =========================================
+   Container
+========================================= */
+
+.personal-container {
+
+    width: 100%;
+
+    padding: 0 7%;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   Breadcrumb
+========================================= */
+
+.breadcrumb-custom {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+}
+
+
+.breadcrumb-link {
+
+    color: #cfcfcf;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.breadcrumb-link:hover {
+
+    color: #d98513;
+
+    text-decoration: none;
+}
+
+.breadcrumb-separator {
+
+    color: #cfcfcf;
+}
+
+.breadcrumb-custom .active {
+
+    color: #d98513;
+}
+
+
+/* =========================================
+   Personal Card
+========================================= */
+
+.personal-card {
+
+    width: 100%;
+
+    background: rgba(25, 29, 30, 0.68);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(2px);
+}
+
+
+/* =========================================
+   Header
+========================================= */
+
+.personal-header {
+
+    width: 100%;
+
+    min-height: 68px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 26px;
+
+    border-bottom: 1px solid #c9851b;
+}
+
+
+.personal-header-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+
+.personal-header-title i {
+
+    font-size: 17px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Content
+========================================= */
+
+.personal-content {
+
+    padding: 25px 55px 28px;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.45;
+}
+
+
+.personal-content p {
+
+    margin-bottom: 15px;
+}
+
+
+.personal-content ul {
+
+    margin-top: 0;
+
+    margin-bottom: 18px;
+
+    padding-left: 22px;
+}
+
+
+.personal-content li {
+
+    margin-bottom: 1px;
+
+    line-height: 1.4;
+}
+
+
+.highlight {
+
+    color: #d88917;
+}
+
+
+/* =========================================
+   Divider
+========================================= */
+
+.personal-divider {
+
+    height: 1px;
+
+    width: calc(100% - 110px);
+
+    margin: 8px auto 0;
+
+    background: rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================
+   Action
+========================================= */
+
+.personal-action {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 45px 20px 38px;
+}
+
+
+.agree-btn {
+
+    min-width: 100px;
+
+    height: 46px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #d88412;
+
+    color: #ffffff;
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+.agree-btn:hover {
+
+    background: #e69a2a;
+
+    transform: translateY(-1px);
+}
+
+
+.agree-btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 768px) {
+
+    .personal-container {
+
+        width: 92%;
+    }
+
+
+    .breadcrumb-custom {
+
+        font-size: 13px;
+    }
+
+
+    .personal-header {
+
+        min-height: 62px;
+
+        padding: 0 22px;
+    }
+
+
+    .personal-header-title {
+
+        font-size: 16px;
+    }
+
+
+    .personal-content {
+
+        padding: 22px 30px;
+
+        font-size: 13px;
+    }
+
+
+    .personal-divider {
+
+        width: calc(100% - 60px);
+    }
+
+
+    .personal-action {
+
+        padding-top: 30px;
+
+        padding-bottom: 30px;
+    }
+
+}
+
+
+/* =========================================
+   Small Mobile
+========================================= */
+
+@media (max-width: 480px) {
+
+    .breadcrumb-custom {
+
+        font-size: 11px;
+
+        gap: 10px;
+    }
+
+
+    .personal-header {
+
+        min-height: 56px;
+
+        padding: 0 17px;
+    }
+
+
+    .personal-header-title {
+
+        font-size: 14px;
+
+        gap: 9px;
+    }
+
+
+    .personal-header-title i {
+
+        font-size: 14px;
+    }
+
+
+    .personal-content {
+
+        padding: 18px;
+
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+
+    .personal-content p {
+
+        margin-bottom: 12px;
+    }
+
+
+    .personal-content ul {
+
+        padding-left: 18px;
+    }
+
+
+    .personal-divider {
+
+        width: calc(100% - 36px);
+    }
+
+
+    .personal-action {
+
+        padding: 28px 15px;
+    }
+
+
+    .agree-btn {
+
+        min-width: 90px;
+
+        height: 42px;
+
+        font-size: 12px;
+    }
+
+}

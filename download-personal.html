@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Information | 360 E-learning</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+        href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- Download Personal CSS -->
+    <link rel="stylesheet" href="assets/css/download-personal.css">
+
+    <link rel="stylesheet" href="assets/css/report-problem.css">
+
+</head>
+
+
+<body class="download-personal-page">
+
+    <div class="download-personal-background">
+
+        <!-- Header -->
+        <header id="header"></header>
+
+
+        <main>
+
+            <section class="personal-section">
+
+                <div class="personal-container">
+
+
+                    <!-- Breadcrumb -->
+                    <div class="breadcrumb-custom">
+
+                        <a href="index.html" class="breadcrumb-link">
+                            HOME
+                        </a>
+
+                        <span class="breadcrumb-separator">
+                            &gt;
+                        </span>
+
+                        <span class="active">
+                            DOWNLOAD
+                        </span>
+
+                    </div>
+
+
+                    <!-- Personal Information Box -->
+                    <div class="personal-card">
+
+
+                        <!-- Card Header -->
+                        <div class="personal-header">
+
+                            <div class="personal-header-title">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <span>
+                                    Personal Information
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Content -->
+                        <div class="personal-content">
+
+
+                            <p>
+                                When you create an account and register with
+                                <span class="highlight">
+                                    360 E-Learning
+                                </span>,
+                                we collect only the personal data that is
+                                necessary to provide our services. Such personal
+                                data may include the following:
+                            </p>
+
+
+                            <p>
+                                The personal data we may collect includes, but is not limited
+                                to
+                            </p>
+
+
+                            <ul>
+
+                                <li>Full Name</li>
+
+                                <li>Residential Address</li>
+
+                                <li>Email Address</li>
+
+                                <li>Telephone Number</li>
+
+                                <li>Date of Birth</li>
+
+                                <li>Gender</li>
+
+                                <li>National Identification Number (ID Card Number)</li>
+
+                                <li>Other information necessary for providing our services</li>
+
+                            </ul>
+
+
+                            <p>
+                                Please provide accurate, complete, and truthful personal
+                                information. If any of your personal information
+                                changes, you are responsible for updating your account
+                                to ensure that the information remains current and
+                                accurate.
+                            </p>
+
+
+                            <p>
+                                <span class="highlight">
+                                    360 E-Learning
+                                </span>
+                                reserves the right to request supporting documents or
+                                other evidence to verify the accuracy and authenticity
+                                of the information you have provided, where necessary.
+                            </p>
+
+
+                        </div>
+
+
+                        <!-- Divider -->
+                        <div class="personal-divider"></div>
+
+
+                        <!-- Agree Button -->
+                        <div class="personal-action">
+
+                            <button
+                                type="button"
+                                class="agree-btn"
+                                id="agreeBtn">
+
+                                I Agree
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer id="footer"></footer>
+
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Layout -->
+    <script src="assets/js/layout.js">
+    </script>
+
+    <!-- Report Problem -->
+    <script src="assets/js/report-problem.js">
+    </script>
+
+    <!-- Scroll Animation -->
+    <script src="assets/js/scroll-animation.js">
+    </script>
+
+
+    <!-- Agree Button -->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const agreeBtn =
+                document.getElementById("agreeBtn");
+
+
+            agreeBtn.addEventListener("click", function () {
+
+                window.location.href = "download.html";
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
