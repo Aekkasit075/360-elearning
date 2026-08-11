@@ -1,690 +1,643 @@
 @font-face {
     font-family: 'Kanit';
     src: url('../../fonts/Kanit/Kanit-Regular.ttf') format('truetype');
-    font-weight:400;
+    font-weight: 400;
 }
-
 
 @font-face {
     font-family: 'Kanit';
     src: url('../../fonts/Kanit/Kanit-Light.ttf') format('truetype');
-    font-weight:300;
+    font-weight: 300;
 }
-
 
 @font-face {
     font-family: 'Kanit';
     src: url('../../fonts/Kanit/Kanit-Bold.ttf') format('truetype');
-    font-weight:700;
+    font-weight: 700;
 }
 
 
-
-
+/* =========================================
+   BANNER OVERVIEW
+========================================= */
 
 .banner-overview-section {
 
-    min-height:100vh;
+    min-height: 100vh;
 
     background:
-    linear-gradient(
-        rgba(25,30,33,.65),
-        rgba(25,30,33,.75)
-    ),
-    url("../images/background/background1.png");
+        linear-gradient(
+            rgba(25, 30, 33, .65),
+            rgba(25, 30, 33, .75)
+        ),
+        url("../images/background/background1.png");
 
-    background-size:cover;
+    background-size: cover;
 
-    background-position:center;
+    background-position: center;
 
-    padding:70px 0;
+    padding: 70px 0;
 
-    color:white;
+    color: white;
 
-    font-family:'Kanit',sans-serif;
-
+    font-family: 'Kanit', sans-serif;
 }
 
 
+/* =========================================
+   WRAPPER
+========================================= */
 
+.academy-wrapper {
 
+    width: 100%;
 
-.academy-wrapper{
-
-    width:100%;
-
-    padding:0 7%;
-
+    padding: 0 7%;
 }
 
 
+/* =========================================
+   TOP BANNER
+========================================= */
 
+.academy-banner {
 
+    background: rgba(25, 25, 25, .65);
 
-
-
-/* =====================
-        TOP BANNER
-===================== */
-
-
-.academy-banner{
-
-    background:
-    rgba(25,25,25,.65);
-
-    padding:35px 45px;
-
+    padding: 40px 50px;
 }
 
 
+.academy-header {
 
-.academy-header{
+    display: flex;
 
-    display:flex;
+    justify-content: space-between;
 
-    justify-content:space-between;
-
-    align-items:center;
-
+    align-items: center;
 }
 
 
+.academy-left {
 
-.academy-left{
-
-    max-width:450px;
-
+    max-width: 600px;
 }
 
 
+.academy-logo {
 
-.academy-logo{
-
-    width:300px;
-
+    width: 300px;
 }
 
 
+.academy-left h1 {
 
-.academy-left h1{
+    margin-top: 20px;
 
-    margin-top:18px;
+    font-size: 26px;
 
-    font-size:18px;
+    font-weight: 400;
 
-    font-weight:400;
-
-    letter-spacing:.5px;
-
+    letter-spacing: .5px;
 }
 
 
+.academy-left p {
 
-.academy-left p{
+    margin-top: 12px;
 
-    margin-top:8px;
+    font-size: 16px;
 
-    font-size:12px;
+    font-weight: 300;
 
-    font-weight:300;
+    line-height: 1.6;
 
-    line-height:1.5;
-
-    color:#ddd;
-
+    color: #ddd;
 }
 
 
+.academy-symbol {
 
-.academy-symbol{
+    width: 260px;
 
-    width:260px;
-
-    opacity:.95;
-
+    opacity: .95;
 }
 
 
+/* =========================================
+   PROGRAM HIGHLIGHTS TITLE
+========================================= */
 
+.highlight-title {
 
+    text-align: center;
 
-
-
-/* =====================
-        TITLE
-===================== */
-
-
-.highlight-title{
-
-    text-align:center;
-
-    margin:45px 0 35px;
-
+    margin: 55px 0 40px;
 }
 
 
+.highlight-title h2 {
 
-.highlight-title h2{
+    font-size: 30px;
 
-    font-size:18px;
+    font-weight: 400;
 
-    font-weight:400;
-
-    margin-bottom:8px;
-
+    margin-bottom: 10px;
 }
 
 
+.highlight-title p {
 
-.highlight-title p{
+    font-size: 16px;
 
-    font-size:11px;
+    font-weight: 300;
 
-    font-weight:300;
-
-    color:#ddd;
-
+    color: #ddd;
 }
 
 
+/* =========================================
+   SWIPER
+========================================= */
 
+.highlightSwiper {
 
+    width: 100%;
 
-
-
-
-/* =====================
-        SWIPER
-===================== */
-
-
-/* =====================
-        SWIPER
-===================== */
-
-
-.highlightSwiper{
-
-    width:100%;
-
-    padding:40px 0 70px;
-
+    padding: 40px 0 75px;
 }
 
 
+.highlightSwiper .swiper-slide {
 
-.highlightSwiper .swiper-slide{
+    display: flex;
 
-    display:flex;
+    justify-content: center;
 
-    justify-content:center;
-
-    align-items:center;
-
+    align-items: center;
 }
 
 
+/* =========================================
+   HIGHLIGHT CARD
+========================================= */
 
+.highlight-card {
 
-.highlight-card{
+    width: 300px;
 
+    height: 200px;
 
-    width:260px;
+    background: #d88917;
 
-    height:170px;
+    border-radius: 10px;
 
+    padding: 28px;
 
-    background:#d88917;
+    position: relative;
 
+    overflow: hidden;
 
-    border-radius:10px;
+    transform: scale(.9);
 
+    opacity: .9;
 
-    padding:25px;
-
-
-    position:relative;
-
-
-    overflow:hidden;
-
-
-    transform:scale(.9);
-
-
-    opacity:.9;
-
-
-    transition:.4s ease;
-
-
+    transition: .4s ease;
 }
 
 
+/* Active card */
 
+.highlight-card.active {
 
-/* card ที่ active */
+    width: 380px;
 
-.highlight-card.active{
+    height: 245px;
 
+    transform: scale(1);
 
-    width:340px;
+    opacity: 1;
 
-    height:220px;
-
-
-    transform:scale(1);
-
-
-    opacity:1;
-
-
-    z-index:5;
-
-
+    z-index: 5;
 }
 
 
+/* =========================================
+   QUOTE
+========================================= */
 
+.quote {
 
+    font-size: 40px;
 
-/* quote icon */
+    color: white;
 
-
-.quote{
-
-
-    font-size:35px;
-
-    color:white;
-
-    margin-bottom:10px;
-
+    margin-bottom: 12px;
 }
 
 
+.quote i {
 
-.quote i{
-
-    font-size:38px;
-
+    font-size: 42px;
 }
 
 
+/* =========================================
+   CARD TEXT
+========================================= */
 
+.highlight-card p {
 
+    width: 190px;
 
-/* text */
+    font-size: 17px;
 
+    line-height: 1.5;
 
-.highlight-card p{
-
-
-    width:160px;
-
-
-    font-size:14px;
-
-
-    line-height:1.5;
-
-
-    font-weight:400;
-
-
+    font-weight: 400;
 }
 
 
+/* Active card text */
 
+.highlight-card.active p {
 
-/* avatar */
+    width: 220px;
 
-
-.highlight-card img{
-
-
-    position:absolute;
-
-
-    right:15px;
-
-
-    bottom:15px;
-
-
-    width:95px;
-
-
-    height:125px;
-
-
-    object-fit:cover;
-
-
-    border-radius:15px;
-
-
+    font-size: 20px;
 }
 
 
+/* =========================================
+   AVATAR
+========================================= */
 
-.highlight-card.active img{
+.highlight-card img {
 
+    position: absolute;
 
-    width:130px;
+    right: 15px;
 
+    bottom: 15px;
 
-    height:170px;
+    width: 105px;
 
+    height: 140px;
 
-    right:15px;
+    object-fit: cover;
 
-
-    bottom:15px;
-
-
+    border-radius: 15px;
 }
 
 
+.highlight-card.active img {
 
+    width: 145px;
 
+    height: 190px;
 
-/* active text */
+    right: 15px;
 
-.highlight-card.active p{
-
-
-    width:180px;
-
-    font-size:16px;
-
+    bottom: 15px;
 }
 
 
-
-
-
-
-
-
-
-/* SWIPER BUTTON */
-
+/* =========================================
+   SWIPER BUTTON
+========================================= */
 
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
 
-    color:#d88917;
-
+    color: #d88917;
 }
 
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
 
-.swiper-pagination-bullet{
-
-    background:#d88917;
-
+    font-size: 28px;
 }
 
 
+.swiper-pagination-bullet {
 
+    background: #d88917;
 
+    width: 9px;
 
-
-
-
-/* =====================
-        PROGRAM INFO
-===================== */
-
-
-.program-info{
-
-    margin-top:55px;
-
-    display:flex;
-
-    gap:50px;
-
-    padding:35px 40px;
-
-    background:
-    rgba(0,0,0,.35);
-
+    height: 9px;
 }
 
 
+/* =========================================
+   PROGRAM INFO
+========================================= */
 
+.program-info {
 
+    margin-top: 60px;
 
-.about-program{
+    display: flex;
 
-    width:65%;
+    gap: 60px;
 
+    padding: 40px 45px;
+
+    background: rgba(0, 0, 0, .35);
 }
 
+
+/* =========================================
+   ABOUT PROGRAM
+========================================= */
+
+.about-program {
+
+    width: 65%;
+}
 
 
 .about-program h3,
-.overview-program h3{
+.overview-program h3 {
 
-    font-size:15px;
+    font-size: 22px;
 
-    font-weight:400;
+    font-weight: 400;
 
-    margin-bottom:15px;
-
+    margin-bottom: 18px;
 }
 
 
+.about-program p {
 
+    font-size: 16px;
 
+    line-height: 1.7;
 
-.about-program p{
+    color: #ddd;
 
-    font-size:11px;
-
-    line-height:1.55;
-
-    color:#ddd;
-
-    font-weight:300;
-
+    font-weight: 300;
 }
 
 
+.about-program a {
 
+    display: inline-block;
 
+    margin-top: 12px;
 
-.about-program a{
+    color: #e89419;
 
-    display:inline-block;
+    font-size: 16px;
 
-    margin-top:10px;
-
-    color:#e89419;
-
-    font-size:12px;
-
-    text-decoration:underline;
-
+    text-decoration: underline;
 }
 
 
+/* =========================================
+   PROGRAM OVERVIEW
+========================================= */
 
+.overview-program {
 
-
-
-
-/* =====================
-        OVERVIEW
-===================== */
-
-
-.overview-program{
-
-    width:35%;
-
+    width: 35%;
 }
 
 
+.overview-item {
 
+    display: flex;
 
+    align-items: center;
 
-.overview-item{
+    gap: 20px;
 
-    display:flex;
-
-    align-items:center;
-
-    gap:18px;
-
-    margin:25px 0;
-
+    margin: 28px 0;
 }
 
 
+.overview-item i {
 
+    width: 40px;
 
+    color: #d88917;
 
-.overview-item i{
-
-    width:35px;
-
-    color:#d88917;
-
-    font-size:22px;
-
+    font-size: 27px;
 }
 
 
+.overview-item span {
 
+    display: block;
 
+    font-size: 15px;
 
-.overview-item span{
+    color: #ddd;
 
-    display:block;
-
-    font-size:11px;
-
-    color:#ddd;
-
-    font-weight:300;
-
+    font-weight: 300;
 }
 
 
+.overview-item p {
 
+    margin-top: 4px;
 
+    font-size: 18px;
 
-.overview-item p{
-
-    margin-top:3px;
-
-    font-size:13px;
-
-    font-weight:400;
-
+    font-weight: 400;
 }
 
 
+/* =========================================
+   RESPONSIVE
+========================================= */
 
+@media (max-width: 992px) {
 
+    .academy-header {
 
+        flex-direction: column;
 
+        gap: 30px;
 
-
-/* =====================
-        RESPONSIVE
-===================== */
-
-
-@media(max-width:992px){
-
-
-    .academy-header{
-
-        flex-direction:column;
-
-        gap:30px;
-
-        text-align:center;
-
+        text-align: center;
     }
 
 
+    .academy-left {
 
-    .academy-left{
-
-        max-width:100%;
-
+        max-width: 100%;
     }
 
 
+    .academy-left h1 {
 
-    .highlightSwiper{
-
-        padding-bottom:40px;
-
+        font-size: 24px;
     }
 
 
+    .academy-left p {
 
-    .program-info{
-
-        flex-direction:column;
-
+        font-size: 15px;
     }
 
+
+    .highlightSwiper {
+
+        padding-bottom: 40px;
+    }
+
+
+    .program-info {
+
+        flex-direction: column;
+    }
 
 
     .about-program,
-    .overview-program{
+    .overview-program {
 
-        width:100%;
-
+        width: 100%;
     }
-
 
 }
 
 
+/* =========================================
+   MOBILE
+========================================= */
 
-@media(max-width:576px){
+@media (max-width: 576px) {
 
+    .academy-wrapper {
 
-    .academy-wrapper{
-
-        padding:0 5%;
-
+        padding: 0 5%;
     }
 
 
+    .academy-banner {
 
-    .academy-banner{
-
-        padding:25px;
-
+        padding: 28px;
     }
 
 
+    .academy-logo {
 
-    .academy-logo{
-
-        width:120px;
-
+        width: 180px;
     }
 
 
+    .academy-symbol {
 
-    .academy-symbol{
-
-        width:100px;
-
+        width: 120px;
     }
 
 
+    .academy-left h1 {
+
+        font-size: 21px;
+    }
+
+
+    .academy-left p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    .highlight-title {
+
+        margin: 40px 0 25px;
+    }
+
+
+    .highlight-title h2 {
+
+        font-size: 25px;
+    }
+
+
+    .highlight-title p {
+
+        font-size: 14px;
+    }
+
+
+    .highlight-card {
+
+        width: 260px;
+
+        height: 180px;
+
+        padding: 22px;
+    }
+
+
+    .highlight-card.active {
+
+        width: 310px;
+
+        height: 210px;
+    }
+
+
+    .highlight-card p {
+
+        font-size: 14px;
+
+        width: 160px;
+    }
+
+
+    .highlight-card.active p {
+
+        font-size: 16px;
+
+        width: 180px;
+    }
+
+
+    .program-info {
+
+        padding: 30px 25px;
+
+        gap: 35px;
+    }
+
+
+    .about-program h3,
+    .overview-program h3 {
+
+        font-size: 20px;
+    }
+
+
+    .about-program p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    .about-program a {
+
+        font-size: 14px;
+    }
+
+
+    .overview-item span {
+
+        font-size: 13px;
+    }
+
+
+    .overview-item p {
+
+        font-size: 16px;
+    }
 
 }
