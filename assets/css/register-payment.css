@@ -20,39 +20,6 @@
 }
 
 
-/* ===============================
-   GLOBAL
-================================ */
-
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Kanit",sans-serif;
-
-}
-
-
-body{
-
-    min-height:100vh;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.45)
-    ),
-    url("../images/background/background1.png")
-    no-repeat center center fixed;
-
-    background-size:cover;
-
-    color:white;
-
-}
-
-
 
 /* ===============================
    PAGE
