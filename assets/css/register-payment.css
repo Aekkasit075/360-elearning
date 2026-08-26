@@ -67,7 +67,18 @@ body{
 
 }
 
+.course-content-box{
 
+    background:rgba(60,60,60,0.65);
+
+    width:100vw;
+
+    margin-left:calc(-7vw);
+    margin-right:calc(-7vw);
+
+    padding:10px 7% 35px;
+
+}
 
 .container-register{
 
@@ -96,9 +107,9 @@ body{
 
     display:flex;
 
-    gap:15px;
+    gap:12px;
 
-    font-size:20px;
+    font-size:16px;
 
     font-weight:400;
 
@@ -195,9 +206,9 @@ body{
 
     width:100%;
 
-    background:rgba(26,28,28,.9);
+    background:rgba(26,28,28,0.95);
 
-    border-radius:4px;
+    border-radius:15px;
 
     overflow:hidden;
 
@@ -377,7 +388,139 @@ body{
 
 }
 
+.course-description{
 
+
+    margin-top:10px;
+
+
+    padding:30px 0;
+
+
+    color:white;
+
+
+}
+
+
+.course-description h2{
+
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+
+}
+
+
+
+.course-description p{
+
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    color:#ddd;
+
+
+}
+
+
+
+.course-description ul{
+
+
+    padding-left:20px;
+
+    color:#ddd;
+
+    font-size:14px;
+
+
+}
+
+
+
+.course-description li{
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+/* ===============================
+   EXTRA COURSE BOX
+================================ */
+
+
+.course-extra{
+
+    margin-top:40px;
+
+}
+
+
+.extra-box{
+
+    background:rgba(40,40,40,0.75);
+
+    padding:30px 20px;
+
+    margin-bottom:25px;
+
+    border-left:3px solid #C97B19;
+
+}
+
+
+.extra-box h2{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#C97B19;
+
+    margin-bottom:15px;
+
+}
+
+
+.extra-box p{
+
+    font-size:14px;
+
+    color:#ddd;
+
+    line-height:1.6;
+
+    margin-bottom:15px;
+
+}
+
+
+.extra-box a:not(.back-top){
+
+    font-size:14px;
+
+    color:#C97B19;
+
+    text-decoration:underline;
+
+}
+
+
+.extra-box a:not(.back-top):hover{
+
+    color:#e3a43c;
+
+}
 
 /* ===============================
    RESPONSIVE
@@ -386,23 +529,34 @@ body{
 
 @media(max-width:900px){
 
+    .course-content-box{
 
-    .course-list{
+        width:100%;
+        margin-left:0;
+        margin-right:0;
 
-        grid-template-columns:1fr;
+        padding:20px 20px 35px;
 
     }
 
 
-    .course-header p{
+    .course-list{
 
-        max-width:100%;
+        grid-template-columns:1fr;
+        gap:20px;
+
+    }
+
+
+    .course-card{
+
+        width:100%;
+        border-radius:10px;
 
     }
 
 
 }
-
 
 
 @media(max-width:500px){
@@ -423,3 +577,327 @@ body{
 
 
 }
+
+
+/* ===============================
+   TITLE ROW + BACK TOP
+================================ */
+
+.section-title-row{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    gap:15px;
+
+}
+
+
+.section-title-row h2{
+
+    margin-bottom:20px;
+
+}
+
+
+.back-top{
+
+    display:inline-block;
+
+    background:#C97B19 !important;
+
+    color:white !important;
+
+    text-decoration:none !important;
+
+    font-size:10px;
+
+    padding:4px 10px;
+
+    border-radius:2px;
+
+    white-space:nowrap;
+
+    flex-shrink:0;
+
+}
+
+
+.back-top:hover{
+
+    background:#e3a43c !important;
+
+    color:white !important;
+
+}
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media(max-width:900px){
+    
+    .course-list{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+
+    .course-card{
+
+        border-radius:10px;
+
+    }
+
+
+
+    .course-card > img{
+
+        height:180px;
+
+    }
+
+
+
+    .card-title{
+
+        padding:12px 15px;
+
+    }
+
+
+
+    .card-title h3{
+
+        font-size:12px;
+
+    }
+
+
+
+    .card-title span{
+
+        font-size:12px;
+
+    }
+
+
+
+    .card-detail{
+
+        padding:15px;
+
+    }
+
+
+
+    .card-detail h2{
+
+        font-size:16px;
+
+    }
+
+
+
+    .card-detail h4{
+
+        font-size:12px;
+
+    }
+
+
+
+    .card-detail p{
+
+        font-size:11px;
+
+    }
+
+
+
+    .card-detail a{
+
+        font-size:12px;
+
+        padding:8px;
+
+    }
+
+
+
+    .course-description{
+
+        padding:20px 0;
+
+    }
+
+
+
+    .course-description h2{
+
+        font-size:18px;
+
+        margin-bottom:12px;
+
+    }
+
+
+
+    .course-description p{
+
+        font-size:11px;
+
+    }
+
+
+
+    .course-description ul{
+
+        font-size:11px;
+
+        padding-left:15px;
+
+    }
+
+
+
+    .course-description li{
+
+        margin-bottom:5px;
+
+    }
+
+
+
+    /* ===============================
+       EXTRA BOX MOBILE
+    ================================ */
+
+
+    .course-extra{
+
+        margin-top:20px;
+
+    }
+
+
+
+    .extra-box{
+
+        padding:18px 15px;
+
+        margin-bottom:15px;
+
+        border-left:2px solid #C97B19;
+
+        border-radius:6px;
+
+    }
+
+
+
+    .extra-box h2{
+
+        font-size:15px;
+
+        margin-bottom:8px;
+
+    }
+
+
+
+    .extra-box p{
+
+        font-size:11px;
+
+        line-height:1.4;
+
+    }
+
+
+
+    .extra-box a{
+
+        font-size:10px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+    .container-register{
+
+        padding:0 8%;
+
+    }
+
+
+
+    .course-header{
+
+        margin-bottom:35px;
+
+    }
+
+
+
+    .course-header h1{
+
+        font-size:20px;
+
+    }
+
+
+
+    .course-header p{
+
+        font-size:10px;
+
+    }
+
+
+
+    .section-title-row{
+
+        align-items:center;
+
+        gap:8px;
+
+    }
+
+
+
+    .section-title-row h2{
+
+        font-size:18px;
+
+        margin-bottom:12px;
+
+    }
+
+
+
+    .back-top{
+
+        font-size:8px;
+
+        padding:3px 8px;
+
+    }
+
+
+}
+
+
