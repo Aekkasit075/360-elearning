@@ -1,0 +1,425 @@
+@font-face {
+
+    font-family:"Kanit";
+
+    src:url("../../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+
+    font-weight:400;
+
+}
+
+
+@font-face {
+
+    font-family:"Kanit";
+
+    src:url("../../fonts/Kanit/Kanit-Bold.ttf") format("truetype");
+
+    font-weight:700;
+
+}
+
+
+/* ===============================
+   GLOBAL
+================================ */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Kanit",sans-serif;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url("../images/background/background1.png")
+    no-repeat center center fixed;
+
+    background-size:cover;
+
+    color:white;
+
+}
+
+
+
+/* ===============================
+   PAGE
+================================ */
+
+
+.register-page{
+
+    min-height:100vh;
+
+    padding:90px 0 120px;
+
+}
+
+
+
+.container-register{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding:0 7%;
+
+    margin:0;
+
+}
+
+
+
+/* ===============================
+   Breadcrumb
+================================ */
+
+
+/* ===============================
+   Breadcrumb
+================================ */
+
+.breadcrumb{
+
+    display:flex;
+
+    gap:15px;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    color:#ddd;
+
+    margin-bottom:45px;
+
+}
+
+
+.breadcrumb i{
+
+    color:#aaa;
+
+    font-size:18px;
+
+}
+
+
+.breadcrumb .active{
+
+    color:#C97B19;
+
+}
+
+
+
+/* ===============================
+   HEADER
+================================ */
+
+
+.course-header{
+
+    margin-bottom:75px;
+
+}
+
+
+.course-header h1{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+.course-header p{
+
+    max-width:1000px;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    font-weight:300;
+
+    color:#e2e8f0;
+
+}
+
+
+
+/* ===============================
+   COURSE LIST
+================================ */
+
+
+.course-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+
+}
+
+
+
+/* ===============================
+   CARD
+================================ */
+
+
+.course-card{
+
+    width:100%;
+
+    background:rgba(26,28,28,.9);
+
+    border-radius:4px;
+
+    overflow:hidden;
+
+    border:1px solid transparent;
+
+    transition:.3s;
+
+}
+
+
+
+.course-card:hover{
+
+    border-color:#C97B19;
+
+}
+
+
+
+/* ===============================
+   CARD TITLE
+================================ */
+
+
+.card-title{
+
+    padding:16px 20px;
+
+    background:#1A1C1C;
+
+}
+
+
+.card-title h3{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:5px;
+
+}
+
+
+.card-title span{
+
+    font-size:14px;
+
+    color:#C97B19;
+
+}
+
+
+
+/* ===============================
+   IMAGE
+================================ */
+
+
+.course-card > img{
+
+    display:block;
+
+    width:100% !important;
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ===============================
+   DETAIL
+================================ */
+
+
+.card-detail{
+
+    padding:20px;
+
+}
+
+
+
+.card-detail h2{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#C97B19;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.card-detail h4{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.card-detail p{
+
+    font-size:15px;
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+
+    margin:10px 0;
+
+}
+
+
+
+.card-detail p i{
+
+    font-size:12px;
+
+    color:#C97B19;
+
+    margin-right:8px;
+
+}
+
+
+
+/* ===============================
+   BUTTON
+================================ */
+
+
+.card-detail a{
+
+    display:block;
+
+    width:100%;
+
+    background:#C97B19;
+
+    color:white;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    padding:12px;
+
+    border-radius:20px;
+
+    margin-top:18px;
+
+}
+
+
+
+.card-detail a:hover{
+
+    background:#d99a1e;
+
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+    .course-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .course-header p{
+
+        max-width:100%;
+
+    }
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+    .container-register{
+
+        padding:0 5%;
+
+    }
+
+
+    .course-header h1{
+
+        font-size:24px;
+
+    }
+
+
+}

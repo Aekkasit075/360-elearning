@@ -1,6 +1,8 @@
 .payment-method{
 
-    width:61%;
+    width:100%;
+
+    max-width:900px;
 
     padding:40px 4%;
 
@@ -200,9 +202,9 @@
 
 .card-brand img{
 
-    width:360px;
+    width:180px;
 
-    height:140px;
+    height:auto;
 
     object-fit:contain;
 
@@ -2082,3 +2084,155 @@ body.modal-open{
     }
 
 }
+
+
+/* ================= PAYMENT RESPONSIVE ================= */
+
+@media (max-width:992px){
+
+    .payment-option{
+
+        height:auto;
+        min-height:75px;
+
+        flex-wrap:wrap;
+
+        padding:15px 20px;
+
+    }
+
+
+    /* icon */
+
+    .payment-icon{
+
+        width:50px;
+        height:50px;
+
+    }
+
+
+    /* text */
+
+    .payment-text{
+
+        margin-left:18px;
+
+        flex:1;
+
+    }
+
+
+    /* arrow */
+
+    .payment-option > i{
+
+        margin-left:auto;
+
+    }
+
+
+    /* card logo ย้ายลงล่าง */
+
+    .card-brand{
+
+        order:5;
+
+        width:100%;
+
+        justify-content:flex-start;
+
+        margin-left:92px;
+
+        margin-top:8px;
+
+    }
+
+
+    .card-brand img{
+
+        width:160px;
+
+    }
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+    .payment-method{
+
+        padding:25px 15px;
+
+    }
+
+
+    .payment-option{
+
+        padding:15px;
+
+        min-height:70px;
+
+    }
+
+
+    .payment-icon{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+
+    .payment-text{
+
+        margin-left:12px;
+
+    }
+
+
+    .payment-text b{
+
+        font-size:14px;
+
+    }
+
+
+    .payment-text span{
+
+        font-size:11px;
+
+    }
+
+
+    .payment-option > i{
+
+        font-size:18px;
+
+    }
+
+
+    /* รูปบัตรตรงกับในรูป */
+
+    .card-brand{
+
+        margin-left:78px;
+
+        margin-top:5px;
+
+    }
+
+
+    .card-brand img{
+
+        width:150px;
+
+    }
+
+}
+
+
