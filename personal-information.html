@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>360 E-learning | Personal Information</title>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+        href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+
+    <!-- Swiper -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/report-problem.css">
+
+
+    <!-- Personal Information CSS -->
+    <link rel="stylesheet" href="assets/css/personal-information.css">
+
+</head>
+
+
+<body class="home-page">
+
+
+<div class="home-background">
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header id="header"></header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main>
+
+
+        <section id="personal_information">
+
+
+            <div class="personal-information-container">
+
+
+                <!-- =================================================
+                     BREADCRUMB
+                     ================================================= -->
+
+                <div class="personal-breadcrumb">
+
+                    <span>HOME</span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                    <span>PERSONAL INFORMATION</span>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     MAIN LAYOUT
+                     ================================================= -->
+
+                <div class="personal-information-layout">
+
+
+                    <!-- =================================================
+                         LEFT MENU
+                         ================================================= -->
+
+                    <aside class="personal-menu">
+
+
+                        <button
+                            type="button"
+                            class="personal-menu-item active"
+                            id="personalMenu">
+
+                            <span>Personal Information</span>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="personal-menu-item"
+                            id="historyMenu">
+
+                            <span>History</span>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+
+                    </aside>
+
+
+
+                    <!-- =================================================
+                         RIGHT CONTENT
+                         ================================================= -->
+
+                    <div class="personal-content">
+
+
+
+                        <!-- =================================================
+                             PERSONAL INFORMATION
+                             ================================================= -->
+
+                        <div
+                            class="personal-tab active"
+                            id="personalInformationContent">
+
+
+                            <!-- TITLE -->
+
+                            <div class="personal-content-title">
+
+                                Personal Information
+
+                            </div>
+
+
+
+                            <!-- FORM -->
+
+                            <div class="personal-form-container">
+
+
+                                <div class="personal-form-left">
+
+
+                                    <!-- ===============================
+                                         PREFACE
+                                         =============================== -->
+
+                                    <div class="personal-form-group preface-group">
+
+                                        <label for="preface">
+                                            Preface
+                                        </label>
+
+                                        <select id="preface">
+
+                                            <option value="">
+                                                Preface
+                                            </option>
+
+                                            <option value="Mr.">
+                                                Mr.
+                                            </option>
+
+                                            <option value="Mrs.">
+                                                Mrs.
+                                            </option>
+
+                                            <option value="Ms.">
+                                                Ms.
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+
+
+                                    <!-- ===============================
+                                         NAME / SURNAME
+                                         =============================== -->
+
+                                    <div class="personal-form-row">
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="name">
+                                                Name
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                autocomplete="given-name">
+
+                                        </div>
+
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="surname">
+                                                Surname
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                id="surname"
+                                                autocomplete="family-name">
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <!-- ===============================
+                                         ID CARD / EMAIL
+                                         =============================== -->
+
+                                    <div class="personal-form-row">
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="idCard">
+                                                Identification Card Number
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                id="idCard"
+                                                maxlength="13"
+                                                inputmode="numeric">
+
+                                        </div>
+
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="email">
+                                                Email
+                                            </label>
+
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                autocomplete="email">
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <!-- ===============================
+                                         USERNAME / PASSWORD
+                                         =============================== -->
+
+                                    <div class="personal-form-row three-column">
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="username">
+                                                Username
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                id="username"
+                                                autocomplete="username">
+
+                                        </div>
+
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="password">
+                                                Password
+                                            </label>
+
+                                            <input
+                                                type="password"
+                                                id="password"
+                                                autocomplete="new-password">
+
+                                        </div>
+
+
+
+                                        <div class="personal-form-group">
+
+                                            <label for="confirmPassword">
+                                                Confirm Password
+                                            </label>
+
+                                            <input
+                                                type="password"
+                                                id="confirmPassword"
+                                                autocomplete="new-password">
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <!-- ===============================
+                                         SAVE BUTTON
+                                         =============================== -->
+
+                                    <div class="save-data-container">
+
+
+                                        <button
+                                            type="button"
+                                            class="save-data-btn"
+                                            id="saveDataBtn">
+
+                                            Save Data
+
+                                        </button>
+
+
+                                    </div>
+
+
+
+                                    <!-- ===============================
+                                         SAVE MESSAGE
+                                         =============================== -->
+
+                                    <div
+                                        class="save-message"
+                                        id="saveMessage">
+
+                                        <i class="fa-solid fa-circle-check"></i>
+
+                                        <span>
+                                            Data saved successfully.
+                                        </span>
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <!-- =================================================
+                                     PROFILE IMAGE
+                                     ================================================= -->
+
+                                <div class="upload-image-container">
+
+
+                                    <label
+                                        for="profileImage"
+                                        class="upload-image-box">
+
+
+                                        <div
+                                            class="upload-image-content"
+                                            id="uploadImageContent">
+
+                                            <i class="fa-regular fa-user"></i>
+
+                                            <span>
+                                                Upload Image
+                                            </span>
+
+                                        </div>
+
+
+
+                                        <img
+                                            id="profilePreview"
+                                            src=""
+                                            alt="Profile Image">
+
+
+
+                                        <input
+                                            type="file"
+                                            id="profileImage"
+                                            accept="image/*">
+
+
+                                    </label>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <!-- =================================================
+                             HISTORY
+                             ================================================= -->
+
+                        <div
+                            class="personal-tab"
+                            id="historyContent">
+
+
+                            <!-- TITLE -->
+
+                            <div class="personal-content-title">
+
+                                History
+
+                            </div>
+
+
+
+                            <!-- HISTORY LIST -->
+
+                            <div class="history-list">
+
+
+
+                                <!-- =================================================
+                                     COURSE 1
+                                     ================================================= -->
+
+                                <div class="history-course-card">
+
+
+                                    <div class="history-course-image">
+
+                                        <img
+                                            src="https://images.unsplash.com/photo-1763568258320-c954a19683e3?auto=format&fit=crop&q=80&w=600"
+                                            alt="Web Development Course">
+
+                                    </div>
+
+
+
+                                    <div class="history-course-detail">
+
+
+                                        <h3>
+                                            Web Development Fundamentals
+                                        </h3>
+
+
+                                        <p>
+                                            Learn HTML, CSS and JavaScript from the beginning.
+                                        </p>
+
+
+
+                                        <div class="history-review">
+
+                                            <span>
+                                                Review
+                                            </span>
+
+
+                                            <div class="history-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="history-progress">
+
+                                            <div
+                                                class="history-progress-value"
+                                                style="width: 85%;">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <button
+                                        type="button"
+                                        class="history-play-btn"
+                                        title="Continue Course">
+
+                                        <i class="fa-solid fa-play"></i>
+
+                                    </button>
+
+
+                                </div>
+
+
+
+
+
+                                <!-- =================================================
+                                     COURSE 2
+                                     ================================================= -->
+
+                                <div class="history-course-card">
+
+
+                                    <div class="history-course-image">
+
+                                        <img
+                                            src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&q=80&w=600"
+                                            alt="Programming Course">
+
+                                    </div>
+
+
+
+                                    <div class="history-course-detail">
+
+
+                                        <h3>
+                                            Modern Programming
+                                        </h3>
+
+
+                                        <p>
+                                            Build modern applications with programming fundamentals.
+                                        </p>
+
+
+
+                                        <div class="history-review">
+
+                                            <span>
+                                                Review
+                                            </span>
+
+
+                                            <div class="history-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="history-progress">
+
+                                            <div
+                                                class="history-progress-value"
+                                                style="width: 65%;">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <button
+                                        type="button"
+                                        class="history-play-btn"
+                                        title="Continue Course">
+
+                                        <i class="fa-solid fa-play"></i>
+
+                                    </button>
+
+
+                                </div>
+
+
+
+
+
+                                <!-- =================================================
+                                     COURSE 3
+                                     ================================================= -->
+
+                                <div class="history-course-card">
+
+
+                                    <div class="history-course-image">
+
+                                        <img
+                                            src="https://images.unsplash.com/photo-1782462238918-a8926180df95?auto=format&fit=crop&q=80&w=600"
+                                            alt="Digital Learning Course">
+
+                                    </div>
+
+
+
+                                    <div class="history-course-detail">
+
+
+                                        <h3>
+                                            Digital Learning & Productivity
+                                        </h3>
+
+
+                                        <p>
+                                            Improve your productivity with digital tools and techniques.
+                                        </p>
+
+
+
+                                        <div class="history-review">
+
+                                            <span>
+                                                Review
+                                            </span>
+
+
+                                            <div class="history-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="history-progress">
+
+                                            <div
+                                                class="history-progress-value"
+                                                style="width: 42%;">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <button
+                                        type="button"
+                                        class="history-play-btn"
+                                        title="Continue Course">
+
+                                        <i class="fa-solid fa-play"></i>
+
+                                    </button>
+
+
+                                </div>
+
+
+
+
+
+                                <!-- =================================================
+                                     COURSE 4
+                                     ================================================= -->
+
+                                <div class="history-course-card">
+
+
+                                    <div class="history-course-image">
+
+                                        <img
+                                            src="https://images.unsplash.com/photo-1781583847268-46d15bfe5609?auto=format&fit=crop&q=80&w=600"
+                                            alt="Teamwork Course">
+
+                                    </div>
+
+
+
+                                    <div class="history-course-detail">
+
+
+                                        <h3>
+                                            Business & Teamwork
+                                        </h3>
+
+
+                                        <p>
+                                            Develop communication, teamwork and professional skills.
+                                        </p>
+
+
+
+                                        <div class="history-review">
+
+                                            <span>
+                                                Review
+                                            </span>
+
+
+                                            <div class="history-stars">
+
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="history-progress">
+
+                                            <div
+                                                class="history-progress-value"
+                                                style="width: 25%;">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <button
+                                        type="button"
+                                        class="history-play-btn"
+                                        title="Continue Course">
+
+                                        <i class="fa-solid fa-play"></i>
+
+                                    </button>
+
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer id="footer"></footer>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP
+     ===================================================== -->
+
+<script src="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- =====================================================
+     SWIPER
+     ===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<!-- =====================================================
+     LAYOUT JS
+     ===================================================== -->
+
+<script src="assets/js/layout.js"></script>
+
+
+
+<!-- =====================================================
+     REPORT PROBLEM
+     ===================================================== -->
+
+<script src="assets/js/report-problem.js"></script>
+
+
+
+<!-- =====================================================
+     SCROLL ANIMATION
+     ===================================================== -->
+
+<script src="assets/js/scroll-animation.js"></script>
+
+
+
+<!-- =====================================================
+     PERSONAL INFORMATION JS
+     ===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       TAB MENU
+       ===================================================== */
+
+    const personalMenu =
+        document.getElementById("personalMenu");
+
+    const historyMenu =
+        document.getElementById("historyMenu");
+
+    const personalContent =
+        document.getElementById("personalInformationContent");
+
+    const historyContent =
+        document.getElementById("historyContent");
+
+
+    personalMenu.addEventListener("click", function () {
+
+        personalMenu.classList.add("active");
+
+        historyMenu.classList.remove("active");
+
+        personalContent.classList.add("active");
+
+        historyContent.classList.remove("active");
+
+    });
+
+
+    historyMenu.addEventListener("click", function () {
+
+        historyMenu.classList.add("active");
+
+        personalMenu.classList.remove("active");
+
+        historyContent.classList.add("active");
+
+        personalContent.classList.remove("active");
+
+    });
+
+
+
+    /* =====================================================
+       PROFILE IMAGE
+       ===================================================== */
+
+    const profileImage =
+        document.getElementById("profileImage");
+
+    const profilePreview =
+        document.getElementById("profilePreview");
+
+    const uploadImageContent =
+        document.getElementById("uploadImageContent");
+
+
+    profileImage.addEventListener("change", function () {
+
+        const file = this.files[0];
+
+        if (!file) {
+            return;
+        }
+
+
+        /* จำกัดไฟล์ไม่เกิน 2MB */
+
+        if (file.size > 2 * 1024 * 1024) {
+
+            alert("Please select an image smaller than 2MB.");
+
+            this.value = "";
+
+            return;
+        }
+
+
+        const reader = new FileReader();
+
+
+        reader.onload = function (event) {
+
+            profilePreview.src =
+                event.target.result;
+
+            profilePreview.style.display =
+                "block";
+
+            uploadImageContent.style.display =
+                "none";
+
+        };
+
+
+        reader.readAsDataURL(file);
+
+    });
+
+
+
+    /* =====================================================
+       SAVE DATA
+       ===================================================== */
+
+    const saveDataBtn =
+        document.getElementById("saveDataBtn");
+
+    const saveMessage =
+        document.getElementById("saveMessage");
+
+
+    saveDataBtn.addEventListener("click", function () {
+
+
+        /* -----------------------------------------------
+           GET VALUES
+           ----------------------------------------------- */
+
+        const preface =
+            document.getElementById("preface").value;
+
+        const name =
+            document.getElementById("name").value.trim();
+
+        const surname =
+            document.getElementById("surname").value.trim();
+
+        const idCard =
+            document.getElementById("idCard").value.trim();
+
+        const email =
+            document.getElementById("email").value.trim();
+
+        const username =
+            document.getElementById("username").value.trim();
+
+        const password =
+            document.getElementById("password").value;
+
+        const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+
+        /* -----------------------------------------------
+           VALIDATION
+           ----------------------------------------------- */
+
+        if (
+            name === "" ||
+            surname === "" ||
+            email === "" ||
+            username === ""
+        ) {
+
+            alert(
+                "Please complete your Name, Surname, Email and Username."
+            );
+
+            return;
+        }
+
+
+        /* -----------------------------------------------
+           PASSWORD CHECK
+           ----------------------------------------------- */
+
+        if (
+            password !== "" &&
+            password !== confirmPassword
+        ) {
+
+            alert(
+                "Password and Confirm Password do not match."
+            );
+
+            return;
+        }
+
+
+        /* -----------------------------------------------
+           GET PROFILE IMAGE
+           ----------------------------------------------- */
+
+        const profileImageData =
+            profilePreview.src || "";
+
+
+        /* -----------------------------------------------
+           CREATE USER DATA
+           ----------------------------------------------- */
+
+        const userData = {
+
+            preface: preface,
+
+            name: name,
+
+            surname: surname,
+
+            idCard: idCard,
+
+            email: email,
+
+            username: username,
+
+            password: password,
+
+            profileImage:
+                profileImageData
+
+        };
+
+
+        /* -----------------------------------------------
+           SAVE TO LOCAL STORAGE
+           ----------------------------------------------- */
+
+        localStorage.setItem(
+            "360_elearning_user",
+            JSON.stringify(userData)
+        );
+
+
+        /* -----------------------------------------------
+           SHOW SUCCESS MESSAGE
+           ----------------------------------------------- */
+
+        saveMessage.classList.add("show");
+
+
+        setTimeout(function () {
+
+            saveMessage.classList.remove("show");
+
+        }, 3000);
+
+
+    });
+
+
+
+    /* =====================================================
+       LOAD SAVED DATA
+       ===================================================== */
+
+    const savedData =
+        localStorage.getItem("360_elearning_user");
+
+
+    if (savedData) {
+
+
+        try {
+
+
+            const userData =
+                JSON.parse(savedData);
+
+
+            /* -------------------------------------------
+               LOAD FORM
+               ------------------------------------------- */
+
+            document.getElementById("preface").value =
+                userData.preface || "";
+
+
+            document.getElementById("name").value =
+                userData.name || "";
+
+
+            document.getElementById("surname").value =
+                userData.surname || "";
+
+
+            document.getElementById("idCard").value =
+                userData.idCard || "";
+
+
+            document.getElementById("email").value =
+                userData.email || "";
+
+
+            document.getElementById("username").value =
+                userData.username || "";
+
+
+            document.getElementById("password").value =
+                userData.password || "";
+
+
+            document.getElementById("confirmPassword").value =
+                userData.password || "";
+
+
+
+            /* -------------------------------------------
+               LOAD PROFILE IMAGE
+               ------------------------------------------- */
+
+            if (
+                userData.profileImage &&
+                userData.profileImage !== ""
+            ) {
+
+                profilePreview.src =
+                    userData.profileImage;
+
+                profilePreview.style.display =
+                    "block";
+
+                uploadImageContent.style.display =
+                    "none";
+
+            }
+
+
+        } catch (error) {
+
+            console.error(
+                "Unable to load saved user data:",
+                error
+            );
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       HISTORY PLAY BUTTON
+       ===================================================== */
+
+    const playButtons =
+        document.querySelectorAll(".history-play-btn");
+
+
+    playButtons.forEach(function (button) {
+
+
+        button.addEventListener("click", function () {
+
+            alert(
+                "Course player will open here."
+            );
+
+        });
+
+    });
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>

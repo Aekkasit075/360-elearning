@@ -1,0 +1,1350 @@
+/* =========================================================
+   PERSONAL INFORMATION PAGE
+   ========================================================= */
+
+/* =========================================================
+   FONT
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap');
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("../../fonts/Kanit/Kanit-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+    --personal-orange: #D17D10;
+    --personal-orange-dark: #8c5208;
+
+    --personal-white: #ffffff;
+
+    --personal-dark: #181a1d;
+    --personal-dark-light: #303236;
+
+    --personal-gray: #b0b5bc;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+#personal_information {
+    width: 100%;
+    min-height: 100vh;
+
+    background: transparent;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   อิงจาก CSS ชุดที่สอง
+   ========================================================= */
+
+.personal-information-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+
+    padding: 90px 7% 120px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   ========================================================= */
+
+.personal-breadcrumb {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 1.5;
+}
+
+.personal-breadcrumb span:first-child {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.personal-breadcrumb span:last-child {
+    color: var(--personal-orange);
+}
+
+.personal-breadcrumb i {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.personal-information-layout {
+    display: grid;
+
+    grid-template-columns: 235px minmax(0, 1fr);
+
+    gap: 24px;
+
+    align-items: start;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   LEFT MENU
+   ========================================================= */
+
+.personal-menu {
+    width: 100%;
+
+    background: transparent;
+}
+
+.personal-menu-item {
+    width: 100%;
+
+    min-height: 50px;
+
+    padding: 0 15px;
+
+    margin: 0;
+
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    color: var(--personal-orange);
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.personal-menu-item:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.personal-menu-item:last-child {
+    border-radius: 0 0 5px 5px;
+
+    border-bottom: none;
+}
+
+.personal-menu-item i {
+    font-size: 12px;
+}
+
+.personal-menu-item:hover {
+    background: var(--personal-orange);
+    color: #ffffff;
+}
+
+.personal-menu-item.active {
+    background: var(--personal-orange);
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.personal-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.personal-tab {
+    display: none;
+    width: 100%;
+}
+
+.personal-tab.active {
+    display: block;
+}
+
+
+/* =========================================================
+   CONTENT CARD
+   ========================================================= */
+
+.personal-content > .personal-tab {
+    background: rgba(24, 26, 29, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ORANGE CONTENT TITLE
+   ========================================================= */
+
+.personal-content-title {
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--personal-orange);
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   PERSONAL FORM CONTAINER
+   ========================================================= */
+
+.personal-form-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        145px;
+
+    gap: 40px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+}
+
+.personal-form-left {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.personal-form-group {
+    width: 100%;
+    min-width: 0;
+}
+
+.personal-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #ffffff;
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 1.4;
+}
+
+.personal-form-group input,
+.personal-form-group select {
+    width: 100%;
+
+    height: 38px;
+
+    padding: 6px 12px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 4px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    color: #555555;
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.personal-form-group input:focus,
+.personal-form-group select:focus {
+    border-color: var(--personal-orange);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(209, 125, 16, 0.15);
+}
+
+
+/* =========================================================
+   PREFACE
+   ========================================================= */
+
+.preface-group {
+    width: 115px;
+
+    margin-bottom: 24px;
+}
+
+.preface-group select {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   FORM ROW
+   ========================================================= */
+
+.personal-form-row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   THREE COLUMN
+   ========================================================= */
+
+.personal-form-row.three-column {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   SAVE DATA
+   ========================================================= */
+
+.save-data-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10px;
+}
+
+.save-data-btn {
+    min-width: 110px;
+
+    min-height: 40px;
+
+    padding: 8px 24px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #D17D10 0%,
+            #8c5208 100%
+        );
+
+    color: #ffffff;
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 15px
+        rgba(209, 125, 16, 0.2);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.save-data-btn:hover {
+    background:
+        linear-gradient(
+            90deg,
+            #e68b14 0%,
+            #a8620a 100%
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 20px
+        rgba(209, 125, 16, 0.35);
+}
+
+
+/* =========================================================
+   SAVE MESSAGE
+   ========================================================= */
+
+.save-message {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.save-message i {
+    color: #39c86a;
+}
+
+.save-message.show {
+    display: flex;
+}
+
+
+/* =========================================================
+   UPLOAD IMAGE
+   ========================================================= */
+
+.upload-image-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.upload-image-box {
+    position: relative;
+
+    width: 125px;
+    height: 125px;
+
+    border:
+        1px dashed
+        var(--personal-orange);
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(24, 26, 29, 0.45);
+}
+
+.upload-image-box input {
+    display: none;
+}
+
+.upload-image-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.upload-image-content i {
+    font-size: 30px;
+}
+
+.upload-image-content span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#profilePreview {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   HISTORY
+   ========================================================= */
+
+.history-list {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding: 35px;
+}
+
+
+/* =========================================================
+   HISTORY CARD
+   ========================================================= */
+
+.history-course-card {
+    width: 100%;
+
+    min-height: 125px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns:
+        150px
+        minmax(0, 1fr)
+        45px;
+
+    gap: 22px;
+
+    align-items: center;
+
+    background:
+        rgba(24, 26, 29, 0.9);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.history-course-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(209, 125, 16, 0.4);
+}
+
+
+/* =========================================================
+   COURSE IMAGE
+   ========================================================= */
+
+.history-course-image {
+    width: 150px;
+    height: 90px;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #080808,
+            #171717
+        );
+}
+
+.history-course-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   COURSE DETAIL
+   ========================================================= */
+
+.history-course-detail {
+    min-width: 0;
+}
+
+.history-course-detail h3 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.3;
+
+    font-weight: 400;
+}
+
+.history-course-detail p {
+    margin: 0 0 8px;
+
+    color: #b0b5bc;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   REVIEW
+   ========================================================= */
+
+.history-review {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    height: 18px;
+}
+
+.history-review > span {
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 300;
+}
+
+.history-stars {
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+}
+
+.history-stars i {
+    color: #a9a9a9;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   HISTORY PROGRESS
+   ========================================================= */
+
+.history-progress {
+    width: 100%;
+
+    height: 6px;
+
+    margin-top: 8px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: #eeeeee;
+}
+
+.history-progress-value {
+    width: 55%;
+
+    height: 100%;
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #D17D10,
+            #e68b14
+        );
+}
+
+
+/* =========================================================
+   PLAY BUTTON
+   ========================================================= */
+
+.history-play-btn {
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    border:
+        2px solid
+        var(--personal-orange);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+
+    color: var(--personal-orange);
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.history-play-btn i {
+    font-size: 12px;
+
+    margin-left: 2px;
+}
+
+.history-play-btn:hover {
+    background: var(--personal-orange);
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .personal-information-container {
+        padding: 80px 5% 100px;
+    }
+
+    .personal-information-layout {
+        grid-template-columns:
+            200px
+            minmax(0, 1fr);
+
+        gap: 20px;
+    }
+
+    .personal-form-container {
+        grid-template-columns:
+            minmax(0, 1fr)
+            125px;
+
+        gap: 25px;
+
+        padding: 30px;
+    }
+
+    .personal-menu-item {
+        font-size: 14px;
+    }
+
+    .personal-content-title {
+        font-size: 16px;
+    }
+
+    .personal-form-group label {
+        font-size: 12px;
+    }
+
+    .personal-form-group input,
+    .personal-form-group select {
+        font-size: 12px;
+    }
+
+    .history-list {
+        padding: 30px;
+    }
+
+    .history-course-card {
+        grid-template-columns:
+            120px
+            minmax(0, 1fr)
+            40px;
+
+        gap: 18px;
+    }
+
+    .history-course-image {
+        width: 120px;
+        height: 78px;
+    }
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .personal-information-container {
+        padding-top: 70px;
+    }
+
+    .personal-form-row.three-column {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    body.home-page {
+        background-attachment: scroll;
+    }
+
+    #personal_information {
+        min-height: auto;
+    }
+
+    .personal-information-container {
+        padding:
+            60px
+            5%
+            80px;
+    }
+
+
+    /* BREADCRUMB */
+
+    .personal-breadcrumb {
+        margin-bottom: 30px;
+
+        font-size: 12px;
+    }
+
+
+    /* MAIN LAYOUT */
+
+    .personal-information-layout {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* LEFT MENU */
+
+    .personal-menu {
+        display: grid;
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 1px;
+
+        background: #eeeeee;
+
+        border-radius: 6px;
+
+        overflow: hidden;
+    }
+
+    .personal-menu-item {
+        min-height: 48px;
+
+        border: none;
+
+        border-radius: 0 !important;
+
+        font-size: 14px;
+    }
+
+
+    /* CONTENT */
+
+    .personal-content > .personal-tab {
+        border-radius: 7px;
+    }
+
+    .personal-content-title {
+        min-height: 50px;
+
+        padding: 0 18px;
+
+        font-size: 16px;
+    }
+
+
+    /* FORM */
+
+    .personal-form-container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 30px 25px;
+    }
+
+
+    /* IMAGE */
+
+    .upload-image-container {
+        order: -1;
+
+        justify-content: flex-start;
+    }
+
+    .upload-image-box {
+        width: 125px;
+        height: 125px;
+    }
+
+
+    /* THREE COLUMN */
+
+    .personal-form-row.three-column {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+
+    /* HISTORY */
+
+    .history-list {
+        padding: 25px;
+
+        gap: 15px;
+    }
+
+    .history-course-card {
+        grid-template-columns:
+            100px
+            minmax(0, 1fr)
+            40px;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .history-course-image {
+        width: 100px;
+        height: 70px;
+    }
+
+    .history-course-detail h3 {
+        font-size: 14px;
+    }
+
+    .history-course-detail p {
+        font-size: 11px;
+    }
+
+    .history-review > span {
+        font-size: 10px;
+    }
+
+    .history-stars i {
+        font-size: 11px;
+    }
+
+    .history-play-btn {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .personal-information-container {
+        padding:
+            50px
+            5%
+            60px;
+    }
+
+    .personal-breadcrumb {
+        margin-bottom: 25px;
+
+        font-size: 11px;
+    }
+
+
+    /* MENU */
+
+    .personal-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .personal-menu-item {
+        min-height: 46px;
+
+        font-size: 14px;
+    }
+
+
+    /* CONTENT TITLE */
+
+    .personal-content-title {
+        min-height: 48px;
+
+        font-size: 15px;
+    }
+
+
+    /* FORM */
+
+    .personal-form-container {
+        padding:
+            25px
+            20px;
+    }
+
+    .personal-form-row {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-bottom: 20px;
+    }
+
+    .personal-form-row.three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .preface-group {
+        width: 130px;
+
+        margin-bottom: 20px;
+    }
+
+    .personal-form-group label {
+        font-size: 12px;
+    }
+
+    .personal-form-group input,
+    .personal-form-group select {
+        height: 38px;
+
+        font-size: 12px;
+    }
+
+
+    /* SAVE */
+
+    .save-data-container {
+        padding-top: 5px;
+    }
+
+    .save-data-btn {
+        min-width: 120px;
+
+        min-height: 40px;
+
+        font-size: 12px;
+    }
+
+
+    /* HISTORY */
+
+    .history-list {
+        padding: 20px;
+
+        gap: 12px;
+    }
+
+    .history-course-card {
+        grid-template-columns:
+            80px
+            minmax(0, 1fr)
+            35px;
+
+        gap: 12px;
+
+        padding: 12px;
+
+        min-height: 100px;
+    }
+
+    .history-course-image {
+        width: 80px;
+        height: 62px;
+    }
+
+    .history-course-detail h3 {
+        font-size: 12px;
+
+        margin-bottom: 5px;
+    }
+
+    .history-course-detail p {
+        font-size: 9px;
+
+        margin-bottom: 5px;
+    }
+
+    .history-review {
+        gap: 7px;
+    }
+
+    .history-review > span {
+        font-size: 9px;
+    }
+
+    .history-stars {
+        gap: 2px;
+    }
+
+    .history-stars i {
+        font-size: 9px;
+    }
+
+    .history-progress {
+        height: 5px;
+
+        margin-top: 6px;
+    }
+
+    .history-play-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .history-play-btn i {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .personal-information-container {
+        padding:
+            40px
+            4%
+            50px;
+    }
+
+    .personal-content-title {
+        min-height: 45px;
+
+        padding: 0 15px;
+
+        font-size: 14px;
+    }
+
+    .personal-form-container {
+        padding:
+            20px
+            15px;
+    }
+
+    .history-list {
+        padding: 15px;
+    }
+
+    .history-course-card {
+        grid-template-columns:
+            65px
+            minmax(0, 1fr)
+            30px;
+
+        gap: 9px;
+
+        padding: 10px;
+    }
+
+    .history-course-image {
+        width: 65px;
+        height: 55px;
+    }
+
+    .history-course-detail h3 {
+        font-size: 10px;
+    }
+
+    .history-course-detail p {
+        font-size: 8px;
+    }
+
+    .history-review {
+        gap: 5px;
+    }
+
+    .history-review > span {
+        font-size: 8px;
+    }
+
+    .history-stars {
+        gap: 1px;
+    }
+
+    .history-stars i {
+        font-size: 8px;
+    }
+
+    .history-progress {
+        height: 4px;
+    }
+
+    .history-play-btn {
+        width: 27px;
+        height: 27px;
+    }
+
+    .history-play-btn i {
+        font-size: 8px;
+    }
+}
