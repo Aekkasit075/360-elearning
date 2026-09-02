@@ -416,21 +416,34 @@
                             <!-- ==========================
                                 CERTIFICATE
                             =========================== -->
-                            <div class="certificate-card" id="certificateBtn">
+                            <div class="certificate-card">
 
                                 <div class="certificate-icon">
                                     <i class="fa-solid fa-award"></i>
                                 </div>
 
-                                <div>
+                                <div class="certificate-info">
+
                                     <div class="certificate-title">
                                         Received a certificate
                                     </div>
 
-                                    <small>
+                                    <!-- กดเฉพาะตัวนี้เท่านั้นที่เปิด Modal -->
+                                    <button
+                                        type="button"
+                                        class="eligibility-btn"
+                                        id="certificateBtn">
                                         Eligibility Criteria
-                                    </small>
+                                    </button>
+
                                 </div>
+
+                                <!-- ปุ่ม View Certificate -->
+                                <a
+                                    href="certificate.html"
+                                    class="view-certificate-btn">
+                                    View Certificate
+                                </a>
 
                             </div>
 

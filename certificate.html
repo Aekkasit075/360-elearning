@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>360 E-learning | Certificate</title>
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- Bootstrap -->
+    <link
+        rel="stylesheet"
+        href="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    >
+
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="assets/css/header.css">
+
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="stylesheet" href="assets/css/report-problem.css">
+
+
+    <!-- Certificate CSS -->
+    <link rel="stylesheet" href="assets/css/certificate.css">
+
+</head>
+
+
+<body class="home-page">
+
+
+    <div class="home-background certificate-page">
+
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header id="header"></header>
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+
+        <main>
+
+            <section class="certificate-section">
+
+
+                <div class="certificate-container">
+
+
+                    <!-- =========================
+                         BACK TO COURSES
+                    ========================== -->
+
+                    <div class="certificate-back">
+
+                        <a href="course-online.html">
+
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                            Back to Courses
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =========================
+                         CERTIFICATE CONTENT
+                    ========================== -->
+
+                    <div class="certificate-content">
+
+
+                        <!-- =========================
+                             CERTIFICATE IMAGE
+                        ========================== -->
+
+                        <div class="certificate-preview">
+
+                            <img
+                                src="assets/images/logo/certificate2.png"
+                                alt="Certificate"
+                                class="certificate-image"
+                            >
+
+                        </div>
+
+
+                        <!-- =========================
+                             CERTIFICATE INFORMATION
+                        ========================== -->
+
+                        <div class="certificate-detail">
+
+
+                            <!-- Recipient -->
+
+                            <div class="certificate-field">
+
+                                <span class="field-label">
+                                    Certificate Recipient:
+                                </span>
+
+                                <span class="field-value">
+                                    Mr.John Doe
+                                </span>
+
+                            </div>
+
+
+                            <!-- Date -->
+
+                            <div class="certificate-field">
+
+                                <span class="field-label">
+                                    Certificate Issue Date:
+                                </span>
+
+                                <span class="field-value">
+                                    28 August 2026
+                                </span>
+
+                            </div>
+
+
+                            <!-- Course -->
+
+                            <div class="certificate-field">
+
+                                <span class="field-label">
+                                    Course / Program Name:
+                                </span>
+
+                                <span class="field-value course-name">
+                                    Why diversify your investments?
+                                </span>
+
+                                <a
+                                    href="course-detail.html"
+                                    class="course-detail-link"
+                                >
+                                    View Course Details
+                                </a>
+
+                            </div>
+
+
+                            <!-- Buttons -->
+
+                            <div class="certificate-actions">
+
+
+                                <button
+                                    type="button"
+                                    class="certificate-btn download-btn"
+                                    onclick="downloadCertificate()"
+                                >
+
+                                    <span>
+                                        Download
+                                    </span>
+
+                                    <i class="fa-solid fa-download"></i>
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="certificate-btn share-btn"
+                                    onclick="shareCertificate()"
+                                >
+
+                                    <i class="fa-solid fa-share-nodes"></i>
+
+                                    <span>
+                                        Share Certificate
+                                    </span>
+
+                                </button>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer id="footer"></footer>
+
+
+    </div>
+
+
+    <!-- Bootstrap -->
+
+    <script
+        src="assets/lib/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Layout -->
+
+    <script src="assets/js/layout.js"></script>
+
+    <script src="assets/js/report-problem.js"></script>
+
+    <script src="assets/js/scroll-animation.js"></script>
+
+
+    <!-- Certificate Script -->
+
+    <script>
+
+        // ==========================================
+        // DOWNLOAD CERTIFICATE
+        // ==========================================
+
+        function downloadCertificate() {
+
+            window.location.href =
+            "certificate-view.html";
+
+        }
+
+
+        // ==========================================
+        // SHARE CERTIFICATE
+        // ==========================================
+
+        function shareCertificate() {
+
+            const shareData = {
+
+                title: "360 E-learning Certificate",
+
+                text: "I have successfully completed the course on 360 E-learning.",
+
+                url: window.location.href
+
+            };
+
+
+            if (navigator.share) {
+
+                navigator.share(shareData)
+
+                    .catch(function () {
+
+                        console.log("Share cancelled.");
+
+                    });
+
+            } else {
+
+                navigator.clipboard.writeText(window.location.href);
+
+                alert("Certificate link copied to clipboard.");
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1725,48 +1725,56 @@ Score
 });
 
 
-document.addEventListener("DOMContentLoaded",()=>{
-
+document.addEventListener("DOMContentLoaded", () => {
 
     const certBtn =
-    document.getElementById("certificateBtn");
-
+        document.getElementById("certificateBtn");
 
     const popup =
-    document.getElementById("certificatePopup");
-
+        document.getElementById("certificatePopup");
 
     const close =
-    document.getElementById("closeCertificate");
+        document.getElementById("closeCertificate");
 
 
+    // เปิด Modal เฉพาะ Eligibility Criteria
+    if (certBtn && popup) {
 
-    certBtn.addEventListener("click",()=>{
+        certBtn.addEventListener("click", () => {
 
-        popup.style.display="flex";
+            popup.style.display = "flex";
 
-    });
+        });
 
-
-
-    close.addEventListener("click",()=>{
-
-        popup.style.display="none";
-
-    });
+    }
 
 
+    // ปิด Modal
+    if (close && popup) {
 
-    popup.addEventListener("click",(e)=>{
+        close.addEventListener("click", () => {
 
-        if(e.target === popup){
+            popup.style.display = "none";
 
-            popup.style.display="none";
+        });
 
-        }
+    }
 
-    });
 
+    // กดพื้นที่ด้านนอก Modal เพื่อปิด
+    if (popup) {
+
+        popup.addEventListener("click", (e) => {
+
+            if (e.target === popup) {
+
+                popup.style.display = "none";
+
+            }
+
+        });
+
+    }
 
 });
 
