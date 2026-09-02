@@ -1608,92 +1608,117 @@ Submit
 
 
 
-<div class="result-page">
+    <div class="result-page">
 
 
-<h1>
+        <h1>
 
-Post-Test
+            Post-Test
 
-</h1>
-
-
-
-
-<h3>
-
-Your score has been recorded successfully.
-
-</h3>
+        </h1>
 
 
 
 
-<div class="result-line"></div>
+        <h3>
+
+            Your score has been recorded successfully.
+
+        </h3>
 
 
 
 
-<p>
-
-Your score is
-
-</p>
+        <div class="result-line"></div>
 
 
 
 
-<strong>
+        <p>
 
-${score}/${questions.length}
+            Your score is
 
-</strong>
-
-
-
-<span>
-
-Score
-
-</span>
+        </p>
 
 
 
 
+        <strong>
 
-<div class="result-line"></div>
+            ${score}/${questions.length}
 
-
-
-
-<button id="tryAgain">
-
-↻ Try Again
-
-</button>
+        </strong>
 
 
 
-</div>
+        <span>
 
+            Score
 
-
-`;
+        </span>
 
 
 
 
+
+        <div class="result-line"></div>
+
+
+
+
+        <div class="result-actions">
+
+            <button id="tryAgain" class="result-try-btn">
+
+                ↻ Try Again
+
+            </button>
+
+
+            <button id="viewCertificate" class="result-certificate-btn">
+
+                View Certificate
+
+            </button>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    `;
+
+
+
+        // ==========================
+        // View Certificate
+        // ==========================
 
         document
-        .getElementById("tryAgain")
-        .onclick = () => {
+            .getElementById("viewCertificate")
+            .onclick = () => {
+
+                window.location.href =
+                    "certificate-view.html";
+
+            };
 
 
-            exercises[0].click();
 
+        // ==========================
+        // Try Again
+        // ==========================
 
-        };
+        document
+            .getElementById("tryAgain")
+            .onclick = () => {
 
+                exercises[0].click();
+
+            };
 
 
     }

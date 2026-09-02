@@ -2583,6 +2583,78 @@ color:#d88900;
 }
 
 
+/* ==========================================
+   RESULT PAGE BUTTONS
+========================================== */
+
+.result-actions {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 25px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+
+/* View Certificate - RIGHT */
+
+.result-certificate-btn {
+    flex: 1;
+    width: 50px;
+    padding: 5px 7px;
+    border: none;
+    border-radius: 8px;
+    background: #d17d10;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 250;
+}
+
+
+.result-certificate-btn:hover {
+
+    background: #b96b08;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(209, 125, 16, 0.25);
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .result-actions {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .result-try-btn,
+    .result-certificate-btn {
+
+        width: 100%;
+
+        flex: none;
+
+    }
+
+}
+
+
 /* ==========================================================
    RESPONSIVE COURSE PLAYER
    ========================================================== */
@@ -4523,6 +4595,154 @@ color:#d88900;
     .result-page strong {
 
         font-size: 38px;
+
+    }
+
+}
+
+
+/* ==========================================
+   RESULT ACTIONS
+========================================== */
+
+.result-actions {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 30px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* ==========================================
+   TRY AGAIN - LEFT
+   ไม่มีกรอบ / ไม่มีพื้นหลัง
+========================================== */
+
+.result-page .result-actions #tryAgain,
+.result-page .result-actions .result-try-btn {
+
+    flex: 1;
+
+    margin: 0 !important;
+    padding: 14px 20px !important;
+
+    border: 0 !important;
+    border-width: 0 !important;
+    border-style: none !important;
+
+    outline: none !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+
+    box-shadow: none !important;
+
+    color: #d88900;
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.result-page .result-actions #tryAgain:hover,
+.result-page .result-actions .result-try-btn:hover {
+
+    border: 0 !important;
+    outline: none !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+
+    color: #b96b08;
+
+    transform: none;
+
+}
+
+
+/* ==========================================
+   VIEW CERTIFICATE - RIGHT
+========================================== */
+
+.result-page .result-actions .result-certificate-btn {
+
+    flex: 1;
+
+    margin: 0 !important;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d88900;
+
+    color: #fff;
+
+    font-family: "Kanit", sans-serif;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: none;
+
+    transition: all 0.2s ease;
+}
+
+
+.result-page .result-actions .result-certificate-btn:hover {
+
+    background: #b96b08;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(209, 125, 16, 0.25);
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .result-actions {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .result-page .result-actions #tryAgain,
+    .result-page .result-actions .result-try-btn,
+    .result-page .result-actions .result-certificate-btn {
+
+        width: 100%;
+
+        flex: none;
 
     }
 
