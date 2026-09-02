@@ -1702,7 +1702,7 @@ Submit
             .onclick = () => {
 
                 window.location.href =
-                    "certificate-view.html";
+                    "certificate.html";
 
             };
 
