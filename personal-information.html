@@ -383,7 +383,6 @@
                                         for="profileImage"
                                         class="upload-image-box">
 
-
                                         <div
                                             class="upload-image-content"
                                             id="uploadImageContent">
@@ -397,19 +396,29 @@
                                         </div>
 
 
-
+                                        <!-- PROFILE IMAGE -->
                                         <img
                                             id="profilePreview"
                                             src=""
                                             alt="Profile Image">
 
 
+                                        <!-- REMOVE IMAGE BUTTON -->
+                                        <button
+                                            type="button"
+                                            class="remove-profile-image"
+                                            id="removeProfileImage"
+                                            aria-label="Remove profile image">
+
+                                            <i class="fa-solid fa-xmark"></i>
+
+                                        </button>
+
 
                                         <input
                                             type="file"
                                             id="profileImage"
                                             accept="image/*">
-
 
                                     </label>
 
@@ -916,6 +925,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const uploadImageContent =
         document.getElementById("uploadImageContent");
 
+    const removeProfileImage =
+        document.getElementById("removeProfileImage");
+
 
     profileImage.addEventListener("change", function () {
 
@@ -951,6 +963,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             uploadImageContent.style.display =
                 "none";
+
+            removeProfileImage.classList.add("show");
 
         };
 
@@ -1175,6 +1189,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 uploadImageContent.style.display =
                     "none";
 
+                removeProfileImage.classList.add("show");
+
             }
 
 
@@ -1188,6 +1204,68 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     }
+
+    /* =====================================================
+    REMOVE PROFILE IMAGE
+    ===================================================== */
+
+    removeProfileImage.addEventListener("click", function (event) {
+
+        /* ป้องกันไม่ให้กดแล้วเปิด file picker */
+        event.preventDefault();
+
+        event.stopPropagation();
+
+
+        /* ล้างรูป */
+        profilePreview.src = "";
+
+        profilePreview.style.display = "none";
+
+
+        /* แสดง Upload Image กลับมา */
+        uploadImageContent.style.display = "flex";
+
+
+        /* ซ่อนปุ่ม X */
+        removeProfileImage.classList.remove("show");
+
+
+        /* ล้าง input file */
+        profileImage.value = "";
+
+
+        /* ลบรูปจาก Local Storage */
+        const savedData =
+            localStorage.getItem("360_elearning_user");
+
+
+        if (savedData) {
+
+            try {
+
+                const userData =
+                    JSON.parse(savedData);
+
+                userData.profileImage = "";
+
+                localStorage.setItem(
+                    "360_elearning_user",
+                    JSON.stringify(userData)
+                );
+
+            } catch (error) {
+
+                console.error(
+                    "Unable to remove profile image:",
+                    error
+                );
+
+            }
+
+        }
+
+    });
 
 
 
