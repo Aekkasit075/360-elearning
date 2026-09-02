@@ -2581,3 +2581,1949 @@ color:#d88900;
     color:#b1731b;
 
 }
+
+
+/* ==========================================================
+   RESPONSIVE COURSE PLAYER
+   ========================================================== */
+
+
+/* ==========================================================
+   LARGE TABLET / SMALL DESKTOP
+   1200px
+   ========================================================== */
+
+@media (max-width: 1200px) {
+
+    .course-container {
+
+        width: 94%;
+
+        max-width: 1050px;
+
+    }
+
+
+    .player-layout {
+
+        gap: 18px;
+
+    }
+
+
+    .player-layout.open .video-side {
+
+        flex: 0 0 calc(100% - 320px);
+
+    }
+
+
+    .player-layout.open .lesson-sidebar {
+
+        width: 300px;
+
+    }
+
+
+    .sidebar-btn {
+
+        font-size: 15px;
+
+    }
+
+
+    .video-controls {
+
+        padding: 13px 20px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+   992px
+   ========================================================== */
+
+@media (max-width: 992px) {
+
+
+    /* ------------------------------------------
+       MAIN CONTAINER
+    ------------------------------------------ */
+
+    .course-player-section {
+
+        padding-top: 30px;
+
+        padding-bottom: 60px;
+
+    }
+
+
+    .course-container {
+
+        width: 94%;
+
+    }
+
+
+    /* ------------------------------------------
+       TOP NAV
+    ------------------------------------------ */
+
+    .player-top-nav {
+
+        margin-bottom: 18px;
+
+    }
+
+
+    .player-top-nav .nav-link {
+
+        font-size: 14px;
+
+        gap: 7px;
+
+    }
+
+
+    /* ------------------------------------------
+       PLAYER LAYOUT
+    ------------------------------------------ */
+
+    .player-layout {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 20px;
+
+    }
+
+
+    .video-side {
+
+        width: 100%;
+
+        flex: none !important;
+
+    }
+
+
+    .player-layout.open .video-side {
+
+        width: 100%;
+
+        flex: none;
+
+    }
+
+
+    /* ------------------------------------------
+       VIDEO
+    ------------------------------------------ */
+
+    .video-player-wrapper {
+
+        width: 100%;
+
+        border-radius: 10px;
+
+    }
+
+
+    /* ------------------------------------------
+       SIDEBAR
+    ------------------------------------------ */
+
+    .lesson-sidebar {
+
+        width: 100% !important;
+
+        height: 0;
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+
+        overflow: hidden;
+
+        border-color: transparent;
+
+        order: 2;
+
+    }
+
+
+    .player-layout.open .lesson-sidebar {
+
+        width: 100% !important;
+
+        height: auto;
+
+        max-height: 600px;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        pointer-events: auto;
+
+        overflow-y: auto;
+
+        order: 2;
+
+    }
+
+
+    /* ------------------------------------------
+       SIDEBAR TOP
+    ------------------------------------------ */
+
+    .sidebar-top {
+
+        width: 100%;
+
+    }
+
+
+    .sidebar-btn {
+
+        height: 52px;
+
+        font-size: 15px;
+
+    }
+
+
+    /* ------------------------------------------
+       LESSON
+    ------------------------------------------ */
+
+    .lesson {
+
+        padding: 16px 15px;
+
+    }
+
+
+    .lesson-content span {
+
+        font-size: 14px;
+
+    }
+
+
+    .lesson-content small {
+
+        font-size: 11px;
+
+    }
+
+
+    /* ------------------------------------------
+       DISCUSSION
+    ------------------------------------------ */
+
+    .discussion-panel {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .discussion-panel h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    /* ------------------------------------------
+       REVIEW
+    ------------------------------------------ */
+
+    .review-panel {
+
+        padding: 25px 20px;
+
+    }
+
+
+    /* ------------------------------------------
+       EXAM
+    ------------------------------------------ */
+
+    .video-player-wrapper:has(.exam-page),
+    .video-player-wrapper:has(.result-page) {
+
+        min-height: 580px;
+
+    }
+
+
+    .exam-start-content {
+
+        padding: 40px 50px;
+
+    }
+
+
+    .question-page {
+
+        padding: 40px 45px;
+
+    }
+
+
+    .question-count {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .question-footer {
+
+        margin-top: 60px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET / MOBILE
+   768px
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+
+    /* ------------------------------------------
+       SECTION
+    ------------------------------------------ */
+
+    .course-player-section {
+
+        padding-top: 25px;
+
+        padding-bottom: 50px;
+
+    }
+
+
+    .course-container {
+
+        width: 94%;
+
+    }
+
+
+    /* ------------------------------------------
+       TOP NAV
+    ------------------------------------------ */
+
+    .player-top-nav {
+
+        margin-bottom: 15px;
+
+        gap: 10px;
+
+    }
+
+
+    .player-top-nav .nav-link {
+
+        font-size: 13px;
+
+        gap: 6px;
+
+    }
+
+
+    /* ------------------------------------------
+       VIDEO
+    ------------------------------------------ */
+
+    .video-player-wrapper {
+
+        border-radius: 8px;
+
+    }
+
+
+    .center-play-btn {
+
+        width: 60px;
+
+        height: 60px;
+
+    }
+
+
+    .center-play-btn i {
+
+        font-size: 21px;
+
+        margin-left: 4px;
+
+    }
+
+
+    /* ------------------------------------------
+       VIDEO CONTROLS
+    ------------------------------------------ */
+
+    .video-controls {
+
+        padding: 10px 14px;
+
+        gap: 8px;
+
+    }
+
+
+    .controls-left,
+    .controls-right {
+
+        gap: 13px;
+
+    }
+
+
+    .control-icon {
+
+        font-size: 14px;
+
+    }
+
+
+    .time-display {
+
+        font-size: 11px;
+
+        margin-left: 2px;
+
+    }
+
+
+    .playback-speed {
+
+        font-size: 11px;
+
+        padding: 3px 6px;
+
+    }
+
+
+    .progress-bar-bg {
+
+        height: 4px;
+
+    }
+
+
+    /* ------------------------------------------
+       FLOATING REPORT
+    ------------------------------------------ */
+
+    .btn-floating-report {
+
+        bottom: 15px;
+
+        right: 15px;
+
+        padding: 8px 14px;
+
+        font-size: 12px;
+
+    }
+
+
+    /* ------------------------------------------
+       SIDEBAR
+    ------------------------------------------ */
+
+    .player-layout.open .lesson-sidebar {
+
+        max-height: 500px;
+
+    }
+
+
+    .sidebar-btn {
+
+        height: 48px;
+
+        font-size: 14px;
+
+    }
+
+
+    /* ------------------------------------------
+       CERTIFICATE
+    ------------------------------------------ */
+
+    .certificate-card {
+
+        min-height: 65px;
+
+        padding: 10px;
+
+        gap: 10px;
+
+    }
+
+
+    .certificate-icon {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 16px;
+
+    }
+
+
+    .certificate-title {
+
+        font-size: 14px;
+
+    }
+
+
+    .eligibility-btn {
+
+        font-size: 11px;
+
+    }
+
+
+    .view-certificate-btn {
+
+        font-size: 10px;
+
+        padding: 5px 8px;
+
+    }
+
+
+    /* ------------------------------------------
+       LESSON
+    ------------------------------------------ */
+
+    .lesson {
+
+        gap: 11px;
+
+        padding: 15px 12px;
+
+    }
+
+
+    .lesson-dot {
+
+        width: 16px;
+
+        height: 16px;
+
+    }
+
+
+    .lesson-content span {
+
+        font-size: 13px;
+
+    }
+
+
+    .lesson-content small {
+
+        font-size: 10px;
+
+        margin-top: 5px;
+
+    }
+
+
+    .lesson-title {
+
+        font-size: 12px;
+
+        padding: 9px 12px;
+
+    }
+
+
+    /* ------------------------------------------
+       DISCUSSION
+    ------------------------------------------ */
+
+    .discussion-panel {
+
+        padding: 22px 16px;
+
+    }
+
+
+    .discussion-panel h3 {
+
+        font-size: 19px;
+
+        margin-bottom: 16px;
+
+    }
+
+
+    .discussion-panel textarea {
+
+        height: 105px;
+
+        padding: 13px;
+
+        font-size: 13px;
+
+    }
+
+
+    .discussion-panel textarea::placeholder {
+
+        font-size: 13px;
+
+    }
+
+
+    .discussion-count {
+
+        font-size: 11px;
+
+    }
+
+
+    .start-discussion-btn {
+
+        height: 40px;
+
+        font-size: 14px;
+
+    }
+
+
+    .all-discussion-title {
+
+        margin-top: 45px;
+
+        font-size: 19px !important;
+
+    }
+
+
+    .search-discussion {
+
+        height: 40px;
+
+    }
+
+
+    .search-discussion input {
+
+        font-size: 13px;
+
+    }
+
+
+    /* ------------------------------------------
+       REVIEW
+    ------------------------------------------ */
+
+    .review-panel {
+
+        padding: 22px 16px;
+
+    }
+
+
+    .review-panel h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    .rating-score {
+
+        font-size: 17px;
+
+    }
+
+
+    .rating-bars div {
+
+        gap: 8px;
+
+    }
+
+
+    .star-select i {
+
+        font-size: 22px;
+
+    }
+
+
+    .confirm-review {
+
+        margin-top: 35px;
+
+        height: 42px;
+
+        font-size: 14px;
+
+    }
+
+
+    .review-item {
+
+        gap: 10px;
+
+        padding: 15px 5px;
+
+    }
+
+
+    .review-avatar {
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+
+    .review-item b {
+
+        font-size: 14px;
+
+    }
+
+
+    .review-item p {
+
+        font-size: 12px;
+
+    }
+
+
+    .small-stars {
+
+        font-size: 12px;
+
+    }
+
+
+    /* ------------------------------------------
+       EXAM
+    ------------------------------------------ */
+
+    .video-player-wrapper:has(.exam-page),
+    .video-player-wrapper:has(.result-page) {
+
+        min-height: 520px;
+
+    }
+
+
+    .exam-title {
+
+        height: auto;
+
+        min-height: 65px;
+
+        padding: 20px 25px;
+
+    }
+
+
+    .exam-title h1 {
+
+        font-size: 19px;
+
+    }
+
+
+    .exam-start-content {
+
+        padding: 35px 30px;
+
+    }
+
+
+    .exam-start-content h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .exam-start-content p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .exam-start-content button,
+    #startExam {
+
+        margin-top: 55px;
+
+        width: 155px;
+
+        height: 43px;
+
+    }
+
+
+    /* ------------------------------------------
+       QUESTION
+    ------------------------------------------ */
+
+    .question-page {
+
+        padding: 35px 30px;
+
+    }
+
+
+    .question-count {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .question-text {
+
+        font-size: 15px;
+
+        margin-top: 25px;
+
+        margin-bottom: 25px;
+
+        padding-right: 20px;
+
+    }
+
+
+    .point-box {
+
+        width: 48px;
+
+        height: 40px;
+
+        right: 20px;
+
+        top: 20px;
+
+    }
+
+
+    .point-box b {
+
+        font-size: 16px;
+
+    }
+
+
+    .answer-list label {
+
+        padding: 13px 15px;
+
+        margin: 12px 0;
+
+        font-size: 12px;
+
+    }
+
+
+    .question-footer {
+
+        margin-top: 50px;
+
+    }
+
+
+    #nextQuestion {
+
+        padding: 10px 25px;
+
+        font-size: 13px;
+
+    }
+
+
+    .previous-question {
+
+        font-size: 13px;
+
+    }
+
+
+    /* ------------------------------------------
+       RESULT
+    ------------------------------------------ */
+
+    .result-page {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .result-page h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .result-page h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .result-page strong {
+
+        font-size: 48px;
+
+    }
+
+
+    .result-line {
+
+        width: 85%;
+
+    }
+
+
+    /* ------------------------------------------
+       QUIZ INTRO
+    ------------------------------------------ */
+
+    .quiz-intro {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .quiz-intro-icon {
+
+        font-size: 50px;
+
+    }
+
+
+    .quiz-intro h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .quiz-intro p {
+
+        font-size: 14px;
+
+    }
+
+
+    .quiz-info {
+
+        margin-top: 20px;
+
+        padding: 16px;
+
+    }
+
+
+    .quiz-start {
+
+        padding: 10px 30px;
+
+    }
+
+
+    /* ------------------------------------------
+       EXERCISE
+    ------------------------------------------ */
+
+    .exercise-intro {
+
+        min-height: 220px;
+
+        padding: 25px 18px;
+
+    }
+
+
+    .exercise-intro h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .exercise-intro p {
+
+        font-size: 12px;
+
+    }
+
+
+    .instruction-box {
+
+        width: 90%;
+
+        padding: 13px;
+
+    }
+
+
+    .instruction-box h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    .instruction-box li {
+
+        font-size: 12px;
+
+    }
+
+
+    .start-exam-btn {
+
+        padding: 9px 25px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ------------------------------------------
+       POPUP
+    ------------------------------------------ */
+
+    .certificate-popup {
+
+        width: calc(100% - 40px);
+
+        max-width: 380px;
+
+        padding: 28px 22px;
+
+    }
+
+
+    .submit-box {
+
+        width: calc(100% - 40px);
+
+        max-width: 350px;
+
+        padding: 25px 20px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   576px
+   ========================================================== */
+
+@media (max-width: 576px) {
+
+
+    /* ------------------------------------------
+       CONTAINER
+    ------------------------------------------ */
+
+    .course-container {
+
+        width: 92%;
+
+    }
+
+
+    /* ------------------------------------------
+       TOP NAV
+    ------------------------------------------ */
+
+    .player-top-nav {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .player-top-nav .nav-link {
+
+        font-size: 12px;
+
+    }
+
+
+    /* ------------------------------------------
+       VIDEO
+    ------------------------------------------ */
+
+    .video-player-wrapper {
+
+        aspect-ratio: 16 / 9;
+
+    }
+
+
+    .center-play-btn {
+
+        width: 52px;
+
+        height: 52px;
+
+    }
+
+
+    .center-play-btn i {
+
+        font-size: 18px;
+
+    }
+
+
+    /* ------------------------------------------
+       CONTROLS
+    ------------------------------------------ */
+
+    .video-controls {
+
+        padding: 8px 10px;
+
+        gap: 7px;
+
+    }
+
+
+    .controls-left,
+    .controls-right {
+
+        gap: 9px;
+
+    }
+
+
+    .control-icon {
+
+        font-size: 13px;
+
+    }
+
+
+    .time-display {
+
+        font-size: 9px;
+
+    }
+
+
+    .playback-speed {
+
+        font-size: 9px;
+
+        padding: 2px 5px;
+
+    }
+
+
+    /* ------------------------------------------
+       REPORT BUTTON
+    ------------------------------------------ */
+
+    .btn-floating-report {
+
+        bottom: 10px;
+
+        right: 10px;
+
+        padding: 7px 11px;
+
+        font-size: 11px;
+
+        gap: 6px;
+
+    }
+
+
+    /* ------------------------------------------
+       SIDEBAR
+    ------------------------------------------ */
+
+    .sidebar-top {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .sidebar-btn {
+
+        height: 45px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ------------------------------------------
+       CERTIFICATE
+    ------------------------------------------ */
+
+    .certificate-card {
+
+        gap: 8px;
+
+        padding: 9px;
+
+    }
+
+
+    .certificate-icon {
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 14px;
+
+    }
+
+
+    .certificate-title {
+
+        font-size: 12px;
+
+    }
+
+
+    .eligibility-btn {
+
+        font-size: 10px;
+
+    }
+
+
+    .view-certificate-btn {
+
+        font-size: 9px;
+
+        padding: 4px 7px;
+
+    }
+
+
+    /* ------------------------------------------
+       LESSON
+    ------------------------------------------ */
+
+    .lesson {
+
+        gap: 9px;
+
+        padding: 13px 10px;
+
+    }
+
+
+    .lesson-dot {
+
+        width: 15px;
+
+        height: 15px;
+
+        border-width: 2px;
+
+    }
+
+
+    .lesson-content span {
+
+        font-size: 12px;
+
+        line-height: 1.4;
+
+    }
+
+
+    .lesson-content small {
+
+        font-size: 9px;
+
+        gap: 4px;
+
+    }
+
+
+    .lesson-title {
+
+        font-size: 11px;
+
+        padding: 8px 10px;
+
+    }
+
+
+    /* ------------------------------------------
+       DISCUSSION
+    ------------------------------------------ */
+
+    .discussion-panel {
+
+        padding: 18px 12px;
+
+    }
+
+
+    .discussion-panel h3 {
+
+        font-size: 17px;
+
+    }
+
+
+    .discussion-panel textarea {
+
+        height: 95px;
+
+        border-radius: 10px;
+
+        padding: 12px;
+
+        font-size: 12px;
+
+    }
+
+
+    .start-discussion-btn {
+
+        height: 38px;
+
+        border-radius: 9px;
+
+        font-size: 13px;
+
+    }
+
+
+    .all-discussion-title {
+
+        margin-top: 35px;
+
+        font-size: 17px !important;
+
+    }
+
+
+    /* ------------------------------------------
+       REVIEW
+    ------------------------------------------ */
+
+    .review-panel {
+
+        padding: 18px 12px;
+
+    }
+
+
+    .review-panel h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .rating-bars div {
+
+        gap: 6px;
+
+        margin: 8px 0;
+
+    }
+
+
+    .rating-bars span {
+
+        width: 15px;
+
+        font-size: 12px;
+
+    }
+
+
+    .rating-bars small {
+
+        width: 38px;
+
+        font-size: 11px;
+
+    }
+
+
+    .star-select i {
+
+        font-size: 20px;
+
+    }
+
+
+    .review-avatar {
+
+        width: 42px;
+
+        height: 42px;
+
+    }
+
+
+    .review-item {
+
+        padding: 13px 0;
+
+    }
+
+
+    .review-item b {
+
+        font-size: 13px;
+
+    }
+
+
+    .review-item p {
+
+        font-size: 11px;
+
+        line-height: 1.5;
+
+    }
+
+
+    /* ------------------------------------------
+       EXAM
+    ------------------------------------------ */
+
+    .video-player-wrapper:has(.exam-page),
+    .video-player-wrapper:has(.result-page) {
+
+        min-height: 500px;
+
+    }
+
+
+    .exam-title {
+
+        padding: 18px 20px;
+
+        min-height: 60px;
+
+    }
+
+
+    .exam-title h1 {
+
+        font-size: 17px;
+
+    }
+
+
+    .exam-start-content {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .exam-type {
+
+        font-size: 10px;
+
+        padding: 4px 14px;
+
+    }
+
+
+    .exam-start-content h2 {
+
+        font-size: 21px;
+
+        margin-top: 10px;
+
+    }
+
+
+    .exam-start-content p {
+
+        font-size: 12px;
+
+    }
+
+
+    .exam-start-content button,
+    #startExam {
+
+        margin-top: 45px;
+
+        width: 145px;
+
+        height: 40px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ------------------------------------------
+       QUESTION
+    ------------------------------------------ */
+
+    .question-page {
+
+        padding: 28px 20px;
+
+    }
+
+
+    .question-count {
+
+        font-size: 11px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .point-box {
+
+        width: 44px;
+
+        height: 37px;
+
+        right: 15px;
+
+        top: 15px;
+
+    }
+
+
+    .point-box b {
+
+        font-size: 14px;
+
+    }
+
+
+    .point-box span {
+
+        font-size: 8px;
+
+    }
+
+
+    .question-text {
+
+        font-size: 14px;
+
+        margin-top: 20px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .answer-list label {
+
+        gap: 10px;
+
+        padding: 12px;
+
+        margin: 10px 0;
+
+        font-size: 11px;
+
+        border-radius: 8px;
+
+    }
+
+
+    .answer-list span {
+
+        width: 11px;
+
+        height: 11px;
+
+    }
+
+
+    .question-footer {
+
+        margin-top: 40px;
+
+    }
+
+
+    #nextQuestion {
+
+        padding: 9px 20px;
+
+        font-size: 12px;
+
+    }
+
+
+    .previous-question {
+
+        font-size: 12px;
+
+    }
+
+
+    /* ------------------------------------------
+       RESULT
+    ------------------------------------------ */
+
+    .result-page {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .result-page h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .result-page h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .result-page strong {
+
+        font-size: 42px;
+
+    }
+
+
+    /* ------------------------------------------
+       QUIZ
+    ------------------------------------------ */
+
+    .quiz-intro {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .quiz-intro-icon {
+
+        font-size: 42px;
+
+        margin-bottom: 18px;
+
+    }
+
+
+    .quiz-intro h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .quiz-intro p {
+
+        font-size: 12px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .quiz-info {
+
+        padding: 14px;
+
+    }
+
+
+    .quiz-start {
+
+        margin-top: 20px;
+
+        padding: 9px 25px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ------------------------------------------
+       EXERCISE
+    ------------------------------------------ */
+
+    .exercise-intro {
+
+        min-height: 200px;
+
+        padding: 20px 12px;
+
+    }
+
+
+    .exercise-intro h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .exercise-intro p {
+
+        font-size: 11px;
+
+    }
+
+
+    .instruction-box {
+
+        width: 100%;
+
+        padding: 12px;
+
+    }
+
+
+    .instruction-box h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .instruction-box li {
+
+        font-size: 11px;
+
+    }
+
+
+    .start-exam-btn {
+
+        margin-top: 12px;
+
+        padding: 8px 22px;
+
+        font-size: 12px;
+
+    }
+
+
+    /* ------------------------------------------
+       POPUPS
+    ------------------------------------------ */
+
+    .certificate-popup {
+
+        width: calc(100% - 30px);
+
+        padding: 25px 18px;
+
+    }
+
+
+    .certificate-popup h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .popup-content {
+
+        font-size: 12px;
+
+    }
+
+
+    .submit-box {
+
+        width: calc(100% - 30px);
+
+        padding: 22px 15px;
+
+    }
+
+
+    .submit-box button {
+
+        margin: 6px;
+
+        padding: 9px 20px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL MOBILE
+   400px
+   ========================================================== */
+
+@media (max-width: 400px) {
+
+
+    .course-container {
+
+        width: 94%;
+
+    }
+
+
+    .player-top-nav .nav-link {
+
+        font-size: 11px;
+
+    }
+
+
+    .video-controls {
+
+        padding: 7px 8px;
+
+    }
+
+
+    .controls-left,
+    .controls-right {
+
+        gap: 7px;
+
+    }
+
+
+    .control-icon {
+
+        font-size: 12px;
+
+    }
+
+
+    .time-display {
+
+        font-size: 8px;
+
+    }
+
+
+    .playback-speed {
+
+        display: none;
+
+    }
+
+
+    .certificate-title {
+
+        font-size: 11px;
+
+    }
+
+
+    .view-certificate-btn {
+
+        font-size: 8px;
+
+        padding: 4px 6px;
+
+    }
+
+
+    .lesson-content span {
+
+        font-size: 11px;
+
+    }
+
+
+    .lesson-content small {
+
+        font-size: 8px;
+
+    }
+
+
+    .question-page {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .question-text {
+
+        font-size: 13px;
+
+    }
+
+
+    .answer-list label {
+
+        font-size: 10px;
+
+        padding: 10px;
+
+    }
+
+
+    .result-page strong {
+
+        font-size: 38px;
+
+    }
+
+}
