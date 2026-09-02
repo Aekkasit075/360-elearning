@@ -1,361 +1,861 @@
 @font-face {
+
     font-family: "Kanit";
+
     src: url("../../fonts/Kanit/Kanit-Regular.ttf");
+
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Kanit",sans-serif;
+
+/* ===========================
+        RESET
+=========================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Kanit", sans-serif;
+
 }
 
-body{
-    background:#0f0f0f;
+
+html,
+body {
+
+    width: 100%;
+    min-height: 100%;
+
 }
+
+
+body {
+
+    background: #0f0f0f;
+
+    overflow-x: hidden;
+
+}
+
 
 /* ===========================
         BACKGROUND
 =========================== */
 
-.login-page{
+.login-page {
 
-    width:100%;
-    min-height:100vh;
+    width: 100%;
+    min-height: 100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
 
     background:
-    linear-gradient(
-        rgba(0,0,0,.30),
-        rgba(0,0,0,.30)
-    ),
-    url("../images/background/background2.png");
+        linear-gradient(
+            rgba(0, 0, 0, .30),
+            rgba(0, 0, 0, .30)
+        ),
+        url("../images/background/background2.png");
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
 
 }
+
 
 /* ===========================
         LOGIN CARD
 =========================== */
 
-.login-card{
+.login-card {
 
-    width:1100px;
-    height:600px;
+    width: min(1100px, 100%);
 
-    display:flex;
+    min-height: 600px;
 
-    overflow:hidden;
+    display: flex;
 
-    border-radius:15px;
+    overflow: hidden;
 
-    background:rgba(20,20,20,.45);
+    border-radius: 15px;
 
-    backdrop-filter:blur(10px);
+    background: rgba(20, 20, 20, .45);
 
-    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, .08);
 
     box-shadow:
-    0 20px 60px rgba(0,0,0,.6);
+        0 20px 60px rgba(0, 0, 0, .6);
 
 }
+
 
 /* ===========================
         LEFT
 =========================== */
 
-.left-side{
+.left-side {
 
-    width:50%;
+    width: 50%;
 
-    display:flex;
-    flex-direction:column;
+    display: flex;
 
-    justify-content:center;
-    align-items:center;
+    flex-direction: column;
 
-}
+    justify-content: center;
 
-.logo360{
+    align-items: center;
 
-    width:240px;
+    padding: 40px;
 
 }
 
-.logoText{
 
-    width:360px;
+.logo360 {
 
-    margin-top:20px;
+    width: 240px;
+
+    max-width: 70%;
 
 }
+
+
+.logoText {
+
+    width: 360px;
+
+    max-width: 90%;
+
+    margin-top: 20px;
+
+}
+
 
 /* ===========================
         RIGHT
 =========================== */
 
-.right-side{
+.right-side {
 
-    width:50%;
+    width: 50%;
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    display: flex;
 
-    padding:70px;
+    flex-direction: column;
 
-    color:white;
+    justify-content: center;
 
-}
+    padding: 70px;
 
-.right-side h2{
-
-    font-size:38px;
-
-    font-weight:700;
-
-    text-align:center;
+    color: white;
 
 }
 
-.right-side p{
 
-    color:#cfcfcf;
+.right-side h2 {
 
-    text-align:center;
+    font-size: 38px;
 
-    margin-bottom:30px;
+    font-weight: 700;
+
+    text-align: center;
 
 }
+
+
+.right-side p {
+
+    color: #cfcfcf;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
 
 /* ===========================
         FORM
 =========================== */
 
-label{
+label {
 
-    color:#d8d8d8;
+    color: #d8d8d8;
 
-    font-size:14px;
-
-}
-
-.form-control{
-
-    height:48px;
-
-    border:none;
-
-    background:white;
-
-    border-radius:3px;
+    font-size: 14px;
 
 }
 
-.form-control:focus{
 
-    box-shadow:none;
+.form-control {
+
+    height: 48px;
+
+    border: none;
+
+    background: white;
+
+    border-radius: 3px;
+
+    min-width: 0;
 
 }
 
-.input-group-text{
 
-    background:white;
+.form-control:focus {
 
-    border:none;
-
-    cursor:pointer;
+    box-shadow: none;
 
 }
+
+
+.input-group {
+
+    width: 100%;
+
+}
+
+
+.input-group-text {
+
+    background: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
 
 /* ===========================
         REMEMBER
 =========================== */
 
-.remember{
+.remember {
 
-    display:flex;
+    display: flex;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
-    align-items:center;
+    align-items: center;
 
-    margin-top:8px;
-    margin-bottom:18px;
+    gap: 10px;
 
-    font-size:13px;
+    margin-top: 8px;
 
-    color:#c7c7c7;
+    margin-bottom: 18px;
 
-}
+    font-size: 13px;
 
-.remember a{
-
-    color:#d0d0d0;
-
-    text-decoration:none;
+    color: #c7c7c7;
 
 }
 
-.remember a:hover{
 
-    color:#ffffff;
+.remember a {
+
+    color: #d0d0d0;
+
+    text-decoration: none;
+
+    white-space: nowrap;
 
 }
+
+
+.remember a:hover {
+
+    color: #ffffff;
+
+}
+
 
 /* ===========================
         LOGIN BUTTON
 =========================== */
 
-.btn-login{
+.btn-login {
 
-    width:100%;
-    height:50px;
+    width: 100%;
 
-    border:none;
-    border-radius:4px;
+    height: 50px;
 
-    background:#d88918;
+    border: none;
 
-    color:white;
+    border-radius: 4px;
 
-    font-size:18px;
-    font-weight:600;
+    background: #d88918;
 
-    transition:.3s;
+    color: white;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-size: 18px;
 
-    text-decoration:none;
+    font-weight: 600;
+
+    transition: .3s;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
 
 }
 
-.btn-login:hover{
 
-    background:#b87310;
+.btn-login:hover {
+
+    background: #b87310;
 
 }
+
 
 /* ===========================
         DIVIDER
 =========================== */
 
-.divider{
+.divider {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    margin:28px 0;
+    margin: 28px 0;
 
-    color:#8f8f8f;
+    color: #8f8f8f;
 
 }
+
 
 .divider::before,
-.divider::after{
+.divider::after {
 
-    content:"";
+    content: "";
 
-    flex:1;
+    flex: 1;
 
-    height:1px;
+    height: 1px;
 
-    background:#666;
+    background: #666;
+
+}
+
+
+.divider span {
+
+    margin: 0 15px;
 
 }
 
-.divider span{
-
-    margin:0 15px;
-
-}
 
 /* ===========================
         SOCIAL
 =========================== */
 
-.social{
+.social {
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    gap:20px;
-
-}
-
-.social button{
-
-    width:100px;
-    height:45px;
-
-    background:white;
-
-    border:none;
-
-    border-radius:5px;
-
-    font-size:22px;
-
-    transition:.3s;
+    gap: 20px;
 
 }
 
-.social button:hover{
 
-    transform:translateY(-3px);
+.social button {
 
-    box-shadow:0 10px 20px rgba(0,0,0,.35);
+    width: 100px;
+
+    height: 45px;
+
+    background: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 22px;
+
+    transition: .3s;
 
 }
 
-.facebook{
 
-    color:#1877F2;
+.social button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, .35);
+
+}
+
+
+.facebook {
+
+    color: #1877F2;
 
 }
 
-.google{
 
-    color:#EA4335;
+.google {
+
+    color: #EA4335;
 
 }
+
 
 /* ===========================
         SIGNUP
 =========================== */
 
-.signup{
+.signup {
 
-    margin-top:25px;
+    margin-top: 25px;
 
-    text-align:center;
+    text-align: center;
 
-    color:#bfbfbf;
-
-}
-
-.signup a{
-
-    color:#d88918;
-
-    text-decoration:none;
-
-    font-weight:600;
+    color: #bfbfbf;
 
 }
 
-.signup a:hover{
 
-    color:#ffb347;
+.signup a {
+
+    color: #d88918;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+.signup a:hover {
+
+    color: #ffb347;
+
+}
+
+
+/* ==================================================
+        TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .login-page {
+
+        padding: 25px;
+
+    }
+
+
+    .login-card {
+
+        min-height: 560px;
+
+    }
+
+
+    .left-side {
+
+        padding: 30px;
+
+    }
+
+
+    .right-side {
+
+        padding: 45px;
+
+    }
+
+
+    .logo360 {
+
+        width: 190px;
+
+    }
+
+
+    .logoText {
+
+        width: 280px;
+
+    }
+
+
+    .right-side h2 {
+
+        font-size: 34px;
+
+    }
+
+}
+
+
+/* ==================================================
+        MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .login-page {
+
+        min-height: 100vh;
+
+        padding: 20px 15px;
+
+        align-items: flex-start;
+
+    }
+
+
+    .login-card {
+
+        width: 100%;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        border-radius: 12px;
+
+    }
+
+
+    /* LEFT */
+
+    .left-side {
+
+        width: 100%;
+
+        padding: 35px 20px 20px;
+
+    }
+
+
+    .logo360 {
+
+        width: 150px;
+
+        max-width: 60%;
+
+    }
+
+
+    .logoText {
+
+        width: 230px;
+
+        max-width: 80%;
+
+        margin-top: 12px;
+
+    }
+
+
+    /* RIGHT */
+
+    .right-side {
+
+        width: 100%;
+
+        padding: 25px 25px 35px;
+
+    }
+
+
+    .right-side h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .right-side p {
+
+        font-size: 14px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    label {
+
+        font-size: 13px;
+
+    }
+
+
+    .form-control {
+
+        height: 46px;
+
+        font-size: 14px;
+
+    }
+
+
+    .input-group-text {
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+
+    }
+
+
+    .remember {
+
+        font-size: 12px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .btn-login {
+
+        height: 48px;
+
+        font-size: 17px;
+
+    }
+
+
+    .divider {
+
+        margin: 23px 0;
+
+    }
+
+
+    .social {
+
+        gap: 15px;
+
+    }
+
+
+    .social button {
+
+        width: 90px;
+
+        height: 42px;
+
+    }
+
+
+    .signup {
+
+        font-size: 13px;
+
+        margin-top: 22px;
+
+    }
+
+}
+
+
+/* ==================================================
+        SMALL MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+    .login-page {
+
+        padding: 15px 10px;
+
+    }
+
+
+    .login-card {
+
+        border-radius: 10px;
+
+    }
+
+
+    .left-side {
+
+        padding: 25px 15px 15px;
+
+    }
+
+
+    .logo360 {
+
+        width: 125px;
+
+    }
+
+
+    .logoText {
+
+        width: 200px;
+
+    }
+
+
+    .right-side {
+
+        padding: 20px 18px 30px;
+
+    }
+
+
+    .right-side h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .right-side p {
+
+        font-size: 13px;
+
+        line-height: 1.5;
+
+        margin-bottom: 22px;
+
+    }
+
+
+    .remember {
+
+        font-size: 11px;
+
+    }
+
+
+    .remember a {
+
+        font-size: 11px;
+
+    }
+
+
+    .divider {
+
+        margin: 20px 0;
+
+    }
+
+
+    .divider span {
+
+        margin: 0 10px;
+
+    }
+
+
+    .social {
+
+        gap: 12px;
+
+    }
+
+
+    .social button {
+
+        width: 80px;
+
+        height: 40px;
+
+        font-size: 19px;
+
+    }
+
+
+    .signup {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* ==================================================
+        VERY SMALL MOBILE
+================================================== */
+
+@media (max-width: 360px) {
+
+    .login-page {
+
+        padding: 10px 8px;
+
+    }
+
+
+    .right-side {
+
+        padding: 18px 15px 25px;
+
+    }
+
+
+    .logo360 {
+
+        width: 110px;
+
+    }
+
+
+    .logoText {
+
+        width: 180px;
+
+    }
+
+
+    .right-side h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .remember {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .remember a {
+
+        margin-left: 0;
+
+    }
+
+
+    .social button {
+
+        width: 75px;
+
+    }
 
 }
